@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DMV Proton Therapy Organization</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                DMV Proton Therapy
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#centers">Centers</a>
+                <a href="#symposium">Symposium</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                DC • MARYLAND • VIRGINIA
+            </p>
+
+            <h1>
+                Advancing Proton Therapy
+                Through Collaboration
+            </h1>
+
+            <p class="hero-text">
+                Bringing together proton therapy centers across the
+                DMV region to advance education, collaboration,
+                research, and professional exchange.
+            </p>
+
+            <div class="buttons">
+                <a href="#about" class="button primary">
+                    Learn More
+                </a>
+
+                <a href="#symposium" class="button secondary">
+                    DMV Proton Therapy Symposium
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-heading">
+            <p class="eyebrow">ABOUT US</p>
+
+            <h2>
+                Building a stronger proton therapy community
+            </h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div>
+                <p>
+                    The DMV Proton Therapy Organization is an academic
+                    collaboration between proton therapy centers in the
+                    District of Columbia, Maryland, and Virginia.
+                </p>
+
+                <p>
+                    The organization aims to strengthen collaboration,
+                    education, research, and professional exchange within
+                    the regional proton therapy community.
+                </p>
+            </div>
+
+            <div class="mission-card">
+
+                <h3>Our Mission</h3>
+
+                <ul>
+                    <li>Promote professional collaboration</li>
+                    <li>Advance proton therapy education</li>
+                    <li>Facilitate research and knowledge exchange</li>
+                    <li>Support regional academic activities</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Member Centers -->
+    <section id="centers" class="section light-section">
+
+        <div class="section-heading center">
+
+            <p class="eyebrow">OUR COMMUNITY</p>
+
+            <h2>
+                Four centers. One regional community.
+            </h2>
+
+            <p>
+                The organization brings together four proton therapy
+                centers in the DMV region.
+            </p>
+
+        </div>
+
+
+        <div class="center-grid">
+
+            <div class="center-card">
+                <div class="center-number">01</div>
+                <h3>Inova</h3>
+                <p>
+                    Proton therapy center in Northern Virginia.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+
+
+            <div class="center-card">
+                <div class="center-number">02</div>
+                <h3>Johns Hopkins</h3>
+                <p>
+                    Proton therapy center in Baltimore, Maryland.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+
+
+            <div class="center-card">
+                <div class="center-number">03</div>
+                <h3>Georgetown</h3>
+                <p>
+                    Proton therapy center in Washington, DC.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+
+
+            <div class="center-card">
+                <div class="center-number">04</div>
+                <h3>Maryland Proton Treatment Center</h3>
+                <p>
+                    Proton therapy center in Baltimore, Maryland.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Symposium -->
+    <section id="symposium" class="symposium">
+
+        <div class="symposium-content">
+
+            <p class="eyebrow">
+                ANNUAL EVENT
+            </p>
+
+            <h2>
+                DMV Proton Therapy Symposium
+            </h2>
+
+            <p>
+                A regional meeting bringing together physicians,
+                medical physicists, researchers, dosimetrists,
+                therapists, trainees, and other professionals
+                involved in proton therapy.
+            </p>
+
+            <a href="#" class="button light-button">
+                Symposium Information →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education" class="section">
+
+        <div class="section-heading center">
+
+            <p class="eyebrow">EDUCATION & RESOURCES</p>
+
+            <h2>
+                Learn. Share. Collaborate.
+            </h2>
+
+            <p>
+                Resources and educational opportunities for
+                professionals and trainees in proton therapy.
+            </p>
+
+        </div>
+
+
+        <div class="resource-grid">
+
+            <div class="resource-card">
+                <h3>Educational Resources</h3>
+                <p>
+                    Educational materials and presentations
+                    related to proton therapy.
+                </p>
+                <a href="#">Explore resources →</a>
+            </div>
+
+
+            <div class="resource-card">
+                <h3>Upcoming Events</h3>
+                <p>
+                    Conferences, seminars, workshops, and
+                    regional educational activities.
+                </p>
+                <a href="#">View events →</a>
+            </div>
+
+
+            <div class="resource-card">
+                <h3>Research & Collaboration</h3>
+                <p>
+                    Opportunities to connect researchers and
+                    professionals across the region.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>
+            Join the conversation
+        </h2>
+
+        <p>
+            Interested in collaborating, participating in the
+            symposium, or contributing to the organization?
+        </p>
+
+        <a href="mailto:info@example.org" class="button primary">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <strong>DMV Proton Therapy Organization</strong>
+                <p>
+                    Advancing proton therapy through regional
+                    collaboration.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    DC • Maryland • Virginia
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 DMV Proton Therapy Organization
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
