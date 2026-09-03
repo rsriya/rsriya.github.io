@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News & Events | DMV Proton Therapy Collaborative</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">DMV</span>
+
+            <span class="logo-text">
+                <strong>PROTON THERAPY</strong>
+                <small>COLLABORATIVE</small>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="about.html">About</a>
+            <a href="centers.html">Our Centers</a>
+            <a href="symposium.html">Symposium</a>
+            <a href="education.html">Education</a>
+            <a href="news.html">News & Events</a>
+            <a href="contact.html" class="nav-button">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="page-hero">
+
+            <p class="eyebrow">
+                NEWS & EVENTS
+            </p>
+
+            <h1>
+                What's happening
+                across the community.
+            </h1>
+
+            <p>
+                News, announcements, educational activities,
+                and upcoming events.
+            </p>
+
+        </section>
+
+
+        <!-- FEATURED EVENT -->
+
+        <section class="section">
+
+            <p class="section-label">
+                FEATURED
+            </p>
+
+            <div class="featured-news">
+
+                <div class="news-image-placeholder">
+                    DMV
+                </div>
+
+                <div class="featured-news-content">
+
+                    <p class="card-label">
+                        UPCOMING EVENT
+                    </p>
+
+                    <h2>
+                        DMV Proton Therapy Symposium
+                    </h2>
+
+                    <p>
+                        Information about the next regional proton
+                        therapy symposium will appear here, including
+                        registration, program information, speakers,
+                        and location.
+                    </p>
+
+                    <a href="symposium.html" class="text-link">
+                        Learn about the Symposium →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWS -->
+
+        <section class="gray-section">
+
+            <div class="section">
+
+                <p class="section-label">
+                    LATEST NEWS
+                </p>
+
+                <div class="news-grid">
+
+                    <article class="news-card">
+
+                        <div class="news-date">
+                            <span>SEP</span>
+                            <strong>2026</strong>
+                        </div>
+
+                        <p class="card-label">
+                            ORGANIZATION
+                        </p>
+
+                        <h3>
+                            Building a new regional
+                            proton therapy organization
+                        </h3>
+
+                        <p>
+                            Updates about the development of the
+                            nonprofit academic organization.
+                        </p>
+
+                        <a href="#">
+                            Read more →
+                        </a>
+
+                    </article>
+
+
+                    <article class="news-card">
+
+                        <div class="news-date">
+                            <span>EVENT</span>
+                            <strong>2026</strong>
+                        </div>
+
+                        <p class="card-label">
+                            SYMPOSIUM
+                        </p>
+
+                        <h3>
+                            DMV Proton Therapy Symposium
+                        </h3>
+
+                        <p>
+                            Information and announcements related
+                            to the annual symposium.
+                        </p>
+
+                        <a href="symposium.html">
+                            View symposium →
+                        </a>
+
+                    </article>
+
+
+                    <article class="news-card">
+
+                        <div class="news-date">
+                            <span>NEWS</span>
+                            <strong>—</strong>
+                        </div>
+
+                        <p class="card-label">
+                            COMMUNITY
+                        </p>
+
+                        <h3>
+                            Regional collaboration
+                            and education
+                        </h3>
+
+                        <p>
+                            Future announcements and community
+                            activities will appear here.
+                        </p>
+
+                        <a href="#">
+                            Read more →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">DMV</span>
+
+                <span class="logo-text">
+                    <strong>PROTON THERAPY</strong>
+                    <small>COLLABORATIVE</small>
+                </span>
+            </a>
+
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="centers.html">Our Centers</a>
+                <a href="symposium.html">Symposium</a>
+                <a href="education.html">Education</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 DMV Proton Therapy Collaborative</p>
+            <p>Washington DC • Maryland • Virginia</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
