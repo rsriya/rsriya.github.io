@@ -1140,97 +1140,6 @@ h2 {
 }
 
 
-/* =====================================================
-   FEATURED CENTERS
-===================================================== */
-
-.centers-section {
-    padding: 0 7%;
-}
-
-.featured-center {
-    padding: 100px 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 90px;
-    align-items: center;
-
-    border-bottom: 1px solid #dce4e8;
-}
-
-.featured-center.reverse .center-image {
-    order: 2;
-}
-
-.featured-center.reverse .featured-center-content {
-    order: 1;
-}
-
-.center-image {
-    position: relative;
-
-    min-height: 420px;
-
-    display: flex;
-    align-items: flex-start;
-
-    background:
-        linear-gradient(
-            135deg,
-            #c7dce4,
-            #8eb2c0
-        );
-}
-
-.center-number {
-    padding: 22px;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    color: #1677a8;
-    background: white;
-}
-
-.center-image-two {
-    background:
-        linear-gradient(
-            135deg,
-            #d4dce4,
-            #9aaebe
-        );
-}
-
-.center-image-three {
-    background:
-        linear-gradient(
-            135deg,
-            #c9ddd8,
-            #8eafa7
-        );
-}
-
-.center-image-four {
-    background:
-        linear-gradient(
-            135deg,
-            #ddd4e2,
-            #b09caf
-        );
-}
-
-.featured-center-content h2 {
-    font-size: 42px;
-}
-
-.featured-center-content > p:not(.card-label) {
-    margin-top: 20px;
-
-    font-size: 17px;
-    color: #657681;
-}
-
 
 /* =====================================================
    COLLABORATION
@@ -1262,38 +1171,53 @@ h2 {
 
     color: #c4d0d6;
 }
+
 /* =====================================================
-   CENTER PHOTOS
+   FEATURED CENTERS
 ===================================================== */
 
-.center-image {
-    position: relative;
-    overflow: hidden;
-    min-height: 420px;
+.centers-section {
+    padding: 0 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
-.center-image img {
-    width: 100%;
-    height: 100%;
-    min-height: 420px;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
+.featured-center {
+    padding: 55px 50px;
 
-.center-number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
-    padding: 22px;
-
+    border: 1px solid #dce4e8;
     background: #ffffff;
-    color: #1677a8;
 
-    font-size: 13px;
-    font-weight: 700;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.featured-center:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(23, 42, 58, 0.08);
+}
+
+.featured-center-content {
+    width: 100%;
+}
+
+.featured-center-content h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.featured-center-content > p:not(.card-label) {
+    margin-top: 18px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #657681;
 }
 /* =====================================================
    FOOTER
