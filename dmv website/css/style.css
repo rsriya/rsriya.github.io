@@ -1233,3 +1233,433 @@ footer {
     }
 
 }
+
+/* =====================================================
+   CENTERS PAGE - HERO
+===================================================== */
+
+.centers-hero {
+    min-height: 560px;
+    padding: 90px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+    background: #f3f7f9;
+}
+
+.centers-hero-content {
+    max-width: 800px;
+}
+
+.centers-hero h1 {
+    font-size: clamp(55px, 7vw, 95px);
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.centers-hero h1 span {
+    color: #1677a8;
+}
+
+.centers-hero-content > p:last-child {
+    max-width: 600px;
+    margin-top: 28px;
+
+    font-size: 18px;
+    color: #60727d;
+}
+
+
+/* REGION STAT */
+
+.region-stat {
+    min-width: 280px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-left: 1px solid #cfdce2;
+}
+
+.region-stat > span {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #1677a8;
+}
+
+.region-stat strong {
+    display: block;
+    margin-top: 20px;
+
+    font-size: 18px;
+}
+
+.region-stat p {
+    margin-top: 8px;
+
+    font-size: 14px;
+    color: #73818a;
+}
+
+
+/* =====================================================
+   CENTERS INTRODUCTION
+===================================================== */
+
+.centers-introduction {
+    background: white;
+}
+
+.centers-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.centers-intro-grid h2 {
+    max-width: 600px;
+
+    font-size: 48px;
+}
+
+.centers-intro-grid > div {
+    font-size: 17px;
+    color: #657681;
+}
+
+.centers-intro-grid p + p {
+    margin-top: 22px;
+}
+
+
+/* =====================================================
+   REGION MAP
+===================================================== */
+
+.region-map-section {
+    padding: 100px 7%;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+
+    background: #edf4f7;
+}
+
+.map-content h2 {
+    margin-top: 10px;
+
+    font-size: 45px;
+}
+
+.map-content > p:last-child {
+    margin-top: 22px;
+
+    color: #657681;
+}
+
+.map-placeholder {
+    position: relative;
+
+    min-height: 430px;
+
+    border: 1px solid #c9d8df;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d8e6eb,
+            #b9d0da
+        );
+}
+
+.map-label {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    color: rgba(23, 42, 58, 0.2);
+}
+
+.map-point {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #172a3a;
+}
+
+.map-point span {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1677a8;
+    color: white;
+}
+
+.point-one {
+    left: 18%;
+    bottom: 22%;
+}
+
+.point-two {
+    right: 16%;
+    top: 18%;
+}
+
+.point-three {
+    left: 35%;
+    bottom: 35%;
+}
+
+.point-four {
+    right: 23%;
+    bottom: 32%;
+}
+
+
+/* =====================================================
+   FEATURED CENTERS
+===================================================== */
+
+.centers-section {
+    padding: 0 7%;
+}
+
+.featured-center {
+    padding: 100px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+
+    border-bottom: 1px solid #dce4e8;
+}
+
+.featured-center.reverse .center-image {
+    order: 2;
+}
+
+.featured-center.reverse .featured-center-content {
+    order: 1;
+}
+
+.center-image {
+    position: relative;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: flex-start;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c7dce4,
+            #8eb2c0
+        );
+}
+
+.center-number {
+    padding: 22px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #1677a8;
+    background: white;
+}
+
+.center-image-two {
+    background:
+        linear-gradient(
+            135deg,
+            #d4dce4,
+            #9aaebe
+        );
+}
+
+.center-image-three {
+    background:
+        linear-gradient(
+            135deg,
+            #c9ddd8,
+            #8eafa7
+        );
+}
+
+.center-image-four {
+    background:
+        linear-gradient(
+            135deg,
+            #ddd4e2,
+            #b09caf
+        );
+}
+
+.featured-center-content {
+    max-width: 560px;
+}
+
+.featured-center-content h2 {
+    font-size: 42px;
+}
+
+.featured-center-content > p:not(.card-label) {
+    margin-top: 20px;
+
+    font-size: 17px;
+    color: #657681;
+}
+
+
+/* =====================================================
+   COLLABORATION
+===================================================== */
+
+.centers-collaboration {
+    padding: 120px 7%;
+
+    text-align: center;
+
+    background: #172a3a;
+    color: white;
+}
+
+.centers-collaboration .section-label {
+    color: #8dc5df;
+}
+
+.centers-collaboration h2 {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 55px;
+}
+
+.centers-collaboration > p:last-child {
+    max-width: 650px;
+    margin: 28px auto 0;
+
+    color: #c4d0d6;
+}
+
+
+/* =====================================================
+   CENTERS PAGE RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .centers-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .region-stat {
+        border-left: none;
+        border-top: 1px solid #cfdce2;
+
+        width: 100%;
+    }
+
+    .centers-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .region-map-section {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-center {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .featured-center.reverse .center-image {
+        order: 1;
+    }
+
+    .featured-center.reverse .featured-center-content {
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .centers-hero {
+        padding: 70px 5%;
+    }
+
+    .centers-hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .centers-intro-grid h2 {
+        font-size: 38px;
+    }
+
+    .region-map-section {
+        padding: 75px 5%;
+    }
+
+    .map-placeholder {
+        min-height: 330px;
+    }
+
+    .centers-section {
+        padding: 0 5%;
+    }
+
+    .featured-center {
+        padding: 70px 0;
+    }
+
+    .center-image {
+        min-height: 280px;
+    }
+
+    .featured-center-content h2 {
+        font-size: 34px;
+    }
+
+    .centers-collaboration {
+        padding: 85px 5%;
+    }
+
+    .centers-collaboration h2 {
+        font-size: 40px;
+    }
+
+}
