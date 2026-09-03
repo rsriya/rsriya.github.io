@@ -961,279 +961,6 @@ h2 {
     color: #687983;
 }
 
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer {
-    padding: 50px 7% 25px;
-
-    background: #10212d;
-    color: #ffffff;
-}
-
-.footer-top {
-    padding-bottom: 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo .logo-mark {
-    color: #ffffff;
-}
-
-.footer-logo .logo-text small {
-    color: #8d9ba3;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.footer-links a {
-    color: #b8c5cc;
-    font-size: 12px;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-}
-
-.footer-bottom {
-    padding-top: 20px;
-
-    display: flex;
-    justify-content: space-between;
-
-    border-top: 1px solid #30424e;
-
-    color: #81919a;
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 950px) {
-
-    .navbar {
-        padding: 0 5%;
-    }
-
-    .nav-links {
-        gap: 15px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        padding: 70px 5%;
-    }
-
-    .hero-visual {
-        height: 380px;
-    }
-
-    .mission,
-    .two-column,
-    .contact-section {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .feature-section,
-    .featured-news {
-        grid-template-columns: 1fr;
-    }
-
-    .center-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .center-card:nth-child(2) {
-        border-right: none;
-    }
-
-    .center-card:nth-child(-n+2) {
-        border-bottom: 1px solid #dce4e8;
-    }
-
-    .goal-grid,
-    .resource-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .goal-card:nth-child(2),
-    .resource-card:nth-child(2) {
-        border-right: none;
-    }
-
-    .goal-card:nth-child(-n+2),
-    .resource-card:nth-child(-n+2) {
-        border-bottom: 1px solid #dce4e8;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 650px) {
-
-    .navbar {
-        height: auto;
-        padding: 20px 5%;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .section {
-        padding: 75px 5%;
-    }
-
-    .hero {
-        padding: 65px 5%;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .hero-description {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .button {
-        text-align: center;
-    }
-
-    .hero-visual {
-        height: 300px;
-    }
-
-    .visual-placeholder span {
-        font-size: 25px;
-    }
-
-    .page-hero {
-        padding: 70px 5%;
-    }
-
-    .page-hero h1 {
-        font-size: 45px;
-    }
-
-    .mission h2,
-    .feature-content h2,
-    .intro-text h2,
-    .symposium-intro h2,
-    .contact-info h2 {
-        font-size: 35px;
-    }
-
-    .section-heading {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .section-heading h2 {
-        font-size: 40px;
-    }
-
-    .center-grid,
-    .goal-grid,
-    .resource-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .center-card,
-    .goal-card,
-    .resource-card {
-        border-right: none !important;
-        border-bottom: 1px solid #dce4e8;
-    }
-
-    .center-card:last-child,
-    .goal-card:last-child,
-    .resource-card:last-child {
-        border-bottom: none;
-    }
-
-    .large-center-card {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .symposium-event {
-        grid-template-columns: 1fr;
-        padding: 30px;
-    }
-
-    .date-box {
-        width: 130px;
-    }
-
-    .past-event {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .featured-news {
-        gap: 35px;
-    }
-
-    .news-image-placeholder {
-        min-height: 280px;
-    }
-
-    .featured-news-content h2 {
-        font-size: 35px;
-    }
-
-    .event-card {
-        padding: 30px;
-    }
-
-    .cta {
-        padding: 80px 5%;
-    }
-
-    .cta h2 {
-        font-size: 38px;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-}
-
 /* =====================================================
    CENTERS PAGE - HERO
 ===================================================== */
@@ -1570,6 +1297,279 @@ footer {
 
     color: #c4d0d6;
 }
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 50px 7% 25px;
+
+    background: #10212d;
+    color: #ffffff;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo .logo-mark {
+    color: #ffffff;
+}
+
+.footer-logo .logo-text small {
+    color: #8d9ba3;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #b8c5cc;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #30424e;
+
+    color: #81919a;
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 70px 5%;
+    }
+
+    .hero-visual {
+        height: 380px;
+    }
+
+    .mission,
+    .two-column,
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .feature-section,
+    .featured-news {
+        grid-template-columns: 1fr;
+    }
+
+    .center-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .center-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .center-card:nth-child(-n+2) {
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .goal-grid,
+    .resource-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .goal-card:nth-child(2),
+    .resource-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .goal-card:nth-child(-n+2),
+    .resource-card:nth-child(-n+2) {
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .section {
+        padding: 75px 5%;
+    }
+
+    .hero {
+        padding: 65px 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+
+    .visual-placeholder span {
+        font-size: 25px;
+    }
+
+    .page-hero {
+        padding: 70px 5%;
+    }
+
+    .page-hero h1 {
+        font-size: 45px;
+    }
+
+    .mission h2,
+    .feature-content h2,
+    .intro-text h2,
+    .symposium-intro h2,
+    .contact-info h2 {
+        font-size: 35px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+    .center-grid,
+    .goal-grid,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .center-card,
+    .goal-card,
+    .resource-card {
+        border-right: none !important;
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .center-card:last-child,
+    .goal-card:last-child,
+    .resource-card:last-child {
+        border-bottom: none;
+    }
+
+    .large-center-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .symposium-event {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .date-box {
+        width: 130px;
+    }
+
+    .past-event {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .featured-news {
+        gap: 35px;
+    }
+
+    .news-image-placeholder {
+        min-height: 280px;
+    }
+
+    .featured-news-content h2 {
+        font-size: 35px;
+    }
+
+    .event-card {
+        padding: 30px;
+    }
+
+    .cta {
+        padding: 80px 5%;
+    }
+
+    .cta h2 {
+        font-size: 38px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
 
 
 /* =====================================================
