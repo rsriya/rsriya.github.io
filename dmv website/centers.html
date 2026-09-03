@@ -1,341 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Our Centers | DMV Proton Therapy Collaborative</title>
+
     <link rel="stylesheet" href="style.css">
-
-    <!-- Image-specific styling for the center photos -->
-    <style>
-        .center-image {
-            position: relative;
-            overflow: hidden;
-            min-height: 430px;
-            background: #e9edf2;
-        }
-
-        .center-image img {
-            width: 100%;
-            height: 100%;
-            min-height: 430px;
-            display: block;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .center-number {
-            z-index: 2;
-        }
-
-        @media (max-width: 950px) {
-            .center-image,
-            .center-image img {
-                min-height: 360px;
-            }
-        }
-
-        @media (max-width: 650px) {
-            .center-image,
-            .center-image img {
-                min-height: 280px;
-            }
-        }
-    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
-    <div class="container nav-container">
-        <a href="index.html" class="site-logo">
-            <span>DMV</span> PROTON THERAPY<br>
-            <small>COLLABORATIVE</small>
-        </a>
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-        <nav class="main-nav">
-            <a href="about.html">About</a>
-            <a href="centers.html" class="active">Our Centers</a>
-            <a href="symposium.html">Symposium</a>
-            <a href="education.html">Education</a>
-            <a href="news.html">News &amp; Events</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-mark">DMV</span>
+
+        <span class="logo-text">
+            <strong>PROTON THERAPY</strong>
+            <small>COLLABORATIVE</small>
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="about.html">About</a>
+
+        <a href="centers.html">Our Centers</a>
+
+        <a href="symposium.html">Symposium</a>
+
+        <a href="education.html">Education</a>
+
+        <a href="news.html">News &amp; Events</a>
+
+        <a href="contact.html" class="nav-button">Contact</a>
+
+    </nav>
+
 </header>
+
 
 
 <main>
 
-    <!-- HERO -->
-    <section class="centers-hero">
-        <div class="container centers-hero-content">
-            <div>
-                <p class="eyebrow">REGIONAL COLLABORATION</p>
-                <h1>Four Centers.<br>One Region.</h1>
-                <p>
-                    Bringing together proton therapy centers across
-                    Washington, DC, Maryland, and Northern Virginia
-                    to advance clinical care, education, and research.
-                </p>
-            </div>
 
-            <div class="region-stat">
-                <strong>4</strong>
-                <span>Proton Therapy<br>Centers</span>
-            </div>
-        </div>
-    </section>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
+<section class="centers-hero">
 
-    <!-- INTRODUCTION -->
-    <section class="centers-introduction section-padding">
-        <div class="container centers-intro-grid">
-            <div>
-                <p class="card-label">THE DMV PROTON COMMUNITY</p>
-                <h2>Regional expertise.<br>Shared knowledge.<br>Stronger together.</h2>
-            </div>
+    <div class="centers-hero-content">
 
-            <div>
-                <p>
-                    The DMV Proton Therapy Collaborative brings together
-                    institutions with complementary expertise in proton
-                    therapy, radiation oncology, medical physics,
-                    research, and education.
-                </p>
+        <p class="eyebrow">
+            REGIONAL COLLABORATION
+        </p>
 
-                <p>
-                    By connecting professionals across the region, the
-                    Collaborative creates opportunities to share knowledge,
-                    develop educational programs, support research, and
-                    strengthen the proton therapy community.
-                </p>
-            </div>
-        </div>
-    </section>
+        <h1>
+            Four Centers.<br>
+            <span>One Region.</span>
+        </h1>
+
+        <p>
+            Bringing together proton therapy centers across
+            Washington, DC, Maryland, and Northern Virginia
+            to advance clinical care, education, and research.
+        </p>
+
+    </div>
 
 
-    <!-- REGION -->
-    <section class="region-map-section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="card-label">OUR REGION</p>
-                <h2>Connected across the DMV.</h2>
-            </div>
+    <div class="region-stat">
 
-            <div class="map-placeholder" aria-label="Map showing the four participating proton therapy centers">
-                <div class="map-point point-one">
-                    <span>01</span>
-                    <strong>Fairfax</strong>
-                </div>
+        <span>4</span>
 
-                <div class="map-point point-two">
-                    <span>02</span>
-                    <strong>Washington, DC</strong>
-                </div>
+        <strong>
+            Proton Therapy<br>
+            Centers
+        </strong>
 
-                <div class="map-point point-three">
-                    <span>03</span>
-                    <strong>Washington, DC</strong>
-                </div>
+        <p>
+            Across the DMV region
+        </p>
 
-                <div class="map-point point-four">
-                    <span>04</span>
-                    <strong>Baltimore</strong>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- CENTERS -->
-    <section class="centers-section section-padding">
-        <div class="container">
 
-            <!-- CENTER 01 -->
-            <article class="featured-center">
-                <div class="center-image center-image-one">
-                    <img
-                        src="https://www.inova.org/sites/default/files/Services/cancer/proton_1_705x395.png"
-                        alt="Proton therapy treatment room at Inova Schar Cancer Institute"
-                        loading="lazy">
-                    <span class="center-number">01</span>
-                </div>
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
 
-                <div class="featured-center-content">
-                    <p class="card-label">FAIRFAX, VIRGINIA</p>
-                    <h2>Inova Radiation Oncology and Proton Therapy</h2>
+<section class="section">
 
-                    <p>
-                        Located within the Inova Schar Cancer Institute
-                        in Fairfax, Virginia, Inova Radiation Oncology and
-                        Proton Therapy provides advanced radiation oncology
-                        and proton therapy services to the Washington, DC
-                        region.
-                    </p>
+    <div class="centers-intro-grid">
 
-                    <a
-                        href="https://www.inova.org/our-services/inova-schar-cancer/treatment-options"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Visit Center Website →
-                    </a>
-                </div>
-            </article>
+        <div>
 
-
-            <!-- CENTER 02 -->
-            <article class="featured-center reverse">
-                <div class="center-image center-image-two">
-                    <img
-                        src="https://www.hopkinsmedicine.org/-/media/kimmel-cancer-center/images/washington-dc-proton-therapy/proton-gantry.jpg"
-                        alt="Proton therapy gantry at the Johns Hopkins Proton Therapy Center"
-                        loading="lazy">
-                    <span class="center-number">02</span>
-                </div>
-
-                <div class="featured-center-content">
-                    <p class="card-label">WASHINGTON, DC</p>
-                    <h2>Johns Hopkins Proton Therapy Center</h2>
-
-                    <p>
-                        Located at Sibley Memorial Hospital in Washington,
-                        DC, the Johns Hopkins Proton Therapy Center combines
-                        clinical proton therapy with academic research and
-                        education.
-                    </p>
-
-                    <a
-                        href="https://www.hopkinsmedicine.org/kimmel-cancer-center/washington-dc/proton-therapy-center"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Visit Center Website →
-                    </a>
-                </div>
-            </article>
-
-
-            <!-- CENTER 03 -->
-            <article class="featured-center">
-                <div class="center-image center-image-three">
-                    <img
-                        src="https://medstarhealth-delivery.sitecorecontenthub.cloud/api/public/content/hyperscan_proton_therapy?v=14234789"
-                        alt="Proton therapy treatment at MedStar Georgetown University Hospital"
-                        loading="lazy">
-                    <span class="center-number">03</span>
-                </div>
-
-                <div class="featured-center-content">
-                    <p class="card-label">WASHINGTON, DC</p>
-                    <h2>MedStar Georgetown Proton Therapy</h2>
-
-                    <p>
-                        The proton therapy program at MedStar Georgetown
-                        University Hospital is part of the Lombardi
-                        Comprehensive Cancer Center and provides advanced
-                        proton therapy in Washington, DC.
-                    </p>
-
-                    <a
-                        href="https://www.medstarhealth.org/services/proton-beam-therapy"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Visit Center Website →
-                    </a>
-                </div>
-            </article>
-
-
-            <!-- CENTER 04 -->
-            <article class="featured-center reverse">
-                <div class="center-image center-image-four">
-                    <img
-                        src="https://mdproton.com/wp-content/uploads/MPTC_190410_007-2.png"
-                        alt="Proton therapy treatment room at Maryland Proton Treatment Center"
-                        loading="lazy">
-                    <span class="center-number">04</span>
-                </div>
-
-                <div class="featured-center-content">
-                    <p class="card-label">BALTIMORE, MARYLAND</p>
-                    <h2>Maryland Proton Treatment Center</h2>
-
-                    <p>
-                        Located in downtown Baltimore, the Maryland Proton
-                        Treatment Center integrates proton therapy with the
-                        clinical and academic programs of the University of
-                        Maryland Department of Radiation Oncology.
-                    </p>
-
-                    <a
-                        href="https://mdproton.com/"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Visit Center Website →
-                    </a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- COLLABORATION -->
-    <section class="centers-collaboration section-padding">
-        <div class="container">
-            <p class="card-label">STRONGER TOGETHER</p>
-            <h2>Four centers.<br>A shared commitment to collaboration.</h2>
-
-            <p>
-                The Collaborative provides a regional platform for
-                clinicians, physicists, researchers, trainees, and other
-                professionals working in proton therapy to connect and learn
-                from one another.
+            <p class="section-label">
+                THE DMV PROTON COMMUNITY
             </p>
 
-            <a href="contact.html" class="button">Get Involved</a>
+            <h2>
+                Regional expertise.<br>
+                Shared knowledge.<br>
+                Stronger together.
+            </h2>
+
         </div>
-    </section>
+
+
+        <div>
+
+            <p>
+                The DMV Proton Therapy Collaborative brings together
+                institutions with complementary expertise in proton
+                therapy, radiation oncology, medical physics,
+                research, and education.
+            </p>
+
+            <p>
+                By connecting professionals across the region, the
+                Collaborative creates opportunities to share knowledge,
+                develop educational programs, support research, and
+                strengthen the proton therapy community.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REGION
+===================================================== -->
+
+<section class="region-map-section">
+
+    <div>
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    OUR REGION
+                </p>
+
+                <h2>
+                    Connected across the DMV.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="map-placeholder"
+            aria-label="Map showing the four participating proton therapy centers"
+        >
+
+            <div class="map-label">
+                DMV
+            </div>
+
+
+            <div class="map-point point-one">
+
+                <span>01</span>
+
+                <strong>
+                    Fairfax
+                </strong>
+
+            </div>
+
+
+            <div class="map-point point-two">
+
+                <span>02</span>
+
+                <strong>
+                    Washington, DC
+                </strong>
+
+            </div>
+
+
+            <div class="map-point point-three">
+
+                <span>03</span>
+
+                <strong>
+                    Washington, DC
+                </strong>
+
+            </div>
+
+
+            <div class="map-point point-four">
+
+                <span>04</span>
+
+                <strong>
+                    Baltimore
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED CENTERS
+===================================================== -->
+
+<section class="centers-section">
+
+    <!-- CENTER 01 -->
+
+    <article class="featured-center">
+
+        <div class="center-image">
+
+            <img
+                src="https://www.inova.org/sites/default/files/Services/cancer/proton_1_705x395.png"
+                alt="Proton therapy treatment room at Inova Schar Cancer Institute"
+                loading="lazy"
+            >
+
+            <span class="center-number">
+                01
+            </span>
+
+        </div>
+
+
+        <div class="featured-center-content">
+
+            <p class="card-label">
+                FAIRFAX, VIRGINIA
+            </p>
+
+            <h2>
+                Inova Radiation Oncology and Proton Therapy
+            </h2>
+
+            <p>
+                Located within the Inova Schar Cancer Institute
+                in Fairfax, Virginia, Inova Radiation Oncology and
+                Proton Therapy provides advanced radiation oncology
+                and proton therapy services to the Washington, DC
+                region.
+            </p>
+
+            <a
+                href="https://www.inova.org/our-services/inova-schar-cancer/treatment-options"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Center Website →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- CENTER 02 -->
+
+    <article class="featured-center reverse">
+
+        <div class="center-image center-image-two">
+
+            <img
+                src="https://www.hopkinsmedicine.org/-/media/kimmel-cancer-center/images/washington-dc-proton-therapy/proton-gantry.jpg"
+                alt="Proton therapy gantry at the Johns Hopkins Proton Therapy Center"
+                loading="lazy"
+            >
+
+            <span class="center-number">
+                02
+            </span>
+
+        </div>
+
+
+        <div class="featured-center-content">
+
+            <p class="card-label">
+                WASHINGTON, DC
+            </p>
+
+            <h2>
+                Johns Hopkins Proton Therapy Center
+            </h2>
+
+            <p>
+                Located at Sibley Memorial Hospital in Washington,
+                DC, the Johns Hopkins Proton Therapy Center combines
+                clinical proton therapy with academic research and
+                education.
+            </p>
+
+            <a
+                href="https://www.hopkinsmedicine.org/kimmel-cancer-center/washington-dc/proton-therapy-center"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Center Website →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- CENTER 03 -->
+
+    <article class="featured-center">
+
+        <div class="center-image center-image-three">
+
+            <img
+                src="https://medstarhealth-delivery.sitecorecontenthub.cloud/api/public/content/hyperscan_proton_therapy?v=14234789"
+                alt="Proton therapy treatment at MedStar Georgetown University Hospital"
+                loading="lazy"
+            >
+
+            <span class="center-number">
+                03
+            </span>
+
+        </div>
+
+
+        <div class="featured-center-content">
+
+            <p class="card-label">
+                WASHINGTON, DC
+            </p>
+
+            <h2>
+                MedStar Georgetown Proton Therapy
+            </h2>
+
+            <p>
+                The proton therapy program at MedStar Georgetown
+                University Hospital is part of the Lombardi
+                Comprehensive Cancer Center and provides advanced
+                proton therapy in Washington, DC.
+            </p>
+
+            <a
+                href="https://www.medstarhealth.org/services/proton-beam-therapy"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Center Website →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- CENTER 04 -->
+
+    <article class="featured-center reverse">
+
+        <div class="center-image center-image-four">
+
+            <img
+                src="https://mdproton.com/wp-content/uploads/MPTC_190410_007-2.png"
+                alt="Proton therapy treatment room at Maryland Proton Treatment Center"
+                loading="lazy"
+            >
+
+            <span class="center-number">
+                04
+            </span>
+
+        </div>
+
+
+        <div class="featured-center-content">
+
+            <p class="card-label">
+                BALTIMORE, MARYLAND
+            </p>
+
+            <h2>
+                Maryland Proton Treatment Center
+            </h2>
+
+            <p>
+                Located in downtown Baltimore, the Maryland Proton
+                Treatment Center integrates proton therapy with the
+                clinical and academic programs of the University of
+                Maryland Department of Radiation Oncology.
+            </p>
+
+            <a
+                href="https://mdproton.com/"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Center Website →
+            </a>
+
+        </div>
+
+    </article>
+
+</section>
+
+
+
+<!-- =====================================================
+     COLLABORATION CTA
+===================================================== -->
+
+<section class="centers-collaboration">
+
+    <p class="section-label">
+        STRONGER TOGETHER
+    </p>
+
+    <h2>
+        Four centers.<br>
+        A shared commitment to collaboration.
+    </h2>
+
+    <p>
+        The Collaborative provides a regional platform for
+        clinicians, physicists, researchers, trainees, and other
+        professionals working in proton therapy to connect and
+        learn from one another.
+    </p>
+
+    <a
+        href="contact.html"
+        class="button button-light"
+    >
+        Get Involved
+    </a>
+
+</section>
+
 
 </main>
 
 
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <a href="index.html" class="site-logo">
-                <span>DMV</span> PROTON THERAPY<br>
-                <small>COLLABORATIVE</small>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-logo">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    DMV
+                </span>
+
+                <span class="logo-text">
+
+                    <strong>
+                        PROTON THERAPY
+                    </strong>
+
+                    <small>
+                        COLLABORATIVE
+                    </small>
+
+                </span>
+
             </a>
-            <p>
-                Connecting the proton therapy community across the
-                Washington, DC, Maryland, and Northern Virginia region.
-            </p>
+
         </div>
 
-        <div>
-            <p class="footer-label">EXPLORE</p>
-            <a href="about.html">About</a>
-            <a href="centers.html">Our Centers</a>
-            <a href="symposium.html">Symposium</a>
-            <a href="education.html">Education</a>
+
+        <div class="footer-links">
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="centers.html">
+                Our Centers
+            </a>
+
+            <a href="symposium.html">
+                Symposium
+            </a>
+
+            <a href="education.html">
+                Education
+            </a>
+
+            <a href="news.html">
+                News &amp; Events
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
         </div>
 
-        <div>
-            <p class="footer-label">CONNECT</p>
-            <a href="news.html">News &amp; Events</a>
-            <a href="contact.html">Contact</a>
-        </div>
     </div>
 
-    <div class="container footer-bottom">
-        <p>© 2026 DMV Proton Therapy Collaborative</p>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 DMV Proton Therapy Collaborative
+        </p>
+
+        <p>
+            Washington, DC · Maryland · Northern Virginia
+        </p>
+
     </div>
+
 </footer>
+
 
 </body>
 </html>
