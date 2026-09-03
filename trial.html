@@ -7,36 +7,39 @@
 
     <title>DMV Proton Therapy Collaborative</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= NAVIGATION ================= -->
+
     <header class="navbar">
 
-        <div class="logo">
-            <span>DMV</span>
-            <div>
+        <a href="index.html" class="logo">
+            <span class="logo-mark">DMV</span>
+
+            <span class="logo-text">
                 <strong>PROTON THERAPY</strong>
                 <small>COLLABORATIVE</small>
-            </div>
-        </div>
+            </span>
+        </a>
 
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Our Centers</a>
-            <a href="#">Symposium</a>
-            <a href="#">Education</a>
-            <a href="#">News & Events</a>
-            <a href="#" class="contact-button">Contact</a>
+        <nav class="nav-links">
+            <a href="about.html">About</a>
+            <a href="centers.html">Our Centers</a>
+            <a href="symposium.html">Symposium</a>
+            <a href="education.html">Education</a>
+            <a href="news.html">News & Events</a>
+            <a href="contact.html" class="nav-button">Contact</a>
         </nav>
 
     </header>
 
 
-    <!-- Hero Section -->
     <main>
+
+        <!-- ================= HERO ================= -->
 
         <section class="hero">
 
@@ -52,27 +55,29 @@
                     Together.
                 </h1>
 
-                <p class="hero-text">
-                    Bringing together proton therapy centers across the
-                    DMV region to foster collaboration, education,
+                <p class="hero-description">
+                    Bringing together proton therapy professionals across
+                    the DMV region to foster collaboration, education,
                     innovation, and professional exchange.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#" class="primary-button">
+
+                    <a href="about.html" class="button button-primary">
                         Learn More
                     </a>
 
-                    <a href="#" class="secondary-button">
+                    <a href="centers.html" class="button button-secondary">
                         Our Centers →
                     </a>
+
                 </div>
 
             </div>
 
-            <div class="hero-image">
+            <div class="hero-visual">
 
-                <div class="image-placeholder">
+                <div class="visual-placeholder">
                     <span>PROTON THERAPY</span>
                     <small>Regional collaboration in action</small>
                 </div>
@@ -82,8 +87,9 @@
         </section>
 
 
-        <!-- Mission -->
-        <section class="mission">
+        <!-- ================= MISSION ================= -->
+
+        <section class="section mission">
 
             <div class="section-label">
                 OUR MISSION
@@ -100,20 +106,25 @@
                     The DMV Proton Therapy Collaborative brings together
                     professionals from leading proton treatment centers
                     across Washington, DC, Maryland, and Virginia.
-                    Through collaboration and shared expertise, we aim
-                    to advance education, research, and clinical practice
-                    in proton therapy.
+                    Through collaboration and shared expertise, the
+                    organization seeks to advance education, research,
+                    and clinical practice in proton therapy.
                 </p>
+
+                <a href="about.html" class="text-link">
+                    Learn about our organization →
+                </a>
 
             </div>
 
         </section>
 
 
-        <!-- Symposium -->
-        <section class="symposium">
+        <!-- ================= SYMPOSIUM ================= -->
 
-            <div class="symposium-text">
+        <section class="feature-section">
+
+            <div class="feature-content">
 
                 <p class="section-label">
                     ANNUAL EVENT
@@ -131,20 +142,21 @@
                     strengthen regional collaboration.
                 </p>
 
-                <a href="#" class="text-link">
+                <a href="symposium.html" class="text-link">
                     Explore the Symposium →
                 </a>
 
             </div>
 
-            <div class="symposium-card">
+            <div class="event-card">
 
-                <div class="calendar">
-                    <span>DMV</span>
-                    <strong>PT</strong>
+                <div class="event-icon">
+                    DMV
                 </div>
 
                 <div>
+                    <p class="card-label">ANNUAL MEETING</p>
+
                     <h3>
                         Proton Therapy
                         Symposium
@@ -160,8 +172,9 @@
         </section>
 
 
-        <!-- Centers -->
-        <section class="centers">
+        <!-- ================= CENTERS ================= -->
+
+        <section class="section centers-preview">
 
             <div class="section-heading">
 
@@ -186,40 +199,41 @@
 
             <div class="center-grid">
 
-                <div class="center-card">
+                <a href="centers.html" class="center-card">
                     <span>01</span>
                     <h3>Our Center</h3>
                     <p>Virginia</p>
-                    <a href="#">Learn more →</a>
-                </div>
+                    <strong>Learn more →</strong>
+                </a>
 
-                <div class="center-card">
+                <a href="centers.html" class="center-card">
                     <span>02</span>
                     <h3>Johns Hopkins</h3>
                     <p>Maryland</p>
-                    <a href="#">Learn more →</a>
-                </div>
+                    <strong>Learn more →</strong>
+                </a>
 
-                <div class="center-card">
+                <a href="centers.html" class="center-card">
                     <span>03</span>
                     <h3>Georgetown</h3>
                     <p>Washington, DC</p>
-                    <a href="#">Learn more →</a>
-                </div>
+                    <strong>Learn more →</strong>
+                </a>
 
-                <div class="center-card">
+                <a href="centers.html" class="center-card">
                     <span>04</span>
                     <h3>Maryland Proton</h3>
                     <p>Baltimore, Maryland</p>
-                    <a href="#">Learn more →</a>
-                </div>
+                    <strong>Learn more →</strong>
+                </a>
 
             </div>
 
         </section>
 
 
-        <!-- Call to Action -->
+        <!-- ================= CTA ================= -->
+
         <section class="cta">
 
             <p class="section-label">
@@ -236,7 +250,7 @@
                 and opportunities for collaboration.
             </p>
 
-            <a href="#" class="primary-button">
+            <a href="contact.html" class="button button-light">
                 Get Involved
             </a>
 
@@ -245,26 +259,29 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
         <div class="footer-top">
 
-            <div class="logo footer-logo">
-                <span>DMV</span>
-                <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">DMV</span>
+
+                <span class="logo-text">
                     <strong>PROTON THERAPY</strong>
                     <small>COLLABORATIVE</small>
-                </div>
-            </div>
+                </span>
+            </a>
 
             <div class="footer-links">
 
-                <a href="#">About</a>
-                <a href="#">Our Centers</a>
-                <a href="#">Symposium</a>
-                <a href="#">Education</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About</a>
+                <a href="centers.html">Our Centers</a>
+                <a href="symposium.html">Symposium</a>
+                <a href="education.html">Education</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact</a>
 
             </div>
 
@@ -272,13 +289,9 @@
 
         <div class="footer-bottom">
 
-            <p>
-                © 2026 DMV Proton Therapy Collaborative
-            </p>
+            <p>© 2026 DMV Proton Therapy Collaborative</p>
 
-            <p>
-                Washington DC • Maryland • Virginia
-            </p>
+            <p>Washington DC • Maryland • Virginia</p>
 
         </div>
 
