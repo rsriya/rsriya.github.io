@@ -1241,6 +1241,70 @@ h2 {
     }
 
 }
+
+/* ================= PURPOSE ================= */
+
+.mission {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.mission-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.mission-heading h2 {
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #172a3a;
+    max-width: 650px;
+}
+
+.mission-description {
+    max-width: 520px;
+}
+
+.mission-description p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #657681;
+}
+
+.mission-description .text-link {
+    display: inline-block;
+    margin-top: 28px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .mission {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mission-heading h2 {
+        font-size: 34px;
+    }
+
+    .mission-description {
+        max-width: none;
+    }
+
+}
 /* =====================================================
    FOOTER
 ===================================================== */
