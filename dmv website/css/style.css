@@ -1304,14 +1304,11 @@ h2 {
 ===================================================== */
 
 .section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 80px;
+max-width: 700px;
 }
 
 .section-heading > div {
-    flex: 1;
+    display: none;
 }
 
 .section-heading h2 {
