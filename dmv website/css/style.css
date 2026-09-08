@@ -1,3 +1,4 @@
+```css
 /* =====================================================
    RESET
 ===================================================== */
@@ -36,6 +37,7 @@ p {
 .navbar {
     height: 82px;
     padding: 0 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -195,7 +197,6 @@ h2 {
 
 .hero {
     min-height: 650px;
-
     padding: 80px 7%;
 
     display: grid;
@@ -266,7 +267,53 @@ h2 {
 
 
 /* =====================================================
-   FEATURE SECTION
+   PURPOSE
+===================================================== */
+
+.mission {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.mission-heading .section-label {
+    margin-bottom: 30px;
+}
+
+.mission-heading h2 {
+    max-width: 650px;
+
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    color: #172a3a;
+}
+
+.mission-description {
+    max-width: 520px;
+    padding-top: 42px;
+}
+
+.mission-description p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #657681;
+}
+
+.mission-description .text-link {
+    margin-top: 28px;
+}
+
+
+/* =====================================================
+   ANNUAL SYMPOSIUM FEATURE
 ===================================================== */
 
 .feature-section {
@@ -307,6 +354,7 @@ h2 {
 .event-icon {
     width: 90px;
     height: 90px;
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;
@@ -343,44 +391,153 @@ h2 {
 
 
 /* =====================================================
-   CENTERS
+   HOMEPAGE SECTION HEADINGS
 ===================================================== */
 
-.centers-section {
-    padding: 0 7%;
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 70px;
 }
 
-.featured-center {
-    padding: 60px 45px;
+.section-heading h2 {
+    font-size: 45px;
+    line-height: 1.15;
+}
 
-    border: 1px solid #dce4e8;
+.section-heading > p {
+    max-width: 520px;
 
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #657681;
+}
+
+
+/* =====================================================
+   REGIONAL NETWORK
+===================================================== */
+
+.centers-preview {
     background: #ffffff;
 }
 
-.centers-section {
+.center-grid {
+    margin-top: 55px;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dce4e8;
+    border-bottom: 1px solid #dce4e8;
 }
 
-.featured-center-content {
-    width: 100%;
-    max-width: none;
+.center-card {
+    min-height: 270px;
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #dce4e8;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
-.featured-center-content h2 {
-    font-size: 32px;
-    line-height: 1.2;
+.center-card:last-child {
+    border-right: none;
 }
 
-.featured-center-content > p:not(.card-label) {
-    margin-top: 18px;
+.center-card:hover {
+    background: #f7fafb;
+}
 
-    font-size: 16px;
+.center-card > span {
+    color: #1677a8;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.center-card h3 {
+    margin-top: 30px;
+
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.center-card strong {
+    margin-top: auto;
+    padding-top: 25px;
+
+    color: #1677a8;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-action {
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   HOMEPAGE COLLABORATION
+===================================================== */
+
+.collaboration {
+    background: #f3f7f9;
+}
+
+.collaboration-grid {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dce4e8;
+    border-bottom: 1px solid #dce4e8;
+}
+
+.collaboration-card {
+    min-height: 270px;
+    padding: 30px 25px;
+
+    border-right: 1px solid #dce4e8;
+}
+
+.collaboration-card:last-child {
+    border-right: none;
+}
+
+.collaboration-card > span {
+    color: #1677a8;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.collaboration-card h3 {
+    margin-top: 30px;
+
+    font-size: 21px;
+    line-height: 1.25;
+}
+
+.collaboration-card p {
+    margin-top: 15px;
+
+    color: #73818a;
+    font-size: 14px;
     line-height: 1.7;
-    color: #657681;
 }
+
+
 /* =====================================================
    CTA
 ===================================================== */
@@ -570,7 +727,7 @@ h2 {
 
 
 /* =====================================================
-   SYMPOSIUM
+   SYMPOSIUM PAGE
 ===================================================== */
 
 .symposium-intro h2 {
@@ -903,8 +1060,9 @@ h2 {
     color: #687983;
 }
 
+
 /* =====================================================
-   CENTERS PAGE - HERO
+   CENTERS PAGE HERO
 ===================================================== */
 
 .centers-hero {
@@ -942,7 +1100,9 @@ h2 {
 }
 
 
-/* REGION STAT */
+/* =====================================================
+   REGION STAT
+===================================================== */
 
 .region-stat {
     min-width: 280px;
@@ -983,7 +1143,7 @@ h2 {
 ===================================================== */
 
 .centers-introduction {
-    background: white;
+    background: #ffffff;
 }
 
 .centers-intro-grid {
@@ -994,7 +1154,6 @@ h2 {
 
 .centers-intro-grid h2 {
     max-width: 600px;
-
     font-size: 48px;
 }
 
@@ -1025,13 +1184,11 @@ h2 {
 
 .map-content h2 {
     margin-top: 10px;
-
     font-size: 45px;
 }
 
 .map-content > p:last-child {
     margin-top: 22px;
-
     color: #657681;
 }
 
@@ -1089,7 +1246,7 @@ h2 {
     border-radius: 50%;
 
     background: #1677a8;
-    color: white;
+    color: #ffffff;
 }
 
 .point-one {
@@ -1113,9 +1270,8 @@ h2 {
 }
 
 
-
 /* =====================================================
-   COLLABORATION
+   CENTERS PAGE COLLABORATION
 ===================================================== */
 
 .centers-collaboration {
@@ -1124,7 +1280,7 @@ h2 {
     text-align: center;
 
     background: #172a3a;
-    color: white;
+    color: #ffffff;
 }
 
 .centers-collaboration .section-label {
@@ -1145,8 +1301,9 @@ h2 {
     color: #c4d0d6;
 }
 
+
 /* =====================================================
-   FEATURED CENTERS
+   FEATURED CENTERS PAGE
 ===================================================== */
 
 .centers-section {
@@ -1192,6 +1349,8 @@ h2 {
 
     color: #657681;
 }
+
+
 /* =====================================================
    ABOUT PAGE
 ===================================================== */
@@ -1204,89 +1363,11 @@ h2 {
 .mission-text p {
     font-size: 22px;
     line-height: 1.7;
+
     color: #4f626e;
 }
 
-@media (max-width: 650px) {
 
-    .mission-text p {
-        font-size: 18px;
-    }
-
-}
-
-/* ================= PURPOSE ================= */
-
-.mission {
-    padding-top: 110px;
-    padding-bottom: 110px;
-}
-
-.mission-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 90px;
-    align-items: start;
-}
-
-.mission-heading .section-label {
-    margin-bottom: 30px;
-}
-
-.mission-heading h2 {
-    font-size: 44px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #172a3a;
-    max-width: 650px;
-}
-
-.mission-description {
-    max-width: 520px;
-    padding-top: 42px;
-}
-
-.mission-description p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #657681;
-}
-
-.mission-description .text-link {
-    display: inline-block;
-    margin-top: 28px;
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 650px) {
-
-    .mission {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .mission-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .mission-heading .section-label {
-        margin-bottom: 20px;
-    }
-
-    .mission-heading h2 {
-        font-size: 34px;
-    }
-
-    .mission-description {
-        max-width: none;
-        padding-top: 0;
-    }
-
-}
 /* =====================================================
    FOOTER
 ===================================================== */
@@ -1356,6 +1437,9 @@ footer {
         gap: 15px;
     }
 
+
+    /* HERO */
+
     .hero {
         grid-template-columns: 1fr;
         padding: 70px 5%;
@@ -1365,7 +1449,22 @@ footer {
         height: 380px;
     }
 
-    .mission,
+
+    /* PURPOSE */
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .mission-description {
+        max-width: 700px;
+        padding-top: 0;
+    }
+
+
+    /* GENERAL TWO COLUMN SECTIONS */
+
     .two-column,
     .contact-section {
         grid-template-columns: 1fr;
@@ -1376,6 +1475,18 @@ footer {
     .featured-news {
         grid-template-columns: 1fr;
     }
+
+
+    /* HOMEPAGE SECTION HEADINGS */
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+
+    /* HOMEPAGE CENTER GRID */
 
     .center-grid {
         grid-template-columns: 1fr 1fr;
@@ -1388,6 +1499,24 @@ footer {
     .center-card:nth-child(-n+2) {
         border-bottom: 1px solid #dce4e8;
     }
+
+
+    /* HOMEPAGE COLLABORATION */
+
+    .collaboration-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collaboration-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .collaboration-card:nth-child(-n+2) {
+        border-bottom: 1px solid #dce4e8;
+    }
+
+
+    /* OTHER GRID SECTIONS */
 
     .goal-grid,
     .resource-grid {
@@ -1408,6 +1537,48 @@ footer {
         grid-template-columns: 1fr;
     }
 
+
+    /* CENTERS PAGE */
+
+    .centers-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .region-stat {
+        width: 100%;
+
+        border-left: none;
+        border-top: 1px solid #cfdce2;
+    }
+
+    .centers-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .region-map-section {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-center {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .featured-center.reverse .center-image {
+        order: 1;
+    }
+
+    .featured-center.reverse .featured-center-content {
+        order: 2;
+    }
+
+    .center-image,
+    .center-image img {
+        min-height: 360px;
+    }
+
 }
 
 
@@ -1416,6 +1587,8 @@ footer {
 ===================================================== */
 
 @media (max-width: 650px) {
+
+    /* NAVIGATION */
 
     .navbar {
         height: auto;
@@ -1426,9 +1599,15 @@ footer {
         display: none;
     }
 
+
+    /* GENERAL */
+
     .section {
         padding: 75px 5%;
     }
+
+
+    /* HERO */
 
     .hero {
         padding: 65px 5%;
@@ -1459,6 +1638,9 @@ footer {
         font-size: 25px;
     }
 
+
+    /* PAGE HERO */
+
     .page-hero {
         padding: 70px 5%;
     }
@@ -1467,16 +1649,42 @@ footer {
         font-size: 45px;
     }
 
-    .mission h2,
-    .feature-content h2,
-    .intro-text h2,
-    .symposium-intro h2,
-    .contact-info h2 {
-        font-size: 35px;
+
+    /* PURPOSE */
+
+    .mission {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mission-heading .section-label {
+        margin-bottom: 20px;
+    }
+
+    .mission-heading h2 {
+        font-size: 34px;
+    }
+
+    .mission-description {
+        max-width: none;
+        padding-top: 0;
+    }
+
+    .mission-description p {
+        font-size: 17px;
+    }
+
+
+    /* SECTION HEADINGS */
 
     .section-heading {
         flex-direction: column;
+        align-items: flex-start;
         gap: 25px;
     }
 
@@ -1484,24 +1692,50 @@ footer {
         font-size: 40px;
     }
 
+
+    /* COMMON HEADINGS */
+
+    .feature-content h2,
+    .intro-text h2,
+    .symposium-intro h2,
+    .contact-info h2 {
+        font-size: 35px;
+    }
+
+
+    /* CENTER + CARD GRIDS */
+
     .center-grid,
     .goal-grid,
-    .resource-grid {
+    .resource-grid,
+    .collaboration-grid {
         grid-template-columns: 1fr;
     }
 
     .center-card,
     .goal-card,
-    .resource-card {
+    .resource-card,
+    .collaboration-card {
         border-right: none !important;
         border-bottom: 1px solid #dce4e8;
     }
 
     .center-card:last-child,
     .goal-card:last-child,
-    .resource-card:last-child {
+    .resource-card:last-child,
+    .collaboration-card:last-child {
         border-bottom: none;
     }
+
+
+    /* CENTER CARDS */
+
+    .center-card {
+        min-height: 230px;
+    }
+
+
+    /* OTHER PAGE COMPONENTS */
 
     .large-center-card {
         grid-template-columns: 1fr;
@@ -1538,6 +1772,9 @@ footer {
         padding: 30px;
     }
 
+
+    /* CTA */
+
     .cta {
         padding: 80px 5%;
     }
@@ -1545,6 +1782,9 @@ footer {
     .cta h2 {
         font-size: 38px;
     }
+
+
+    /* FOOTER */
 
     .footer-top {
         flex-direction: column;
@@ -1557,54 +1797,8 @@ footer {
         gap: 10px;
     }
 
-}
 
-
-
-/* =====================================================
-   CENTERS PAGE RESPONSIVE
-===================================================== */
-
-@media (max-width: 950px) {
-
-    .centers-hero {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .region-stat {
-        border-left: none;
-        border-top: 1px solid #cfdce2;
-
-        width: 100%;
-    }
-
-    .centers-intro-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .region-map-section {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-center {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .featured-center.reverse .center-image {
-        order: 1;
-    }
-
-    .featured-center.reverse .featured-center-content {
-        order: 2;
-    }
-
-}
-
-
-@media (max-width: 650px) {
+    /* CENTERS PAGE */
 
     .centers-hero {
         padding: 70px 5%;
@@ -1635,7 +1829,8 @@ footer {
         padding: 70px 0;
     }
 
-    .center-image {
+    .center-image,
+    .center-image img {
         min-height: 280px;
     }
 
@@ -1651,24 +1846,12 @@ footer {
         font-size: 40px;
     }
 
-}
 
+    /* ABOUT */
 
-
-@media (max-width: 950px) {
-
-    .center-image,
-    .center-image img {
-        min-height: 360px;
+    .mission-text p {
+        font-size: 18px;
     }
 
 }
-
-@media (max-width: 650px) {
-
-    .center-image,
-    .center-image img {
-        min-height: 280px;
-    }
-
-}
+```
