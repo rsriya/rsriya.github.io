@@ -486,57 +486,6 @@ h2 {
 }
 
 
-/* =====================================================
-   HOMEPAGE COLLABORATION
-===================================================== */
-
-.collaboration {
-    background: #f3f7f9;
-}
-
-.collaboration-grid {
-    margin-top: 55px;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    border-top: 1px solid #dce4e8;
-    border-bottom: 1px solid #dce4e8;
-}
-
-.collaboration-card {
-    min-height: 270px;
-    padding: 30px 25px;
-
-    border-right: 1px solid #dce4e8;
-}
-
-.collaboration-card:last-child {
-    border-right: none;
-}
-
-.collaboration-card > span {
-    color: #1677a8;
-
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.collaboration-card h3 {
-    margin-top: 30px;
-
-    font-size: 21px;
-    line-height: 1.25;
-}
-
-.collaboration-card p {
-    margin-top: 15px;
-
-    color: #73818a;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
 
 /* =====================================================
    CTA
@@ -1498,6 +1447,22 @@ h2 {
     color: #73818a;
     font-size: 14px;
     line-height: 1.7;
+}
+
+.collaboration-card:nth-child(1) {
+    border-top: 4px solid #1677a8;
+}
+
+.collaboration-card:nth-child(2) {
+    border-top: 4px solid #28a745;
+}
+
+.collaboration-card:nth-child(3) {
+    border-top: 4px solid #ff7a00;
+}
+
+.collaboration-card:nth-child(4) {
+    border-top: 4px solid #6f42c1;
 }
 /* =====================================================
    ABOUT PAGE
