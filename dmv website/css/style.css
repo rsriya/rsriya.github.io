@@ -394,28 +394,26 @@ h2 {
    HOMEPAGE SECTION HEADINGS
 ===================================================== */
 
+
 .section-heading {
     display: block;
+    width: 100%;
 }
 
 .section-heading > div {
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
 }
 
 .section-heading h2 {
+    width: 100%;
+    max-width: none;
+
     margin: 0;
+
     font-size: 45px;
     line-height: 1.15;
     letter-spacing: -1px;
-}
-
-.section-heading > p {
-    max-width: 520px;
-    margin-top: 25px;
-
-    font-size: 17px;
-    line-height: 1.7;
-    color: #657681;
 }
 
 
