@@ -266,33 +266,6 @@ h2 {
 
 
 /* =====================================================
-   MISSION
-===================================================== */
-
-.mission {
-    display: grid;
-    grid-template-columns: 0.35fr 1fr;
-    gap: 80px;
-}
-
-.mission-content {
-    max-width: 850px;
-}
-
-.mission h2 {
-    font-size: 43px;
-}
-
-.mission-content > p {
-    max-width: 720px;
-    margin-top: 25px;
-
-    color: #657681;
-    font-size: 17px;
-}
-
-
-/* =====================================================
    FEATURE SECTION
 ===================================================== */
 
