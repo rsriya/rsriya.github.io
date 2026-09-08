@@ -1299,32 +1299,6 @@ h2 {
     color: #657681;
 }
 
-/* =====================================================
-   HOMEPAGE SECTION HEADINGS
-===================================================== */
-
-.section-heading {
-max-width: 700px;
-}
-
-.section-heading > div {
-    display: none;
-}
-
-.section-heading h2 {
-    font-size: 45px;
-    line-height: 1.15;
-}
-
-.section-heading > p {
-    flex: 0 1 520px;
-    max-width: 520px;
-
-    font-size: 17px;
-    line-height: 1.7;
-
-    color: #657681;
-}
 
 /* =====================================================
    REGIONAL NETWORK
