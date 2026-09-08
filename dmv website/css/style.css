@@ -1402,7 +1402,19 @@ max-width: 700px;
 .collaboration {
     background: #f3f7f9;
 }
+.collaboration .section-heading {
+    display: block;
+    max-width: 900px;
+}
 
+.collaboration .section-heading > div {
+    max-width: 850px;
+}
+
+.collaboration .section-heading h2 {
+    max-width: 850px;
+    margin-bottom: 0;
+}
 .collaboration-grid {
     margin-top: 55px;
 
