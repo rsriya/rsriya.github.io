@@ -486,7 +486,46 @@ h2 {
 }
 
 
+/* =====================================================
+   HOW WE CONNECT
+===================================================== */
 
+.connection-list {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dce4e8;
+    border-bottom: 1px solid #dce4e8;
+}
+
+.connection-item {
+    min-height: 180px;
+    padding: 30px 25px;
+
+    border-right: 1px solid #dce4e8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connection-item:last-child {
+    border-right: none;
+}
+
+.connection-item span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1677a8;
+}
+
+.connection-item h3 {
+    font-size: 21px;
+    line-height: 1.25;
+    font-weight: 700;
+}
 /* =====================================================
    CTA
 ===================================================== */
