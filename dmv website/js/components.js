@@ -16,8 +16,6 @@ const navigation = `
 
         <a href="about.html">About</a>
 
-        <a href="centers.html">Our Centers</a>
-
         <a href="symposium.html">Symposium</a>
 
         <a href="resources.html">Resources</a>
