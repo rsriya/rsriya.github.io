@@ -395,23 +395,26 @@ h2 {
 ===================================================== */
 
 .section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 70px;
+    display: block;
+}
+
+.section-heading > div {
+    max-width: 900px;
 }
 
 .section-heading h2 {
+    margin: 0;
     font-size: 45px;
     line-height: 1.15;
+    letter-spacing: -1px;
 }
 
 .section-heading > p {
     max-width: 520px;
+    margin-top: 25px;
 
     font-size: 17px;
     line-height: 1.7;
-
     color: #657681;
 }
 
