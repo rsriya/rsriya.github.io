@@ -236,6 +236,10 @@ h2 {
     margin-top: 38px;
 }
 
+.hero-visual {
+    height: 470px;
+}
+
 .hero-panel {
     min-height: 455px;
     padding: 45px;
