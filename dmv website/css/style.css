@@ -200,8 +200,8 @@ h2 {
     padding: 85px 7%;
 
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
-    gap: 80px;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
     align-items: center;
 
     background: #f3f7f9;
