@@ -202,7 +202,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
 
     background: #f3f7f9;
 }
