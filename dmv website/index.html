@@ -63,8 +63,22 @@
         
             </div>
             <p class="image-attribution">
-                Hero image: Tidal Basin in Spring by Eric C. Gutierrez,
-                CC BY 4.0
+                Image credit:
+                <a
+                    href="https://commons.wikimedia.org/wiki/File:Tidal_Basin_in_Spring.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Tidal Basin in Spring
+                </a>
+                by Eric C. Gutierrez,
+                <a
+                    href="https://creativecommons.org/licenses/by/4.0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CC BY 4.0
+                </a>
             </p>
         </section>
 
@@ -121,221 +135,15 @@
                             </span>
         
                         </div>
-        
-        
                         <div class="map-graphic">
-        
-                            <svg
-                                viewBox="0 0 700 500"
+                
+                            <div
+                                id="proton-map"
                                 role="img"
-                                aria-label="Schematic map of the DMV region showing four proton therapy centers"
-                            >
-        
-                                <!-- Maryland -->
-        
-                                <path
-                                    class="map-state map-maryland"
-                                    d="M300 72
-                                       C350 62 420 72 470 102
-                                       C505 124 530 153 545 188
-                                       L518 211
-                                       L485 202
-                                       L460 220
-                                       L425 207
-                                       L395 225
-                                       L365 211
-                                       L340 184
-                                       L310 164
-                                       L286 134
-                                       Z"
-                                />
-        
-                                <!-- Virginia -->
-        
-                                <path
-                                    class="map-state map-virginia"
-                                    d="M105 225
-                                       C160 207 215 200 270 205
-                                       L310 220
-                                       L350 245
-                                       L400 270
-                                       L455 286
-                                       L505 310
-                                       L545 340
-                                       L525 375
-                                       L475 382
-                                       L420 368
-                                       L365 350
-                                       L310 335
-                                       L255 320
-                                       L205 300
-                                       L155 278
-                                       L112 255
-                                       Z"
-                                />
-        
-                                <!-- DC -->
-        
-                                <path
-                                    class="map-dc"
-                                    d="M270 190
-                                       L294 188
-                                       L303 208
-                                       L287 223
-                                       L267 216
-                                       Z"
-                                />
-        
-        
-                                <!-- Potomac / regional divider -->
-        
-                                <path
-                                    class="map-river"
-                                    d="M255 115
-                                       C275 155 265 185 286 215
-                                       C305 243 337 263 365 279
-                                       C405 302 450 315 500 337"
-                                />
-        
-        
-                                <!-- ================= LOCATIONS ================= -->
-        
-        
-                                <!-- Johns Hopkins -->
-        
-                                <g class="map-location">
-        
-                                    <circle
-                                        cx="282"
-                                        cy="199"
-                                        r="9"
-                                    />
-        
-                                    <circle
-                                        class="map-location-ring"
-                                        cx="282"
-                                        cy="199"
-                                        r="17"
-                                    />
-        
-                                    <text
-                                        x="305"
-                                        y="195"
-                                    >
-                                        Johns Hopkins
-                                    </text>
-        
-                                    <text
-                                        x="305"
-                                        y="213"
-                                        class="map-location-city"
-                                    >
-                                        Washington, DC
-                                    </text>
-        
-                                </g>
-        
-        
-                                <!-- MedStar Georgetown -->
-        
-                                <g class="map-location">
-        
-                                    <circle
-                                        cx="300"
-                                        cy="220"
-                                        r="9"
-                                    />
-        
-                                    <circle
-                                        class="map-location-ring"
-                                        cx="300"
-                                        cy="220"
-                                        r="17"
-                                    />
-        
-                                    <text
-                                        x="325"
-                                        y="218"
-                                    >
-                                        MedStar Georgetown
-                                    </text>
-        
-                                </g>
-        
-        
-                                <!-- Inova -->
-        
-                                <g class="map-location">
-        
-                                    <circle
-                                        cx="235"
-                                        cy="255"
-                                        r="9"
-                                    />
-        
-                                    <circle
-                                        class="map-location-ring"
-                                        cx="235"
-                                        cy="255"
-                                        r="17"
-                                    />
-        
-                                    <text
-                                        x="258"
-                                        y="252"
-                                    >
-                                        Inova
-                                    </text>
-        
-                                    <text
-                                        x="258"
-                                        y="270"
-                                        class="map-location-city"
-                                    >
-                                        Fairfax, VA
-                                    </text>
-        
-                                </g>
-        
-        
-                                <!-- Maryland Proton -->
-        
-                                <g class="map-location">
-        
-                                    <circle
-                                        cx="438"
-                                        cy="150"
-                                        r="9"
-                                    />
-        
-                                    <circle
-                                        class="map-location-ring"
-                                        cx="438"
-                                        cy="150"
-                                        r="17"
-                                    />
-        
-                                    <text
-                                        x="462"
-                                        y="148"
-                                    >
-                                        Maryland Proton
-                                    </text>
-        
-                                    <text
-                                        x="462"
-                                        y="166"
-                                        class="map-location-city"
-                                    >
-                                        Baltimore, MD
-                                    </text>
-        
-                                </g>
-        
-                            </svg>
-        
+                                aria-label="Map showing four proton therapy centers in the DMV region"
+                            ></div>
+                        
                         </div>
-        
                     </div>
         
         
@@ -661,7 +469,89 @@
     <script src="js/footer.js"></script>
 
     <script src="js/components.js"></script>
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
 
+<script>
+
+    const protonMap = L.map('proton-map', {
+        scrollWheelZoom: false
+    }).setView([38.93, -77.15], 8.5);
+
+
+    L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+            attribution: '&copy; OpenStreetMap contributors'
+        }
+    ).addTo(protonMap);
+
+
+    const protonCenters = [
+
+        {
+            name: 'Maryland Proton Treatment Center',
+            city: 'Baltimore, MD',
+            lat: 39.2886,
+            lng: -76.6286
+        },
+
+        {
+            name: 'Johns Hopkins Proton Therapy Center',
+            city: 'Washington, DC',
+            lat: 38.9315,
+            lng: -77.1065
+        },
+
+        {
+            name: 'MedStar Georgetown Proton Therapy',
+            city: 'Washington, DC',
+            lat: 38.9128,
+            lng: -77.0777
+        },
+
+        {
+            name: 'Inova Mather Proton Therapy Center',
+            city: 'Fairfax, VA',
+            lat: 38.8475,
+            lng: -77.4380
+        }
+
+    ];
+
+
+    protonCenters.forEach(center => {
+
+        L.circleMarker(
+            [center.lat, center.lng],
+            {
+                radius: 7,
+                color: '#1677a8',
+                weight: 3,
+                fillColor: '#ffffff',
+                fillOpacity: 1
+            }
+        )
+        .addTo(protonMap)
+
+        .bindPopup(`
+            <div class="proton-popup">
+
+                <div class="proton-popup-name">
+                    ${center.name}
+                </div>
+
+                <div class="proton-popup-city">
+                    ${center.city}
+                </div>
+
+            </div>
+        `);
+
+    });
+
+</script>
 </body>
 
 </html>
