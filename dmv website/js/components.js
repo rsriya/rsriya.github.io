@@ -22,10 +22,6 @@ const navigation = `
 
         <a href="news.html">News &amp; Events</a>
 
-        <a href="contact.html" class="nav-button">
-            Contact
-        </a>
-
     </nav>
 
 </header>
