@@ -710,9 +710,6 @@ h2 {
     border-right: 6px solid transparent;
     border-top: 6px solid #ffffff;
 }
-/* =====================================================
-   PROTON MAP MARKERS
-====================================================== */
 
 /* =====================================================
    PROTON MAP MARKERS
@@ -820,20 +817,19 @@ h2 {
 }
 
 .network-center-card:nth-child(2) {
-    --center-color: #168a8a;
-    --center-bg: #eef8f8;
+    --center-color: #008c95;
+    --center-bg: #eaf8f8;
 }
 
 .network-center-card:nth-child(3) {
-    --center-color: #c47a32;
-    --center-bg: #fcf5ec;
+    --center-color: #c46a2b;
+    --center-bg: #fcf2ea;
 }
 
 .network-center-card:nth-child(4) {
-    --center-color: #7659a8;
-    --center-bg: #f4f0f9;
+    --center-color: #7252a3;
+    --center-bg: #f3eef9;
 }
-
 
 .network-center-card {
     display: grid;
