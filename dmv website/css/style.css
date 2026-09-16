@@ -714,15 +714,16 @@ h2 {
    PROTON MAP MARKERS
 ====================================================== */
 
+/* =====================================================
+   PROTON MAP MARKERS
+====================================================== */
+
 .proton-marker-wrapper {
     background: transparent;
     border: none;
 }
 
-
 .proton-marker {
-    position: relative;
-
     width: 42px;
     height: 42px;
 
@@ -736,12 +737,7 @@ h2 {
 
     box-shadow:
         0 3px 8px rgba(23, 42, 58, 0.25);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
 
 .proton-marker span {
 
@@ -818,82 +814,82 @@ h2 {
     border-bottom: 1px solid #d6e0e5;
 }
 
+.network-center-card:nth-child(1) {
+    --center-color: #1677a8;
+    --center-bg: #eef7fa;
+}
+
+.network-center-card:nth-child(2) {
+    --center-color: #168a8a;
+    --center-bg: #eef8f8;
+}
+
+.network-center-card:nth-child(3) {
+    --center-color: #c47a32;
+    --center-bg: #fcf5ec;
+}
+
+.network-center-card:nth-child(4) {
+    --center-color: #7659a8;
+    --center-bg: #f4f0f9;
+}
+
+
 .network-center-card {
-    min-height: 190px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 
-    padding: 25px 25px 22px;
+    min-height: 82px;
+    padding: 17px 20px;
 
-    display: flex;
+    background: var(--center-bg);
 
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    position: relative;
-
-    background: #ffffff;
-
-    border-right: 1px solid #d6e0e5;
+    border: 1px solid transparent;
 
     text-decoration: none;
 
     transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-.network-center-card:last-child {
-    border-right: none;
-}
-
-.network-center-card:hover {
-    background: #edf5f8;
-
-    transform: translateY(-3px);
-}
 
 .network-center-number {
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-
-    color: #1677a8;
+    display: none;
 }
 
-.network-center-content {
-    margin-top: 30px;
-}
 
 .network-center-content .card-label {
-    margin-bottom: 8px;
+    margin: 0 0 4px;
 }
 
 .network-center-content h3 {
     margin: 0;
 
-    font-size: 20px;
-    line-height: 1.25;
-
-    color: #172a3a;
+    font-size: 18px;
+    line-height: 1.3;
 }
+
 
 .network-center-arrow {
-    position: absolute;
-
-    right: 24px;
-    bottom: 22px;
-
+    color: var(--center-color);
     font-size: 20px;
-
-    color: #1677a8;
-
-    transition: transform 0.2s ease;
 }
 
-.network-center-card:hover .network-center-arrow {
-    transform: translateX(4px);
+
+.network-center-card:hover {
+    border-color: var(--center-color);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(23, 42, 58, 0.08);
+}
+
+.network-center-card:last-child {
+    border-right: none;
 }
 
 /* =====================================================
