@@ -710,7 +710,52 @@ h2 {
     border-right: 6px solid transparent;
     border-top: 6px solid #ffffff;
 }
+/* =====================================================
+   PROTON MAP MARKERS
+====================================================== */
 
+.proton-marker-wrapper {
+    background: transparent;
+    border: none;
+}
+
+
+.proton-marker {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    background: var(--marker-color);
+
+    border: 3px solid #ffffff;
+
+    border-radius: 50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    box-shadow:
+        0 3px 8px rgba(23, 42, 58, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.proton-marker span {
+
+    transform: rotate(45deg);
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+}
 /* ================= NETWORK SUMMARY ================= */
 
 .network-summary {
