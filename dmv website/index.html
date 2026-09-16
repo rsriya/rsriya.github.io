@@ -480,8 +480,9 @@
 <script>
 
     const protonMap = L.map('proton-map', {
-        scrollWheelZoom: false
-    }).setView([38.93, -77.15], 8.5);
+        scrollWheelZoom: false,
+        zoomControl: true
+    });
 
 
     L.tileLayer(
@@ -495,28 +496,28 @@
     const protonCenters = [
 
         {
-            name: 'Maryland Proton Treatment Center',
+            name: 'Maryland Proton',
             city: 'Baltimore, MD',
             lat: 39.2886,
             lng: -76.6286
         },
 
         {
-            name: 'Johns Hopkins Proton Therapy Center',
+            name: 'Johns Hopkins',
             city: 'Washington, DC',
             lat: 38.9315,
             lng: -77.1065
         },
 
         {
-            name: 'MedStar Georgetown Proton Therapy',
+            name: 'MedStar Georgetown',
             city: 'Washington, DC',
             lat: 38.9128,
             lng: -77.0777
         },
 
         {
-            name: 'Inova Mather Proton Therapy Center',
+            name: 'Inova',
             city: 'Fairfax, VA',
             lat: 38.8475,
             lng: -77.4380
@@ -527,7 +528,7 @@
 
     protonCenters.forEach(center => {
 
-        L.circleMarker(
+        const marker = L.circleMarker(
             [center.lat, center.lng],
             {
                 radius: 7,
@@ -536,22 +537,36 @@
                 fillColor: '#ffffff',
                 fillOpacity: 1
             }
-        )
-        .addTo(protonMap)
+        ).addTo(protonMap);
 
-        .bindPopup(`
-            <div class="proton-popup">
+        const bounds = L.latLngBounds(
+            protonCenters.map(center => [center.lat, center.lng])
+        );
+        
+        protonMap.fitBounds(bounds, {
+            padding: [60, 60]
+        });
+        marker.bindTooltip(
+            `
+            <div class="proton-label">
 
-                <div class="proton-popup-name">
+                <div class="proton-label-name">
                     ${center.name}
                 </div>
 
-                <div class="proton-popup-city">
+                <div class="proton-label-city">
                     ${center.city}
                 </div>
 
             </div>
-        `);
+            `,
+            {
+                permanent: true,
+                direction: 'top',
+                offset: [0, -8],
+                className: 'proton-map-label'
+            }
+        );
 
     });
 
