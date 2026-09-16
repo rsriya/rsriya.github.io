@@ -581,40 +581,18 @@ h2 {
 
 
 /* ================= SECTION HEADING ================= */
-
 .regional-network-heading {
     display: grid;
-
-    grid-template-columns: 1.1fr 0.9fr;
-
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
-
-    align-items: end;
-
-    margin-bottom: 60px;
-}
-
-.regional-network-heading h2 {
-    margin: 0;
-
-    font-size: 48px;
-    line-height: 1.12;
-    letter-spacing: -1.5px;
-
-    color: #172a3a;
+    margin-bottom: 50px;
 }
 
 .regional-network-heading > p {
-    max-width: 480px;
-
     margin: 0;
-
-    font-size: 17px;
-    line-height: 1.75;
-
-    color: #657681;
+    max-width: 520px;
+    justify-self: end;
 }
-
 
 /* =====================================================
    REGIONAL NETWORK MAP
