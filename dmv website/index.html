@@ -496,31 +496,39 @@
     const protonCenters = [
 
         {
-            name: 'Maryland Proton',
-            city: 'Baltimore, MD',
-            lat: 39.2886,
-            lng: -76.6286
-        },
-
-        {
-            name: 'Johns Hopkins',
-            city: 'Washington, DC',
-            lat: 38.9315,
-            lng: -77.1065
-        },
-
-        {
-            name: 'MedStar Georgetown',
-            city: 'Washington, DC',
-            lat: 38.9128,
-            lng: -77.0777
-        },
-
-        {
-            name: 'Inova',
+            number: 1,
+            name: 'Inova Mather Proton Therapy Center',
             city: 'Fairfax, VA',
-            lat: 38.8475,
-            lng: -77.4380
+            lat: 38.861074,
+            lng: -77.224236,
+            color: '#1677a8'
+        },
+
+        {
+            number: 2,
+            name: 'Johns Hopkins Proton Therapy Center',
+            city: 'Washington, DC',
+            lat: 38.936711,
+            lng: -77.108596,
+            color: '#168a8a'
+        },
+
+        {
+            number: 3,
+            name: 'MedStar Georgetown Proton Therapy',
+            city: 'Washington, DC',
+            lat: 38.912448,
+            lng: -77.073898,
+            color: '#c47a32'
+        },
+
+        {
+            number: 4,
+            name: 'Maryland Proton Treatment Center',
+            city: 'Baltimore, MD',
+            lat: 39.289470,
+            lng: -76.630230,
+            color: '#7659a8'
         }
 
     ];
@@ -528,47 +536,65 @@
 
     protonCenters.forEach(center => {
 
-        const marker = L.circleMarker(
+        const markerIcon = L.divIcon({
+
+            className: 'proton-marker-wrapper',
+
+            html: `
+                <div
+                    class="proton-marker"
+                    style="--marker-color: ${center.color};"
+                >
+                    <span>${center.number}</span>
+                </div>
+            `,
+
+            iconSize: [46, 58],
+
+            iconAnchor: [23, 58]
+
+        });
+
+
+        L.marker(
             [center.lat, center.lng],
             {
-                radius: 7,
-                color: '#1677a8',
-                weight: 3,
-                fillColor: '#ffffff',
-                fillOpacity: 1
+                icon: markerIcon
             }
-        ).addTo(protonMap);
+        )
+        .addTo(protonMap)
 
-        const bounds = L.latLngBounds(
-            protonCenters.map(center => [center.lat, center.lng])
-        );
-        
-        protonMap.fitBounds(bounds, {
-            padding: [60, 60]
-        });
-        marker.bindTooltip(
-            `
-            <div class="proton-label">
+        .bindPopup(`
+            <div class="proton-popup">
 
-                <div class="proton-label-name">
+                <div class="proton-popup-name">
                     ${center.name}
                 </div>
 
-                <div class="proton-label-city">
+                <div class="proton-popup-city">
                     ${center.city}
                 </div>
 
             </div>
-            `,
-            {
-                permanent: true,
-                direction: 'top',
-                offset: [0, -8],
-                className: 'proton-map-label'
-            }
-        );
+        `);
 
     });
+
+
+    const bounds = L.latLngBounds(
+        protonCenters.map(center => [
+            center.lat,
+            center.lng
+        ])
+    );
+
+
+    protonMap.fitBounds(
+        bounds,
+        {
+            padding: [60, 60]
+        }
+    );
 
 </script>
 </body>
