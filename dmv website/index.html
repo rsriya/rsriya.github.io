@@ -367,66 +367,46 @@
 
     ];
 
+    const centerCards = document.querySelectorAll(".network-center-card");
 
-    protonCenters.forEach(center => {
-
+    protonCenters.forEach((center, index) => {
+    
         const markerIcon = L.divIcon({
-
-            className: 'proton-marker-wrapper',
-
+            className: "proton-marker-wrapper",
             html: `
                 <div
                     class="proton-marker"
                     style="--marker-color: ${center.color};"
                 ></div>
             `,
-
             iconSize: [46, 58],
-
             iconAnchor: [23, 58]
-
         });
-
-
-        L.marker(
+    
+        const marker = L.marker(
             [center.lat, center.lng],
             {
                 icon: markerIcon
             }
-        )
-        .addTo(protonMap)
-
-        .bindPopup(`
-            <div class="proton-popup">
-
-                <div class="proton-popup-name">
-                    ${center.name}
-                </div>
-
-                <div class="proton-popup-city">
-                    ${center.city}
-                </div>
-
-            </div>
-        `);
-
+        ).addTo(protonMap);
+    
+        marker.on("click", function () {
+    
+            // Remove highlight from all cards
+            centerCards.forEach(card => {
+                card.classList.remove("active");
+            });
+    
+            // Highlight corresponding card
+            const selectedCard = centerCards[index];
+    
+            if (selectedCard) {
+                selectedCard.classList.add("active");
+            }
+    
+        });
+    
     });
-
-
-    const bounds = L.latLngBounds(
-        protonCenters.map(center => [
-            center.lat,
-            center.lng
-        ])
-    );
-
-
-    protonMap.fitBounds(
-        bounds,
-        {
-            padding: [60, 60]
-        }
-    );
 
 </script>
 </body>
