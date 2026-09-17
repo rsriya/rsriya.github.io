@@ -1,4 +1,3 @@
-```javascript
 document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("footer");
 
@@ -51,4 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
         </footer>
     `;
 });
-```
