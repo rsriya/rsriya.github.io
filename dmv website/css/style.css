@@ -838,46 +838,7 @@ h2 {
     border-right: none;
 }
 
-/* =====================================================
-   HOW WE CONNECT
-===================================================== */
 
-.connection-list {
-    margin-top: 55px;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    border-top: 1px solid #dce4e8;
-    border-bottom: 1px solid #dce4e8;
-}
-
-.connection-item {
-    min-height: 180px;
-    padding: 30px 25px;
-
-    border-right: 1px solid #dce4e8;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.connection-item:last-child {
-    border-right: none;
-}
-
-.connection-item span {
-    font-size: 12px;
-    font-weight: 700;
-    color: #1677a8;
-}
-
-.connection-item h3 {
-    font-size: 21px;
-    line-height: 1.25;
-    font-weight: 700;
-}
 /* =====================================================
    CTA
 ===================================================== */
@@ -1764,40 +1725,60 @@ h2 {
    COLLABORATION AREAS
 ===================================================== */
 
+.collaboration {
+    background: #ffffff;
+}
+
+.collaboration-grid {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dce4e8;
+    border-bottom: 1px solid #dce4e8;
+}
+
 .collaboration-card {
     position: relative;
+
     min-height: 270px;
     padding: 25px;
+
     border-right: 1px solid #dce4e8;
-    background-size: cover;
-    background-position: center;
+
     display: flex;
     align-items: flex-end;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.collaboration-card:last-child {
+    border-right: none;
 }
 
 .collaboration-card > div {
-    background: #172a3a;
-    padding: 18px 20px;
     width: 100%;
+    padding: 18px 20px;
+
+    background: #172a3a;
 }
 
-.collaboration-card > div > span {
-    color: #8ed0ee;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
+.collaboration-card h3 {
+    margin: 0;
 
-.collaboration-card > div h3 {
-    margin-top: 8px;
-    color: #fff;
+    color: #ffffff;
+
     font-size: 21px;
     line-height: 1.25;
 }
 
-.collaboration-card > div p {
+.collaboration-card p {
     margin-top: 10px;
+
     color: #d8e2e7;
+
     font-size: 14px;
     line-height: 1.6;
 }
