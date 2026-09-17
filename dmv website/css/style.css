@@ -423,10 +423,12 @@ h2 {
 
 .event-image {
     width: 100%;
-    height: 100%;
+    height: calc(100% + 200px);
+    margin-top: -100px;
+    margin-bottom: -100px;
+
     overflow: hidden;
 }
-
 .event-image img {
     width: 100%;
     height: 100%;
