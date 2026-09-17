@@ -368,7 +368,7 @@
     ];
 
     const centerCards = document.querySelectorAll(".network-center-card");
-
+    
     protonCenters.forEach((center, index) => {
     
         const markerIcon = L.divIcon({
@@ -376,6 +376,7 @@
             html: `
                 <div
                     class="proton-marker"
+                    data-center-index="${index}"
                     style="--marker-color: ${center.color};"
                 ></div>
             `,
@@ -390,14 +391,15 @@
             }
         ).addTo(protonMap);
     
+    
+        /* MARKER → CARD */
+    
         marker.on("click", function () {
     
-            // Remove highlight from all cards
             centerCards.forEach(card => {
                 card.classList.remove("active");
             });
     
-            // Highlight corresponding card
             const selectedCard = centerCards[index];
     
             if (selectedCard) {
@@ -405,6 +407,35 @@
             }
     
         });
+    
+    
+        /* CARD → MARKER */
+    
+        const card = centerCards[index];
+    
+        if (card) {
+    
+            card.addEventListener("mouseenter", function () {
+    
+                const markerElement = marker.getElement();
+    
+                if (markerElement) {
+                    markerElement.classList.add("marker-hover");
+                }
+    
+            });
+    
+            card.addEventListener("mouseleave", function () {
+    
+                const markerElement = marker.getElement();
+    
+                if (markerElement) {
+                    markerElement.classList.remove("marker-hover");
+                }
+    
+            });
+    
+        }
     
     });
 
