@@ -323,13 +323,24 @@
     });
 
 
+    /* ================= MAP VIEW ================= */
+
+    protonMap.setView([39.05, -77.05], 8);
+
+
+    /* ================= BASE MAP ================= */
+
     L.tileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
         {
-            attribution: '&copy; OpenStreetMap contributors'
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+            subdomains: 'abcd',
+            maxZoom: 20
         }
     ).addTo(protonMap);
 
+
+    /* ================= PROTON CENTERS ================= */
 
     const protonCenters = [
 
@@ -367,12 +378,21 @@
 
     ];
 
-    const centerCards = document.querySelectorAll(".network-center-card");
-    
+
+    /* ================= CENTER CARDS ================= */
+
+    const centerCards =
+        document.querySelectorAll(".network-center-card");
+
+
+    /* ================= CREATE MARKERS ================= */
+
     protonCenters.forEach((center, index) => {
-    
+
         const markerIcon = L.divIcon({
+
             className: "proton-marker-wrapper",
+
             html: `
                 <div
                     class="proton-marker"
@@ -380,64 +400,92 @@
                     style="--marker-color: ${center.color};"
                 ></div>
             `,
+
             iconSize: [46, 58],
+
             iconAnchor: [23, 58]
+
         });
-    
+
+
         const marker = L.marker(
             [center.lat, center.lng],
             {
                 icon: markerIcon
             }
         ).addTo(protonMap);
-    
-    
-        /* MARKER → CARD */
-    
+
+
+        /* ================= MARKER → CARD ================= */
+
         marker.on("click", function () {
-    
+
             centerCards.forEach(card => {
                 card.classList.remove("active");
             });
-    
+
+
             const selectedCard = centerCards[index];
-    
+
+
             if (selectedCard) {
+
                 selectedCard.classList.add("active");
+
             }
-    
+
         });
-    
-    
-        /* CARD → MARKER */
-    
+
+
+        /* ================= CARD → MARKER ================= */
+
         const card = centerCards[index];
-    
+
+
         if (card) {
-    
+
             card.addEventListener("mouseenter", function () {
-    
+
                 const markerElement = marker.getElement();
-    
+
+
                 if (markerElement) {
+
                     markerElement.classList.add("marker-hover");
+
                 }
-    
+
             });
-    
+
+
             card.addEventListener("mouseleave", function () {
-    
+
                 const markerElement = marker.getElement();
-    
+
+
                 if (markerElement) {
+
                     markerElement.classList.remove("marker-hover");
+
                 }
-    
+
             });
-    
+
         }
-    
+
     });
+
+
+    /* ================= LEAFLET SIZE FIX ================= */
+
+    setTimeout(function () {
+
+        protonMap.invalidateSize();
+
+    }, 100);
+
+</script>
+
 
 </script>
 </body>
