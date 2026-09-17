@@ -1792,11 +1792,11 @@ h2 {
 }
 
 .collaboration-card:nth-child(3) {
-    background-image: url("../images/Collaboration.jpg");
+    background-image: url("../images/Collaboration.png");
 }
 
 .collaboration-card:nth-child(4) {
-    background-image: url("../images/QualityImprovement.jpg");
+    background-image: url("../images/QualityImprovement.png");
 }
 /* =====================================================
    ABOUT PAGE
