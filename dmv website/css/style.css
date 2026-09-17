@@ -684,6 +684,9 @@ h2 {
 
     box-shadow:
         0 3px 8px rgba(23, 42, 58, 0.25);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .proton-marker span {
@@ -698,6 +701,14 @@ h2 {
 
     line-height: 1;
 
+}
+
+.proton-marker-wrapper.marker-hover .proton-marker {
+    transform: rotate(-45deg) scale(1.18);
+
+    box-shadow:
+        0 0 0 5px rgba(255, 255, 255, 0.75),
+        0 5px 14px rgba(23, 42, 58, 0.30);
 }
 /* ================= NETWORK SUMMARY ================= */
 
@@ -801,6 +812,15 @@ h2 {
         box-shadow 0.2s ease;
 }
 
+.network-center-card.active {
+    outline: 2px solid var(--center-color);
+    outline-offset: -2px;
+    background: var(--center-bg);
+}
+
+.network-center-card.active .network-center-arrow {
+    transform: translateX(5px);
+}
 
 .network-center-number {
     display: none;
@@ -822,6 +842,7 @@ h2 {
 .network-center-arrow {
     color: var(--center-color);
     font-size: 20px;
+    transition: transform 0.2s ease;
 }
 
 
@@ -1726,7 +1747,7 @@ h2 {
 ===================================================== */
 
 .collaboration {
-    background: #ffffff;
+    background: #f3f7f9;
 }
 
 .collaboration-grid {
