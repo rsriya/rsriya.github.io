@@ -921,9 +921,9 @@ h2 {
 
 .page-hero-image {
     width: calc(100% + 7vw);
-    height: calc(100% + 100px);
-    margin-top: -50px;
-    margin-bottom: -50px;
+    height: calc(100% + 160px);
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     overflow: hidden;
 }
