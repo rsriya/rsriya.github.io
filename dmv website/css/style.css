@@ -900,11 +900,11 @@ h2 {
     padding: 80px 7%;
 
     display: grid;
-    grid-template-columns: 1fr 0.85fr;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
 
-    background: #f3f7f9;
+    background: #f3f1ed;
 }
 
 .page-hero-content {
@@ -960,7 +960,9 @@ h2 {
     margin-top: 25px;
 }
 
-
+.large-text .button {
+    margin-top: 25px;
+}
 /* =====================================================
    GOALS
 ===================================================== */
