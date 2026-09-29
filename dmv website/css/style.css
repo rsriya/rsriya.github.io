@@ -900,7 +900,7 @@ h2 {
     padding: 80px 7%;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.85fr 1fr;
     gap: 80px;
     align-items: center;
 
@@ -911,7 +911,7 @@ h2 {
     max-width: 800px;
 }
 .page-hero .eyebrow {
-    color: #155a73;
+    color: #5a4638;
 }
 .page-hero h1 {
     max-width: 800px;
