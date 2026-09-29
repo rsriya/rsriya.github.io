@@ -920,7 +920,11 @@ h2 {
 }
 
 .page-hero-image {
-    height: 430px;
+    width: calc(100% + 7vw);
+    height: calc(100% + 100px);
+    margin-top: -50px;
+    margin-bottom: -50px;
+
     overflow: hidden;
 }
 
@@ -931,7 +935,6 @@ h2 {
     object-fit: cover;
     display: block;
 }
-
 
 /* =====================================================
    TWO COLUMN
