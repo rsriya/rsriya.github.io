@@ -459,7 +459,9 @@ h2 {
     line-height: 1.15;
     letter-spacing: -1px;
 }
-
+.section-heading > p {
+    margin-top: 30px;
+}
 
 /* =====================================================
    REGIONAL NETWORK
@@ -897,7 +899,7 @@ h2 {
 
 .page-hero {
     min-height: 560px;
-    padding: 80px 7%;
+    padding: 50px 7%;
 
     display: grid;
     grid-template-columns: 0.85fr 1fr;
@@ -923,9 +925,9 @@ h2 {
 
 .page-hero-image {
     width: calc(100% + 7vw);
-    height: calc(100% + 160px);
-    margin-top: -80px;
-    margin-bottom: -80px;
+    height: calc(100% + 100px);
+    margin-top: -50px;
+    margin-bottom: -50px;
 
     overflow: hidden;
 }
@@ -965,12 +967,13 @@ h2 {
 .large-text .button {
     margin-top: 25px;
 }
+
 /* =====================================================
    GOALS
 ===================================================== */
 
 .goal-grid {
-    margin-top: 50px;
+    margin-top: 55px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -980,31 +983,78 @@ h2 {
 }
 
 .goal-card {
-    min-height: 250px;
-    padding: 30px 25px;
+    position: relative;
+
+    min-height: 300px;
+    padding: 32px 28px 35px;
 
     border-right: 1px solid #dce4e8;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
 }
 
 .goal-card:last-child {
     border-right: none;
 }
 
-.goal-card span {
-    color: #1677a8;
+/* Number */
+
+.goal-card > span {
     font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #1677a8;
 }
+
+/* Accent line */
+
+.goal-card::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+
+    margin-top: 18px;
+
+    background: #1677a8;
+
+    transition: width 0.25s ease;
+}
+
+/* Heading */
 
 .goal-card h3 {
     margin-top: 30px;
-    font-size: 21px;
+
+    font-size: 22px;
+    line-height: 1.25;
 }
 
-.goal-card p {
-    margin-top: 12px;
+/* Description */
 
-    color: #73818a;
-    font-size: 14px;
+.goal-card p {
+    margin-top: 15px;
+
+    color: #687983;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Hover */
+
+.goal-card:hover {
+    background: #f3f7f9;
+}
+
+.goal-card:hover::before {
+    width: 60px;
 }
 
 
@@ -1115,7 +1165,7 @@ h2 {
 }
 
 .symposium-event p:not(.card-label) {
-    max-width: 650px;
+    max-width: none;
     margin: 18px 0 25px;
 
     color: #687983;
