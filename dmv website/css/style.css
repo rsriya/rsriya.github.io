@@ -1052,6 +1052,9 @@ h2 {
         opacity 0.3s ease;
 }
 
+.goal-card.research .goal-overlay {
+    opacity: 0.45;
+}
 
 /* =====================================================
    CONTENT
