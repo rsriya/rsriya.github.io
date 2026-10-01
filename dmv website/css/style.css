@@ -1017,19 +1017,19 @@ h2 {
 ===================================================== */
 
 .goal-card.clinical {
-    background-image: url("images/ClinicalPractice.png");
+    background-image: url("../images/ClinicalPractice.png");
 }
 
 .goal-card.medical-physics {
-    background-image: url("images/MedicalPhysics.png");
+    background-image: url("../images/MedicalPhysics.png");
 }
 
 .goal-card.research {
-    background-image: url("images/ResearchInnovation.png");
+    background-image: url("../images/ResearchInnovation.png");
 }
 
 .goal-card.education {
-    background-image: url("images/Education.png");
+    background-image: url("../images/Education.png");
 }
 
 /* =====================================================
