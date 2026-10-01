@@ -1017,21 +1017,20 @@ h2 {
 ===================================================== */
 
 .goal-card.clinical {
-    background-image: url("images/clinical-practice.jpg");
+    background-image: url("images/ClinicalPractice.png");
+}
+
+.goal-card.medical-physics {
+    background-image: url("images/MedicalPhysics.png");
 }
 
 .goal-card.research {
-    background-image: url("images/research-innovation.jpg");
+    background-image: url("images/ResearchInnovation.png");
 }
 
 .goal-card.education {
-    background-image: url("images/education-training.jpg");
+    background-image: url("images/Education.png");
 }
-
-.goal-card.collaboration {
-    background-image: url("images/collaboration.jpg");
-}
-
 
 /* =====================================================
    OVERLAY
@@ -1220,7 +1219,6 @@ h2 {
     color: #687983;
 }
 
-
 /* =====================================================
    SYMPOSIUM PAGE
 ===================================================== */
@@ -1273,36 +1271,244 @@ h2 {
     color: #687983;
 }
 
-.past-events {
-    margin-top: 45px;
 
-    border-top: 1px solid #dce4e8;
+.past-events {
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
 }
+
+
+/* =====================================================
+   EVENT CARD
+===================================================== */
 
 .past-event {
-    padding: 30px 0;
+    position: relative;
+
+    min-height: 175px;
+    padding: 30px 35px;
 
     display: grid;
-    grid-template-columns: 100px 1fr auto;
-    gap: 30px;
+    grid-template-columns: 150px 1fr auto;
+    gap: 40px;
     align-items: center;
 
-    border-bottom: 1px solid #dce4e8;
+    background: #ffffff;
+
+    border: 1px solid #dce4e8;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-.past-event > span {
-    color: #1677a8;
+
+/* Blue accent on left */
+
+.past-event::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background: #1677a8;
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =====================================================
+   YEAR
+===================================================== */
+
+.past-event-year {
+    display: flex;
+    flex-direction: column;
+}
+
+.past-event-year span {
+    margin-bottom: 3px;
+
+    color: #7a8991;
+
+    font-size: 10px;
     font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.past-event-year strong {
+    color: #1677a8;
+
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.past-event-content {
+    max-width: 700px;
+}
+
+.past-event-location {
+    margin: 0 0 9px;
+
+    color: #1677a8;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
 }
 
 .past-event h3 {
-    font-size: 19px;
+    margin: 0;
+
+    color: #172a3a;
+
+    font-size: 21px;
+    line-height: 1.35;
 }
 
-.past-event a {
-    color: #1677a8;
-    font-size: 13px;
+.past-event-content > p:last-child {
+    margin: 9px 0 0;
+
+    color: #687983;
+
+    font-size: 14px;
 }
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+.past-event-link {
+    min-width: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 15px;
+
+    color: #1677a8;
+
+    border: 1px solid #c9dce5;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.past-event-link strong {
+    font-size: 18px;
+    font-weight: 400;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.past-event:hover {
+    transform: translateY(-3px);
+
+    border-color: #b9d4df;
+
+    box-shadow:
+        0 12px 30px rgba(23, 42, 58, 0.08);
+}
+
+.past-event:hover::before {
+    transform: scaleY(1);
+}
+
+.past-event:hover .past-event-link {
+    background: #1677a8;
+    border-color: #1677a8;
+    color: #ffffff;
+}
+
+.past-event:hover .past-event-link strong {
+    transform: translate(3px, -2px);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .past-event {
+        grid-template-columns: 110px 1fr;
+        gap: 25px;
+    }
+
+    .past-event-year strong {
+        font-size: 42px;
+    }
+
+    .past-event-link {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .past-events {
+        gap: 15px;
+    }
+
+    .past-event {
+        padding: 25px;
+
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .past-event-year strong {
+        font-size: 44px;
+    }
+
+    .past-event-link {
+        grid-column: auto;
+        width: 100%;
+    }
+
+}
+
 
 
 /* =====================================================
