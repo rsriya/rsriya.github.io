@@ -2184,19 +2184,19 @@ h2 {
 }
 
 .collaboration-card:nth-child(1) {
-    background-image: url("../images/Education.png");
+    background-image: url("images/Education.png");
 }
 
 .collaboration-card:nth-child(2) {
-    background-image: url("../images/ScientificExchange.png");
+    background-image: url("images/ScientificExchange.png");
 }
 
 .collaboration-card:nth-child(3) {
-    background-image: url("../images/Collaboration.png");
+    background-image: url("images/Collaboration.png");
 }
 
 .collaboration-card:nth-child(4) {
-    background-image: url("../images/QualityImprovement.png");
+    background-image: url("images/QualityImprovement.png");
 }
 /* =====================================================
    ABOUT PAGE
