@@ -969,7 +969,7 @@ h2 {
 }
 
 /* =====================================================
-   GOALS
+   GOAL GRID
 ===================================================== */
 
 .goal-grid {
@@ -982,79 +982,181 @@ h2 {
     border-bottom: 1px solid #dce4e8;
 }
 
+
+/* =====================================================
+   GOAL CARD
+===================================================== */
+
 .goal-card {
     position: relative;
 
-    min-height: 300px;
+    min-height: 360px;
     padding: 32px 28px 35px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
 
     border-right: 1px solid #dce4e8;
 
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
+    background-position: center;
 
     transition:
-        background 0.25s ease,
-        transform 0.25s ease;
+        transform 0.3s ease;
 }
 
 .goal-card:last-child {
     border-right: none;
 }
 
-/* Number */
 
-.goal-card > span {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+/* =====================================================
+   BACKGROUND IMAGES
+===================================================== */
 
-    color: #1677a8;
+.goal-card.clinical {
+    background-image: url("images/clinical-practice.jpg");
 }
 
-/* Accent line */
-
-.goal-card::before {
-    content: "";
-
-    width: 35px;
-    height: 2px;
-
-    margin-top: 18px;
-
-    background: #1677a8;
-
-    transition: width 0.25s ease;
+.goal-card.research {
+    background-image: url("images/research-innovation.jpg");
 }
 
-/* Heading */
+.goal-card.education {
+    background-image: url("images/education-training.jpg");
+}
+
+.goal-card.collaboration {
+    background-image: url("images/collaboration.jpg");
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.goal-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(10, 35, 48, 0.88),
+        rgba(10, 35, 48, 0.05)
+    );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.goal-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
 
 .goal-card h3 {
-    margin-top: 30px;
+    margin: 0;
 
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.25;
+
+    color: #ffffff;
 }
 
-/* Description */
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
 
 .goal-card p {
-    margin-top: 15px;
+    max-width: 320px;
 
-    color: #687983;
+    margin: 15px 0 0;
+
+    color: rgba(255, 255, 255, 0.9);
 
     font-size: 15px;
     line-height: 1.7;
+
+    opacity: 0;
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
-/* Hover */
+
+/* =====================================================
+   HOVER
+===================================================== */
 
 .goal-card:hover {
-    background: #f3f7f9;
+    transform: translateY(-3px);
 }
 
-.goal-card:hover::before {
-    width: 60px;
+.goal-card:hover .goal-overlay {
+    opacity: 1;
+}
+
+.goal-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   IMAGE ZOOM
+===================================================== */
+
+.goal-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+
+    z-index: 0;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.5s ease;
+}
+
+.goal-card:hover::after {
+    transform: scale(1.04);
+}
+
+
+/* Keep overlay and content above image */
+.goal-card .goal-overlay {
+    z-index: 1;
+}
+
+.goal-card .goal-content {
+    z-index: 2;
 }
 
 
