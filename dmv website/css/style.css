@@ -344,41 +344,7 @@ h2 {
     margin-top: 38px;
 }
 
-/* =====================================================
-   TEXT-ONLY PAGE HERO
-===================================================== */
 
-.page-hero--text {
-    min-height: 470px;
-    padding: 90px 7%;
-
-    display: flex;
-    align-items: center;
-
-    background: #1677a8;
-}
-
-.page-hero--text .page-hero-content {
-    width: 100%;
-    max-width: 1100px;
-}
-
-.page-hero--text .eyebrow {
-    color: #d8f0fa;
-}
-
-.page-hero--text h1 {
-    max-width: 950px;
-
-    color: #ffffff;
-}
-
-.page-hero--text p:not(.eyebrow) {
-    max-width: 800px;
-    margin-top: 25px;
-
-    color: #e8f5fa;
-}
 /* =====================================================
    PURPOSE
 ===================================================== */
@@ -942,6 +908,44 @@ h2 {
     display: block;
 }
 
+
+/* =====================================================
+   TEXT-ONLY PAGE HERO
+===================================================== */
+
+.page-hero.page-hero--text {
+    min-height: 470px;
+    padding: 90px 7%;
+
+    display: flex;
+    align-items: center;
+
+    background: #1677a8;
+}
+
+.page-hero.page-hero--text .page-hero-content {
+    width: 100%;
+    max-width: 1200px;
+
+    grid-column: auto;
+}
+
+.page-hero.page-hero--text h1 {
+    max-width: 950px;
+
+    color: #ffffff;
+}
+
+.page-hero.page-hero--text .eyebrow {
+    color: #d8f0fa;
+}
+
+.page-hero.page-hero--text p:not(.eyebrow) {
+    max-width: 850px;
+    margin-top: 25px;
+
+    color: #e8f5fa;
+}
 /* =====================================================
    TWO COLUMN
 ===================================================== */
@@ -1611,8 +1615,7 @@ h2 {
     display: flex;
     align-items: center;
 
-    background: #f3f7f9;
-
+    background: #e4edf1;
     border-left: 4px solid #1677a8;
 
     transition:
@@ -1620,6 +1623,10 @@ h2 {
         background 0.25s ease;
 }
 
+.education-feature:hover {
+    background: #dce8ed;
+    transform: translateY(-3px);
+}
 .education-feature-content {
     max-width: 600px;
 }
@@ -1646,10 +1653,6 @@ h2 {
     font-weight: 600;
 }
 
-.education-feature:hover {
-    background: #eaf3f7;
-    transform: translateY(-3px);
-}
 
 /* =====================================================
    CONTACT
