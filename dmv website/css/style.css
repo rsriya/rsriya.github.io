@@ -344,7 +344,27 @@ h2 {
     margin-top: 38px;
 }
 
+.page-hero--text {
+    min-height: 430px;
+    padding: 90px 7%;
 
+    display: flex;
+    align-items: center;
+
+    background: #d4cec4;
+}
+
+.page-hero--text .page-hero-content {
+    max-width: 850px;
+}
+
+.page-hero--text h1 {
+    max-width: 800px;
+}
+
+.page-hero--text > p {
+    max-width: 680px;
+}
 /* =====================================================
    PURPOSE
 ===================================================== */
@@ -1552,97 +1572,70 @@ h2 {
     color: #0f638e;
     transform: translateX(3px);
 }
+
 /* =====================================================
-   NEWS
+   EDUCATION FEATURE
 ===================================================== */
 
-.featured-news {
+.education-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 90px;
     align-items: center;
 }
 
-.news-image-placeholder {
-    min-height: 400px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #c2d7e0;
-
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-.featured-news-content h2 {
+.education-intro h2 {
+    max-width: 480px;
     font-size: 43px;
+    line-height: 1.08;
 }
 
-.featured-news-content > p:not(.card-label) {
-    margin-top: 22px;
-
-    color: #687983;
-    font-size: 17px;
-}
-
-.news-grid {
-    margin-top: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.news-card {
-    padding: 35px;
-
-    background: #ffffff;
-
-    border: 1px solid #dce4e8;
-}
-
-.news-date {
-    margin-bottom: 30px;
+.education-feature {
+    min-height: 280px;
+    padding: 45px;
 
     display: flex;
-    flex-direction: column;
+    align-items: center;
 
-    color: #1677a8;
+    background: #f3f7f9;
+
+    border-left: 4px solid #1677a8;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
 }
 
-.news-date span {
-    font-size: 10px;
-    letter-spacing: 2px;
+.education-feature-content {
+    max-width: 600px;
 }
 
-.news-date strong {
-    font-size: 22px;
+.education-feature h3 {
+    font-size: 25px;
+    color: #172a3a;
 }
 
-.news-card h3 {
-    font-size: 22px;
-    line-height: 1.25;
-}
-
-.news-card > p:not(.card-label) {
-    margin-top: 15px;
+.education-feature p {
+    margin-top: 18px;
 
     color: #73818a;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
-.news-card > a {
+.education-feature a {
     display: inline-block;
-    margin-top: 22px;
+    margin-top: 25px;
 
     color: #1677a8;
     font-size: 13px;
     font-weight: 600;
 }
 
+.education-feature:hover {
+    background: #eaf3f7;
+    transform: translateY(-3px);
+}
 
 /* =====================================================
    CONTACT
