@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News | DMV Proton Therapy Collaborative</title>
+    <meta
+        name="description"
+        content="Latest news, research, clinical developments, and innovations in proton therapy and radiation oncology."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            DMV PROTON THERAPY COLLABORATIVE
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="centers.html">Centers</a>
+            <a href="symposium.html">Symposium</a>
+            <a href="education.html">Education</a>
+            <a href="news.html" class="active">News</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section class="page-hero page-hero--text news-hero">
+
+            <div class="page-hero-content">
+
+                <p class="eyebrow">NEWS &amp; DEVELOPMENTS</p>
+
+                <h1>
+                    The latest in
+                    proton therapy.
+                </h1>
+
+                <p>
+                    A continuously updated collection of news,
+                    research, clinical developments, and innovations
+                    relevant to the proton therapy community.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LATEST NEWS
+        ================================================== -->
+
+        <section class="news-section">
+
+            <div class="news-heading">
+
+                <div>
+                    <p class="section-label">LATEST NEWS</p>
+                    <h2>Recent developments in the field.</h2>
+                </div>
+
+                <p class="news-updated" id="news-updated">
+                    Updating...
+                </p>
+
+            </div>
+
+
+            <div class="news-filters" aria-label="Filter news">
+
+                <button class="news-filter active" data-category="All">
+                    All
+                </button>
+
+                <button class="news-filter" data-category="Proton Therapy">
+                    Proton Therapy
+                </button>
+
+                <button class="news-filter" data-category="Radiation Oncology">
+                    Radiation Oncology
+                </button>
+
+                <button class="news-filter" data-category="Medical Physics">
+                    Medical Physics
+                </button>
+
+                <button class="news-filter" data-category="Research">
+                    Research
+                </button>
+
+                <button class="news-filter" data-category="AI & Imaging">
+                    AI &amp; Imaging
+                </button>
+
+                <button class="news-filter" data-category="Regional">
+                    Regional
+                </button>
+
+            </div>
+
+
+            <div
+                class="news-grid"
+                id="news-grid"
+                aria-live="polite"
+            >
+                <div class="news-loading">
+                    Loading the latest news...
+                </div>
+            </div>
+
+
+            <div class="news-empty" id="news-empty" hidden>
+                No stories are currently available in this category.
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EDITORIAL NOTE
+        ================================================== -->
+
+        <section class="news-note">
+
+            <div class="news-note-inner">
+
+                <p class="section-label">ABOUT THIS FEED</p>
+
+                <h2>
+                    Curated for the proton therapy community.
+                </h2>
+
+                <p>
+                    This page is automatically updated using an AI-assisted
+                    news workflow that searches for recent developments
+                    in proton therapy, radiation oncology, medical physics,
+                    research, and related technologies.
+                </p>
+
+                <p>
+                    Summaries are generated from the original source.
+                    Please follow the source link for the complete article
+                    and original reporting.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div>
+            <h3>DMV Proton Therapy Collaborative</h3>
+            <p>
+                Connecting proton therapy professionals
+                across the DC, Maryland, and Virginia region.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="centers.html">Centers</a>
+            <a href="symposium.html">Symposium</a>
+            <a href="education.html">Education</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </footer>
+
+
+    <script src="js/news.js"></script>
+
+</body>
+</html>

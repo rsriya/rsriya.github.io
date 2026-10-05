@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-10-05T14:57:00-04:00",
+  "articles": [
+    {
+      "id": "cancernetwork-impt-prostate-2026-10-05",
+      "title": "Prioritizing Proton Therapy for Pelvic Nodal Irradiation in Prostate Cancer",
+      "summary": "At the 2026 ASTRO Annual Meeting, clinicians discussed when proton therapy may be most justified over advanced photon approaches for intermediate- to very high-risk prostate cancer, with particular attention to pelvic nodal irradiation and reducing dose to nearby bowel.",
+      "category": "Proton Therapy",
+      "source": "CancerNetwork",
+      "published_date": "2026-10-05",
+      "url": "https://www.cancernetwork.com/view/prioritizing-proton-therapy-for-pelvic-nodal-irradiation-in-prostate-cancer"
+    },
+    {
+      "id": "stanford-rad-onc-astro-2026-10-02",
+      "title": "Stanford Radiation Oncology Showcases Research and Awards at ASTRO 2026",
+      "summary": "Stanford Cancer Institute highlighted advances presented at ASTRO 2026 spanning AI, cancer treatment, and precision oncology, reflecting the continued integration of computational methods with radiation oncology research.",
+      "category": "Research",
+      "source": "Stanford Medicine",
+      "published_date": "2026-10-02",
+      "url": "https://med.stanford.edu/cancer/about/news/stanford-radiation-oncology-showcases-research-and-awards-at-ast.html"
+    },
+    {
+      "id": "napt-proton-news-2026",
+      "title": "National Proton Conference Highlights Advances and Expanding Access",
+      "summary": "The National Association for Proton Therapy continues to highlight developments in proton therapy, new clinical programs, technology, and efforts to expand access across the United States.",
+      "category": "Proton Therapy",
+      "source": "National Association for Proton Therapy",
+      "published_date": "2026-04-13",
+      "url": "https://proton-therapy.org/"
+    }
+  ]
+}
