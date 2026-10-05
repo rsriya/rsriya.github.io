@@ -916,35 +916,29 @@ h2 {
 .page-hero.page-hero--text {
     min-height: 470px;
     padding: 90px 7%;
-
     display: flex;
     align-items: center;
-
-    background: #1677a8;
+    background: #d4cec4;
 }
 
 .page-hero.page-hero--text .page-hero-content {
     width: 100%;
-    max-width: 1200px;
-
-    grid-column: auto;
+    max-width: 1400px;
 }
 
 .page-hero.page-hero--text h1 {
-    max-width: 950px;
-
-    color: #ffffff;
+    max-width: 1100px;
+    color: #172a3a;
 }
 
 .page-hero.page-hero--text .eyebrow {
-    color: #d8f0fa;
+    color: #5a4638;
 }
 
 .page-hero.page-hero--text p:not(.eyebrow) {
-    max-width: 850px;
+    max-width: 950px;
     margin-top: 25px;
-
-    color: #e8f5fa;
+    color: #4f626e;
 }
 /* =====================================================
    TWO COLUMN
