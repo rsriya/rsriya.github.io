@@ -861,38 +861,6 @@ h2 {
     border-right: none;
 }
 
-
-/* =====================================================
-   CTA
-===================================================== */
-
-.cta {
-    padding: 110px 7%;
-
-    text-align: center;
-
-    background: #172a3a;
-    color: #ffffff;
-}
-
-.cta .section-label {
-    color: #8dc5df;
-}
-
-.cta h2 {
-    max-width: 750px;
-    margin: auto;
-
-    font-size: 48px;
-}
-
-.cta > p:not(.section-label) {
-    max-width: 600px;
-    margin: 22px auto 30px;
-
-    color: #c4d0d6;
-}
-
 /* =====================================================
    PAGE HERO
 ===================================================== */
@@ -1512,10 +1480,8 @@ h2 {
 
 }
 
-
-
 /* =====================================================
-   EDUCATION
+   RESOURCE CARDS
 ===================================================== */
 
 .resource-grid {
@@ -1523,48 +1489,69 @@ h2 {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dce4e8;
+    border-bottom: 1px solid #dce4e8;
 }
 
 .resource-card {
-    min-height: 280px;
-    padding: 30px 25px;
+    min-height: 300px;
+    padding: 35px 28px;
+
+    display: flex;
+    flex-direction: column;
 
     border-right: 1px solid #dce4e8;
+
+    background: #ffffff;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
 }
 
 .resource-card:last-child {
     border-right: none;
 }
 
-.resource-card > span {
-    color: #1677a8;
-    font-size: 12px;
-}
-
 .resource-card h3 {
-    margin-top: 30px;
-
     font-size: 21px;
-    line-height: 1.25;
+    line-height: 1.3;
+
+    color: #172a3a;
 }
 
 .resource-card p {
-    margin-top: 15px;
+    margin-top: 16px;
 
     color: #73818a;
     font-size: 14px;
+    line-height: 1.7;
 }
 
 .resource-card a {
-    display: inline-block;
-    margin-top: 22px;
+    margin-top: auto;
+    padding-top: 25px;
 
     color: #1677a8;
+
     font-size: 13px;
     font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
+.resource-card:hover {
+    background: #f7fafb;
+    transform: translateY(-3px);
+}
 
+.resource-card:hover a {
+    color: #0f638e;
+    transform: translateX(3px);
+}
 /* =====================================================
    NEWS
 ===================================================== */
