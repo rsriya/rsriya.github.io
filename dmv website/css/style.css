@@ -1674,217 +1674,214 @@ h2 {
     text-transform: uppercase;
     color: #8ed0ee;
 }
-/* ================= FOOTER RESPONSIVE ================= */
 
-@media (max-width: 950px) {
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
 
-    .footer-main {
-        padding: 60px 5%;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        gap: 45px;
-    }
-
-    .footer-bottom {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-
-
-@media (max-width: 650px) {
-
-    .footer-main {
-        padding: 55px 5%;
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .footer-brand h2 {
-        font-size: 20px;
-    }
-
-    .footer-bottom {
-        padding: 20px 5% 25px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .footer-bottom p:last-child {
-        text-align: left;
-    }
-}
 
 /* =====================================================
    TABLET
 ===================================================== */
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
+
+    /* ---------- NAVIGATION ---------- */
 
     .navbar {
         padding: 0 5%;
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 20px;
     }
 
 
-    /* HERO */
+    /* ---------- GENERAL ---------- */
+
+    .section {
+        padding: 85px 5%;
+    }
+
+
+    /* ---------- HERO ---------- */
 
     .hero {
-        grid-template-columns: 1fr;
-        padding: 70px 5%;
+        min-height: 600px;
+        padding: 0 5%;
     }
 
-    .hero-visual {
-        height: 380px;
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 68px);
     }
 
-
-    /* PURPOSE */
-
-    .mission-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .mission-description {
-        max-width: 700px;
-        padding-top: 0;
+    .hero-description {
+        font-size: 17px;
     }
 
 
-    /* GENERAL TWO COLUMN SECTIONS */
+    /* ---------- FEATURE ---------- */
 
-    .two-column,
-    .contact-section {
-        grid-template-columns: 1fr;
-        gap: 45px;
+    .feature-section {
+        padding: 45px 5%;
+        gap: 50px;
     }
 
-    .feature-section,
-    .featured-news {
-        grid-template-columns: 1fr;
+    .feature-content h2 {
+        font-size: 40px;
     }
 
-
-    /* HOMEPAGE SECTION HEADINGS */
-
-    .section-heading {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
+    .event-image {
+        width: calc(100% + 5vw);
     }
 
 
-    /* HOMEPAGE CENTER GRID */
+    /* ---------- REGIONAL NETWORK ---------- */
 
-    .center-grid {
-        grid-template-columns: 1fr 1fr;
+    .regional-network {
+        padding: 85px 5% 95px;
     }
 
-    .center-card:nth-child(2) {
+    .regional-network-heading {
+        gap: 50px;
+    }
+
+    .regional-network-heading h2 {
+        font-size: 40px;
+    }
+
+    .map-graphic {
+        height: 450px;
+    }
+
+
+    /* ---------- CENTER CARDS ---------- */
+
+    .network-centers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- PAGE HERO ---------- */
+
+    .page-hero {
+        padding: 50px 5%;
+        gap: 50px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(42px, 5.5vw, 62px);
+    }
+
+    .page-hero-image {
+        width: calc(100% + 5vw);
+    }
+
+
+    /* ---------- TWO COLUMN ---------- */
+
+    .two-column {
+        gap: 60px;
+    }
+
+
+    /* ---------- GOAL GRID ---------- */
+
+    .goal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .goal-card:nth-child(2) {
         border-right: none;
     }
 
-    .center-card:nth-child(-n+2) {
-        border-bottom: 1px solid #dce4e8;
+
+    /* ---------- RESOURCE GRID ---------- */
+
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resource-card:nth-child(2) {
+        border-right: none;
     }
 
 
-    /* HOMEPAGE COLLABORATION */
+    /* ---------- COLLABORATION ---------- */
 
     .collaboration-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .collaboration-card:nth-child(2) {
         border-right: none;
     }
 
-    .collaboration-card:nth-child(-n+2) {
-        border-bottom: 1px solid #dce4e8;
+
+    /* ---------- EDUCATION ---------- */
+
+    .education-section {
+        gap: 55px;
     }
 
 
-    /* OTHER GRID SECTIONS */
+    /* ---------- CONTACT ---------- */
 
-    .goal-grid,
-    .resource-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .goal-card:nth-child(2),
-    .resource-card:nth-child(2) {
-        border-right: none;
-    }
-
-    .goal-card:nth-child(-n+2),
-    .resource-card:nth-child(-n+2) {
-        border-bottom: 1px solid #dce4e8;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
+    .contact-section {
+        gap: 60px;
     }
 
 
-    /* CENTERS PAGE */
+    /* ---------- FOOTER ---------- */
 
-    .centers-hero {
-        flex-direction: column;
-        align-items: flex-start;
+    .footer-main {
+        padding: 60px 5% 50px;
+        gap: 50px;
     }
 
-    .region-stat {
-        width: 100%;
-
-        border-left: none;
-        border-top: 1px solid #cfdce2;
+    .footer-navigation {
+        gap: 25px;
     }
 
-    .centers-intro-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+    .footer-links {
+        gap: 20px;
     }
 
-    .region-map-section {
-        grid-template-columns: 1fr;
+    .footer-bottom {
+        padding: 20px 5%;
     }
-
-    .featured-center {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .featured-center.reverse .center-image {
-        order: 1;
-    }
-
-    .featured-center.reverse .featured-center-content {
-        order: 2;
-    }
-
-    .center-image,
-    .center-image img {
-        min-height: 360px;
-    }
-
 }
+
 
 
 /* =====================================================
    MOBILE
 ===================================================== */
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 
-    /* NAVIGATION */
+    /* ---------- NAVIGATION ---------- */
 
     .navbar {
-        height: auto;
-        padding: 20px 5%;
+        height: 72px;
+        padding: 0 6%;
+    }
+
+    .logo {
+        gap: 9px;
+    }
+
+    .logo-mark {
+        font-size: 24px;
+    }
+
+    .logo-text strong {
+        font-size: 10px;
+    }
+
+    .logo-text small {
+        font-size: 7px;
+        letter-spacing: 1.5px;
     }
 
     .nav-links {
@@ -1892,258 +1889,569 @@ h2 {
     }
 
 
-    /* GENERAL */
+    /* ---------- GENERAL ---------- */
 
     .section {
-        padding: 75px 5%;
+        padding: 70px 6%;
+    }
+
+    .section-label,
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.7px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 620px;
+        padding: 0 6%;
+        align-items: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 70px 0;
+    }
+
+    .hero .eyebrow {
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(42px, 11vw, 58px);
+        line-height: 1.02;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero-buttons {
+        margin-top: 30px;
+    }
+
+    .button-primary {
+        padding: 13px 22px;
+    }
+
+
+    /* ---------- FEATURE ---------- */
+
+    .feature-section {
+        padding: 65px 6%;
+        display: block;
+    }
+
+    .feature-content h2 {
+        font-size: 36px;
+    }
+
+    .feature-content > p:not(.section-label) {
+        margin-top: 18px;
+    }
+
+    .event-image {
+        width: 100%;
+        height: 280px;
+        margin: 40px 0 0;
+    }
+
+
+    /* ---------- SECTION HEADINGS ---------- */
+
+    .section-heading h2 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .section-heading > p {
+        margin-top: 22px;
+    }
+
+
+    /* ---------- REGIONAL NETWORK ---------- */
+
+    .regional-network {
+        padding: 70px 6% 80px;
+    }
+
+    .regional-network-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .regional-network-heading h2 {
+        font-size: 36px;
+    }
+
+    .regional-network-heading > p {
+        margin-top: 22px;
+        max-width: none;
+    }
+
+    .map-graphic {
+        height: 380px;
+    }
+
+
+    /* ---------- MAP LABELS ---------- */
+
+    .proton-label {
+        min-width: 100px;
+        padding: 6px 8px;
+    }
+
+    .proton-label-name {
+        font-size: 11px;
+    }
+
+    .proton-label-city {
+        font-size: 10px;
+    }
+
+    .proton-marker {
+        width: 36px;
+        height: 36px;
+    }
+
+    .proton-marker span {
+        font-size: 14px;
+    }
+
+
+    /* ---------- NETWORK SUMMARY ---------- */
+
+    .network-summary {
+        min-height: auto;
+        padding: 45px 30px;
+    }
+
+    .network-summary h3 {
+        font-size: 29px;
+    }
+
+    .network-summary p:not(.card-label) {
+        font-size: 15px;
+    }
+
+
+    /* ---------- CENTER CARDS ---------- */
+
+    .network-centers {
+        grid-template-columns: 1fr;
+    }
+
+    .network-center-card {
+        min-height: 75px;
+        padding: 15px 18px;
+        border-right: none;
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .network-center-card:last-child {
+        border-bottom: none;
+    }
+
+
+    /* ---------- PAGE HERO ---------- */
+
+    .page-hero {
+        min-height: auto;
+        padding: 70px 6%;
+        display: block;
+    }
+
+    .page-hero-content {
+        max-width: 100%;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(40px, 10vw, 55px);
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+    }
+
+    .page-hero-image {
+        width: 100%;
+        height: 300px;
+        margin: 45px 0 0;
+    }
+
+
+    /* ---------- TEXT-ONLY PAGE HERO ---------- */
+
+    .page-hero.page-hero--text {
+        min-height: 400px;
+        padding: 70px 6%;
+    }
+
+    .page-hero.page-hero--text h1 {
+        max-width: 100%;
+    }
+
+    .page-hero.page-hero--text p:not(.eyebrow) {
+        max-width: 100%;
+        margin-top: 22px;
+    }
+
+
+    /* ---------- TWO COLUMN ---------- */
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .two-column h2 {
+        font-size: 36px;
+    }
+
+    .large-text {
+        font-size: 16px;
+    }
+
+
+    /* ---------- GOAL GRID ---------- */
+
+    .goal-grid {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .goal-card {
+        min-height: 330px;
+        padding: 28px 24px 30px;
+        border-right: none;
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .goal-card:last-child {
+        border-bottom: none;
+    }
+
+    /* No hover-only interaction on mobile */
+    .goal-card p {
+        opacity: 1;
+        transform: none;
+    }
+
+    .goal-card .goal-overlay {
+        opacity: 0.55;
+    }
+
+    .goal-card:hover {
+        transform: none;
+    }
+
+    .goal-card:hover::after {
+        transform: none;
+    }
+
+
+    /* ---------- SYMPOSIUM EVENT ---------- */
+
+    .symposium-event {
+        padding: 35px 25px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .date-box {
+        width: 130px;
+        height: 110px;
+    }
+
+    .symposium-event h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- PAST EVENTS ---------- */
+
+    .past-events {
+        margin-top: 40px;
+    }
+
+    .past-event {
+        min-height: auto;
+        padding: 28px 25px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .past-event-year strong {
+        font-size: 44px;
+    }
+
+    .past-event-content {
+        max-width: none;
+    }
+
+    .past-event-link {
+        width: 100%;
+    }
+
+    .past-event:hover {
+        transform: none;
+    }
+
+
+    /* ---------- RESOURCE CARDS ---------- */
+
+    .resource-grid {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card {
+        min-height: 250px;
+        padding: 30px 24px;
+        border-right: none;
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .resource-card:last-child {
+        border-bottom: none;
+    }
+
+    .resource-card:hover {
+        transform: none;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .education-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .education-intro h2 {
+        font-size: 36px;
+    }
+
+    .education-feature {
+        min-height: 240px;
+        padding: 35px 30px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contact-info h2 {
+        font-size: 36px;
+    }
+
+    .contact-info > p:not(.section-label) {
+        font-size: 16px;
+    }
+
+
+    /* ---------- CENTERED SECTIONS ---------- */
+
+    .centered-section h2 {
+        font-size: 36px;
+    }
+
+
+    /* ---------- COLLABORATION ---------- */
+
+    .collaboration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collaboration-card {
+        min-height: 260px;
+        border-right: none;
+        border-bottom: 1px solid #dce4e8;
+    }
+
+    .collaboration-card:last-child {
+        border-bottom: none;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-main {
+        padding: 50px 6% 40px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 15px 22px;
+    }
+
+    .footer-email {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .footer-bottom {
+        padding: 18px 6%;
+    }
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        height: 68px;
+    }
+
+    .logo-mark {
+        font-size: 22px;
+    }
+
+    .logo-text strong {
+        font-size: 9px;
+    }
+
+    .logo-text small {
+        font-size: 6px;
+    }
+
+
+    .section {
+        padding: 60px 6%;
     }
 
 
     /* HERO */
 
     .hero {
-        padding: 65px 5%;
+        min-height: 570px;
     }
 
     .hero h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
+        font-size: 42px;
+        letter-spacing: -1.7px;
     }
 
     .hero-description {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .button {
-        text-align: center;
-    }
-
-    .hero-visual {
-        height: 300px;
-    }
-
-    .visual-placeholder span {
-        font-size: 25px;
+        font-size: 15px;
     }
 
 
     /* PAGE HERO */
 
     .page-hero {
-        padding: 70px 5%;
+        padding: 60px 6%;
     }
 
     .page-hero h1 {
-        font-size: 45px;
+        font-size: 40px;
+    }
+
+    .page-hero-image {
+        height: 240px;
+    }
+
+    .page-hero.page-hero--text {
+        min-height: 360px;
+        padding: 60px 6%;
     }
 
 
-    /* PURPOSE */
+    /* MAP */
 
-    .mission {
-        padding-top: 80px;
-        padding-bottom: 80px;
+    .map-graphic {
+        height: 320px;
     }
 
-    .mission-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .proton-label {
+        min-width: 85px;
+        padding: 5px 7px;
     }
 
-    .mission-heading .section-label {
-        margin-bottom: 20px;
+    .proton-label-name {
+        font-size: 10px;
     }
 
-    .mission-heading h2 {
-        font-size: 34px;
-    }
-
-    .mission-description {
-        max-width: none;
-        padding-top: 0;
-    }
-
-    .mission-description p {
-        font-size: 17px;
+    .proton-label-city {
+        font-size: 9px;
     }
 
 
-    /* SECTION HEADINGS */
+    /* HEADINGS */
 
-    .section-heading {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
+    .feature-content h2,
+    .section-heading h2,
+    .regional-network-heading h2,
+    .two-column h2,
+    .education-intro h2,
+    .contact-info h2,
+    .centered-section h2 {
+        font-size: 32px;
     }
 
-    .section-heading h2 {
+
+    /* GOAL CARDS */
+
+    .goal-card {
+        min-height: 300px;
+    }
+
+
+    /* SYMPOSIUM */
+
+    .symposium-event h2 {
+        font-size: 30px;
+    }
+
+    .symposium-event {
+        padding: 30px 20px;
+    }
+
+
+    /* PAST EVENTS */
+
+    .past-event {
+        padding: 25px 20px;
+    }
+
+    .past-event-year strong {
         font-size: 40px;
     }
 
 
-    /* COMMON HEADINGS */
+    /* EDUCATION */
 
-    .feature-content h2,
-    .intro-text h2,
-    .symposium-intro h2,
-    .contact-info h2 {
-        font-size: 35px;
-    }
-
-
-    /* CENTER + CARD GRIDS */
-
-    .center-grid,
-    .goal-grid,
-    .resource-grid,
-    .collaboration-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .center-card,
-    .goal-card,
-    .resource-card,
-    .collaboration-card {
-        border-right: none !important;
-        border-bottom: 1px solid #dce4e8;
-    }
-
-    .center-card:last-child,
-    .goal-card:last-child,
-    .resource-card:last-child,
-    .collaboration-card:last-child {
-        border-bottom: none;
-    }
-
-
-    /* CENTER CARDS */
-
-    .center-card {
-        min-height: 230px;
-    }
-
-
-    /* OTHER PAGE COMPONENTS */
-
-    .large-center-card {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .symposium-event {
-        grid-template-columns: 1fr;
-        padding: 30px;
-    }
-
-    .date-box {
-        width: 130px;
-    }
-
-    .past-event {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .featured-news {
-        gap: 35px;
-    }
-
-    .news-image-placeholder {
-        min-height: 280px;
-    }
-
-    .featured-news-content h2 {
-        font-size: 35px;
-    }
-
-    .event-card {
-        padding: 30px;
-    }
-
-
-    /* CTA */
-
-    .cta {
-        padding: 80px 5%;
-    }
-
-    .cta h2 {
-        font-size: 38px;
+    .education-feature {
+        padding: 30px 25px;
     }
 
 
     /* FOOTER */
 
-    .footer-top {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 20px;
     }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-
-    /* CENTERS PAGE */
-
-    .centers-hero {
-        padding: 70px 5%;
-    }
-
-    .centers-hero h1 {
-        font-size: 58px;
-        letter-spacing: -3px;
-    }
-
-    .centers-intro-grid h2 {
-        font-size: 38px;
-    }
-
-    .region-map-section {
-        padding: 75px 5%;
-    }
-
-    .map-placeholder {
-        min-height: 330px;
-    }
-
-    .centers-section {
-        padding: 0 5%;
-    }
-
-    .featured-center {
-        padding: 70px 0;
-    }
-
-    .center-image,
-    .center-image img {
-        min-height: 280px;
-    }
-
-    .featured-center-content h2 {
-        font-size: 34px;
-    }
-
-    .centers-collaboration {
-        padding: 85px 5%;
-    }
-
-    .centers-collaboration h2 {
-        font-size: 40px;
-    }
-
-
-    /* ABOUT */
-
-    .mission-text p {
-        font-size: 18px;
-    }
-
 }
-```
