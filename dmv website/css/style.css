@@ -918,7 +918,7 @@ h2 {
     padding: 90px 7%;
     display: flex;
     align-items: center;
-    background: #d4cec4;
+    background: #1677a8;
 }
 
 .page-hero.page-hero--text .page-hero-content {
@@ -928,17 +928,17 @@ h2 {
 
 .page-hero.page-hero--text h1 {
     max-width: 1100px;
-    color: #172a3a;
+    color: #ffffff;
 }
 
 .page-hero.page-hero--text .eyebrow {
-    color: #5a4638;
+    color: #d8f0fa;
 }
 
 .page-hero.page-hero--text p:not(.eyebrow) {
     max-width: 950px;
     margin-top: 25px;
-    color: #4f626e;
+    color: #e8f5fa;
 }
 /* =====================================================
    TWO COLUMN
