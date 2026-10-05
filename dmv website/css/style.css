@@ -344,26 +344,40 @@ h2 {
     margin-top: 38px;
 }
 
+/* =====================================================
+   TEXT-ONLY PAGE HERO
+===================================================== */
+
 .page-hero--text {
-    min-height: 430px;
+    min-height: 470px;
     padding: 90px 7%;
 
     display: flex;
     align-items: center;
 
-    background: #d4cec4;
+    background: #1677a8;
 }
 
 .page-hero--text .page-hero-content {
-    max-width: 850px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.page-hero--text .eyebrow {
+    color: #d8f0fa;
 }
 
 .page-hero--text h1 {
-    max-width: 800px;
+    max-width: 950px;
+
+    color: #ffffff;
 }
 
-.page-hero--text > p {
-    max-width: 680px;
+.page-hero--text p:not(.eyebrow) {
+    max-width: 800px;
+    margin-top: 25px;
+
+    color: #e8f5fa;
 }
 /* =====================================================
    PURPOSE
