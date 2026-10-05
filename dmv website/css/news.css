@@ -1,0 +1,368 @@
+/* =====================================================
+   NEWS PAGE
+===================================================== */
+
+/* -----------------------------------------------------
+   HERO
+----------------------------------------------------- */
+
+.news-hero {
+    background: #d4cec4;
+}
+
+.news-hero .eyebrow {
+    color: #5a4638;
+}
+
+
+/* -----------------------------------------------------
+   NEWS SECTION
+----------------------------------------------------- */
+
+.news-section {
+    padding: 105px 7% 115px;
+    background: #f3f7f9;
+}
+
+.news-heading {
+    max-width: 1250px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 60px;
+}
+
+.news-heading h2 {
+    max-width: 650px;
+    margin-top: 12px;
+
+    font-size: clamp(34px, 3.4vw, 50px);
+    line-height: 1.08;
+    color: #172a3a;
+}
+
+.section-label {
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: #1677a8;
+}
+
+.news-updated {
+    margin: 0;
+    max-width: 260px;
+
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: right;
+
+    color: #60717d;
+}
+
+
+/* -----------------------------------------------------
+   FILTERS
+----------------------------------------------------- */
+
+.news-filters {
+    max-width: 1250px;
+    margin: 0 auto 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.news-filter {
+    border: 1px solid #cbd7dd;
+    border-radius: 999px;
+
+    padding: 9px 17px;
+
+    background: transparent;
+
+    font: inherit;
+    font-size: 13px;
+    color: #435765;
+
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.news-filter:hover,
+.news-filter.active {
+    border-color: #1677a8;
+    background: #1677a8;
+    color: #ffffff;
+}
+
+
+/* -----------------------------------------------------
+   GRID
+----------------------------------------------------- */
+
+.news-grid {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* -----------------------------------------------------
+   CARD
+----------------------------------------------------- */
+
+.news-card {
+    min-height: 345px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid #dce4e8;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 35px rgba(23, 42, 58, 0.08);
+}
+
+.news-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.news-category {
+    display: inline-block;
+
+    padding: 6px 9px;
+
+    background: #eaf5f9;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #1677a8;
+}
+
+.news-date {
+    padding-top: 5px;
+
+    font-size: 12px;
+    white-space: nowrap;
+
+    color: #73828b;
+}
+
+.news-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 23px;
+    line-height: 1.2;
+
+    color: #172a3a;
+}
+
+.news-card-summary {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #526570;
+}
+
+.news-card-footer {
+    margin-top: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e6ecef;
+}
+
+.news-source {
+    font-size: 12px;
+    font-weight: 600;
+    color: #647680;
+}
+
+.news-read {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+
+    color: #1677a8;
+}
+
+.news-read:hover {
+    text-decoration: underline;
+}
+
+
+/* -----------------------------------------------------
+   STATES
+----------------------------------------------------- */
+
+.news-loading {
+    grid-column: 1 / -1;
+
+    padding: 55px;
+
+    text-align: center;
+
+    color: #667985;
+}
+
+.news-empty {
+    max-width: 1250px;
+    margin: 30px auto 0;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid #dce4e8;
+
+    color: #667985;
+}
+
+
+/* -----------------------------------------------------
+   ABOUT THE FEED
+----------------------------------------------------- */
+
+.news-note {
+    padding: 105px 7%;
+
+    background: #ffffff;
+}
+
+.news-note-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.news-note h2 {
+    margin: 12px 0 22px;
+
+    font-size: clamp(32px, 3.2vw, 46px);
+    line-height: 1.1;
+
+    color: #172a3a;
+}
+
+.news-note p:not(.section-label) {
+    max-width: 760px;
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: #526570;
+}
+
+
+/* -----------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-heading {
+        align-items: start;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .news-section {
+        padding: 75px 7% 85px;
+    }
+
+    .news-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .news-updated {
+        margin-top: 18px;
+        text-align: left;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card {
+        min-height: 0;
+    }
+
+    .news-note {
+        padding: 75px 7%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .news-section {
+        padding: 60px 6% 70px;
+    }
+
+    .news-filter {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
+    .news-card {
+        padding: 24px;
+    }
+
+    .news-card h3 {
+        font-size: 21px;
+    }
+
+    .news-note {
+        padding: 60px 6%;
+    }
+
+}
