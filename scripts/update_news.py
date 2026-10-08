@@ -33,7 +33,7 @@ from google.genai import types
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_FILE = ROOT / "data" / "news.json"
 
-MODEL = os.getenv("GEMINI_NEWS_MODEL") or "gemini-3.8-flash"
+MODEL = os.getenv("GEMINI_NEWS_MODEL") or "gemini-3.1-flash-lite"
 
 MAX_STORIES = 18
 LOOKBACK_DAYS = 7
