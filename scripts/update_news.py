@@ -66,15 +66,15 @@ CATEGORIES = [
 RSS_FEEDS = [
     {
         "name": "NCI",
-        "url": "https://www.cancer.gov/rss/cancer-current-news.xml",
+        "url": "https://www.cancer.gov/news-events/press-releases/2026",
     },
     {
         "name": "NIH Research Matters",
-        "url": "https://www.nih.gov/news-events/nih-research-matters/feed",
+        "url": "https://www.nih.gov/news-events/nih-research-matters/",
     },
     {
         "name": "ASTRO",
-        "url": "https://www.astro.org/rss",
+        "url": "https://www.astro.org/news-and-publications/news-and-media-center/news-releases",
     },
 ]
 
