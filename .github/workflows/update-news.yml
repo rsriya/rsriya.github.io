@@ -32,8 +32,7 @@ jobs:
 
       - name: Update news feed
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_NEWS_MODEL: ${{ vars.OPENAI_NEWS_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python scripts/update_news.py
 
