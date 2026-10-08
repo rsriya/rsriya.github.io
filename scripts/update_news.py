@@ -70,7 +70,7 @@ RSS_FEEDS = [
     },
     {
         "name": "NIH Research Matters",
-        "url": "https://www.nih.gov/news-events/nih-research-matters/",
+        "url": "https://www.nih.gov/nih-research-matters/feed.xml",
     },
     {
         "name": "ASTRO",
