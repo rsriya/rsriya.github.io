@@ -86,14 +86,11 @@ SCHEMA = {
                     "published_date",
                     "url",
                 ],
-                "additionalProperties": False,
             },
         }
     },
     "required": ["articles"],
-    "additionalProperties": False,
 }
-
 
 def load_existing() -> dict:
     """Load the existing news feed."""
@@ -307,7 +304,7 @@ def fetch_new_articles(
                 )
             ],
             response_mime_type="application/json",
-            response_schema=SCHEMA,
+            response_json_schema=SCHEMA,
         ),
     )
 
