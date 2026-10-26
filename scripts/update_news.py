@@ -70,7 +70,15 @@ RSS_FEEDS = [
     },
     {
         "name": "PubMed Proton Therapy",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM/?limit=15&utm_campaign=pubmed-2&fc=20261026170100"
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM/?limit=100&utm_campaign=pubmed-2&fc=20261026170100"
+    },
+    {
+        "name": "PubMed Medical Physics",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen/?limit=100&utm_campaign=pubmed-2&fc=20261026171808"
+    },
+    {
+        "name": "PubMed AI",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv/?limit=100&utm_campaign=pubmed-2&fc=20261026171942"
     },
 ]
 
