@@ -1,6 +1,42 @@
 {
-  "updated_at": "2026-10-26T20:56:27.932923+00:00",
+  "updated_at": "2026-10-26T21:08:34.025388+00:00",
   "articles": [
+    {
+      "title": "DoseRAD2026: A benchmark dataset for AI-accelerated photon and proton dose calculation in radiotherapy",
+      "summary": "This article introduces the DoseRAD2026 benchmark dataset designed to support research in fast and accurate dose calculation for both CT and MRI-guided radiotherapy. The dataset aims to facilitate the development of AI-driven solutions for real-time adaptive treatment planning.",
+      "category": "AI & Imaging",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42928698/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42928698/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "ESTRO-EPTN guidelines for independent dose calculation and log file-based patient-specific quality assurance in scanned particle therapy",
+      "summary": "The European Society for Radiotherapy and Oncology (ESTRO) and the European Particle Therapy Network (EPTN) have released new guidelines for independent dose calculation and log file-based quality assurance in particle therapy. These recommendations are intended to standardize safety protocols across centers while maintaining rigorous machine QA standards.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-24",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42921085/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42921085/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Spot-wise compensation of proton beam deflection and radiation field deformation in the transverse magnetic field of an in-beam MR scanner",
+      "summary": "Researchers have developed and validated a spot-wise compensation method for proton beam deflection and radiation field deformation caused by the magnetic field in MR-integrated proton therapy. This work provides a critical step toward the clinical implementation of high-precision image-guided particle therapy.",
+      "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42913708/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42913708/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Five-Year Persistent 18F-FAPI-74 Uptake in Radiation-induced Hepatic Fibrosis Following Proton Beam Therapy for Hepatocellular Carcinoma",
+      "summary": "A case report highlights the use of 18F-FAPI-74 PET in identifying persistent fibroblast activation in radiation-induced hepatic fibrosis five years after proton beam therapy. This finding suggests potential long-term imaging biomarkers for evaluating tissue changes following particle irradiation.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42912573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42912573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
     {
       "id": "cancernetwork-impt-prostate-2026-10-05",
       "title": "Prioritizing Proton Therapy for Pelvic Nodal Irradiation in Prostate Cancer",
