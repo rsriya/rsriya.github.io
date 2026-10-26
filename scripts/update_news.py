@@ -259,15 +259,16 @@ def fetch_rss_articles() -> list[dict]:
         )
 
         try:
-            feed = feedparser.parse(
-                feed_info["url"]
-            )
-        except Exception as exc:
-            print(
-                f"WARNING: Could not read "
-                f"{feed_info['name']}: {exc}",
-                file=sys.stderr,
-            )
+            response = requests.get(url, timeout=20)
+            response.raise_for_status()
+    
+            feed = feedparser.parse(response.content)
+    
+            if not feed.entries:
+                print(f"WARNING: No entries found in {url}")
+    
+        except requests.RequestException as e:
+            print(f"WARNING: Could not access {url}: {e}")
             continue
 
         if getattr(feed, "bozo", False):
