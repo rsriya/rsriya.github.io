@@ -2,7 +2,7 @@
    NEWS FEED
 ===================================================== */
 
-const NEWS_DATA_URL = "data/news.json";
+const NEWS_DATA_URL = "../data/news.json";
 
 const newsGrid = document.getElementById("news-grid");
 const newsEmpty = document.getElementById("news-empty");
