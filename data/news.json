@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:08:34.025388+00:00",
+  "updated_at": "2026-10-26T21:23:03.661226+00:00",
   "articles": [
     {
       "title": "DoseRAD2026: A benchmark dataset for AI-accelerated photon and proton dose calculation in radiotherapy",
@@ -11,6 +11,42 @@
       "id": "pubmed.ncbi.nlm.nih.gov/42928698/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     },
     {
+      "title": "Dose-Informed Surgical Margin in Mandibular Osteoradionecrosis Surgery: Integrating Radiation Biology into Osteotomy Planning",
+      "summary": "This study explores moving beyond anatomical landmarks by integrating radiation biology into surgical planning for mandibular osteoradionecrosis. The researchers aim to improve outcomes for head and neck radiotherapy patients through more biologically informed surgical margins.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42930379/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42930379/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Diagnostic CT-Based Palliative Radiotherapy Using kV Image Verification: A Prospective Feasibility Study",
+      "summary": "This feasibility study investigates the use of existing diagnostic CT scans for palliative radiotherapy planning instead of dedicated simulation CTs. The workflow, utilizing kV image verification, aims to increase access and efficiency for patients with bone metastases.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "A novel automatic real-time motion tracking method in MRI-guided radiotherapy",
+      "summary": "Researchers have developed an automatic real-time markerless motion tracking method for MRI-guided radiotherapy (MRIgRT). The study demonstrates high precision in tracking and segmentation, suggesting significant potential for improving radiotherapy efficacy.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261026172258&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
+    },
+    {
+      "title": "Feasibility of Urethra-Sparing Ultra-Hypofractionated Three-Dose-Level Radiotherapy for Prostate Cancer",
+      "summary": "This planning study evaluates a three-dose-level ultra-hypofractionated approach for prostate cancer patients where a lesion is close to the urethra. Results indicate that target coverage can be maintained while adhering to strict organ-at-risk constraints.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42927354/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42927354/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
       "title": "ESTRO-EPTN guidelines for independent dose calculation and log file-based patient-specific quality assurance in scanned particle therapy",
       "summary": "The European Society for Radiotherapy and Oncology (ESTRO) and the European Particle Therapy Network (EPTN) have released new guidelines for independent dose calculation and log file-based quality assurance in particle therapy. These recommendations are intended to standardize safety protocols across centers while maintaining rigorous machine QA standards.",
       "category": "Proton Therapy",
@@ -18,6 +54,15 @@
       "published_date": "2026-10-24",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42921085/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42921085/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Automated offline adaptive radiotherapy through CBCT imaging: A multidimensional feasibility study",
+      "summary": "This study assesses the performance of a new imaging system for offline adaptive radiotherapy workflow processes. While contouring remains a challenge, the system demonstrates sufficient accuracy in dose calculation and tissue density representation to support clinical adaptive efforts.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-24",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42922064/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42922064/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     },
     {
       "title": "Spot-wise compensation of proton beam deflection and radiation field deformation in the transverse magnetic field of an in-beam MR scanner",
