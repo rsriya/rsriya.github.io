@@ -260,7 +260,7 @@ def fetch_rss_articles() -> list[dict]:
         )
 
         try:
-            response = requests.get(url, timeout=20)
+            response = requests.get(feed_info['url'], timeout=20)
             response.raise_for_status()
     
             feed = feedparser.parse(response.content)
