@@ -68,6 +68,10 @@ RSS_FEEDS = [
         "name": "NCI Cancer Currents",
         "url": "https://www.cancer.gov/publishedcontent/rss/news-events/cancer-currents-blog.rss",
     },
+    {
+        "name": "PubMed Proton Therapy",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/rss/search/1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM/?limit=15&utm_campaign=pubmed-2&fc=20261026170100"
+    },
 ]
 
 LOOKBACK_DAYS = 30
