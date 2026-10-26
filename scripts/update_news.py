@@ -64,19 +64,12 @@ CATEGORIES = [
 #
 RSS_FEEDS = [
     {
-        "name": "NCI",
-        "url": "https://www.cancer.gov/news-events/press-releases/2026",
-    },
-    {
-        "name": "NIH Research Matters",
-        "url": "https://www.nih.gov/nih-research-matters/feed.xml",
-    },
-    {
-        "name": "ASTRO",
-        "url": "https://www.astro.org/news-and-publications/news-and-media-center/news-releases",
+        "name": "NCI Cancer Currents",
+        "url": "https://www.cancer.gov/publishedcontent/rss/news-events/cancer-currents-blog.rss",
     },
 ]
 
+LOOKBACK_DAYS = 30
 
 # ---------------------------------------------------------------------
 # GEMINI STRUCTURED OUTPUT
