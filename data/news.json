@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-10-26T21:23:03.661226+00:00",
+  "updated_at": "2026-10-27T10:36:32.790657+00:00",
   "articles": [
+    {
+      "title": "Impact of anatomical changes on simulated proton arc therapy and intensity-modulated proton therapy for lung cancer",
+      "summary": "This study demonstrates that simulated proton arc therapy (sPAT) provides superior robustness compared to intensity-modulated proton therapy (IMPT) when addressing inter-fractional anatomical changes in lung cancer patients. The findings highlight potential advantages for treatment planning in lung tumor sites prone to motion.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934945/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027063622&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42934945/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Assessment of Radiation Dose and Volume Changes in the Masticatory Apparatus and their Clinical Correlation with Trismus in Oral Cavity Cancer Patients",
+      "summary": "Researchers analyzed the correlation between radiation dose, muscle atrophy, and trismus in oral cavity cancer patients. The study suggests that incorporating masticatory muscle sparing into radiation treatment planning is crucial to reducing long-term functional morbidity.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42935071/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027063624&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42935071/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
     {
       "title": "DoseRAD2026: A benchmark dataset for AI-accelerated photon and proton dose calculation in radiotherapy",
       "summary": "This article introduces the DoseRAD2026 benchmark dataset designed to support research in fast and accurate dose calculation for both CT and MRI-guided radiotherapy. The dataset aims to facilitate the development of AI-driven solutions for real-time adaptive treatment planning.",
@@ -36,6 +54,42 @@
       "published_date": "2026-10-26",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261026172258&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
+    },
+    {
+      "title": "Curative-intent management of de novo metastatic nasopharyngeal carcinoma: an evidence-based consensus guideline from the International Collaborating Oncology Organisations",
+      "summary": "An international panel of 54 experts developed consensus guidelines for managing de novo metastatic nasopharyngeal carcinoma, highlighting the shift toward curative-intent protocols. The recommendations integrate modern systemic therapy with targeted local radiation strategies to improve long-term survival outcomes.",
+      "category": "Research",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933448/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027063622&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42933448/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Preclinical highlights from the 64th Annual Meeting of the Particle Therapy Co-Operative Group (PTCOG 64)",
+      "summary": "This summary of PTCOG 64 highlights a shift in particle therapy toward integrating advanced imaging, biological modeling, and patient-specific decision support. Experts identified digital twins and biologically optimized multi-ion therapy as key innovations for the next generation of precision treatment.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933259/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027063622&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42933259/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Charge collection efficiency in air-vented plane-parallel ionisation chambers at ultra-high dose rates",
+      "summary": "This study develops a Monte Carlo framework to investigate ion recombination and space-charge effects in ionization chambers during FLASH radiotherapy. The work provides essential modeling data for ensuring accurate dosimetry in ultra-high dose rate environments.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933125/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027063624&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42933125/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Clinical and Geometric Evaluation of Artificial Intelligence-based Organ at Risk Auto-contouring for Post-operative Oral Tongue Cancer Radiotherapy",
+      "summary": "Research into AI-based organ-at-risk segmentation for oral tongue cancer shows high geometric accuracy and significant workflow efficiency improvements. While auto-contouring maintains dosimetric integrity for most organs, the study emphasizes the necessity of manual verification for serial structures like the spinal cord.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934040/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261027063627&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42934040/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
     },
     {
       "title": "Feasibility of Urethra-Sparing Ultra-Hypofractionated Three-Dose-Level Radiotherapy for Prostate Cancer",
