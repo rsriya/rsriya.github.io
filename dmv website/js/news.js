@@ -108,6 +108,19 @@ function renderCards(stories) {
         .join("");
 }
 
+function storyType(story) {
+    // Explicit classification takes precedence.
+    if (story.content_type === "paper" ||
+        story.content_type === "news") {
+        return story.content_type;
+    }
+
+    // Backward compatibility with existing news.json.
+    return /pubmed/i.test(story.source || "")
+        ? "paper"
+        : "news";
+}
+
 function renderNews() {
     const filteredStories = activeCategory === "All"
         ? allStories
