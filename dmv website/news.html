@@ -104,19 +104,43 @@
             </div>
 
 
-            <div
-                class="news-grid"
-                id="news-grid"
-                aria-live="polite"
-            >
-                <div class="news-loading">
-                    Loading the latest news...
-                </div>
-            </div>
-
-
-            <div class="news-empty" id="news-empty" hidden>
-                No stories are currently available in this category.
+            
+            <div class="news-groups">
+            
+                <section class="news-group" aria-labelledby="research-heading">
+                    <div class="news-group-heading">
+                        <p class="section-label">RESEARCH &amp; PUBLICATIONS</p>
+                        <h3 id="research-heading">Latest Research &amp; Publications</h3>
+                        <p>Newly published studies in proton therapy, medical physics,
+                           radiation oncology, and related technologies.</p>
+                    </div>
+            
+                    <div class="news-grid" id="research-grid" aria-live="polite">
+                        <div class="news-loading">Loading research publications...</div>
+                    </div>
+            
+                    <div class="news-empty" id="research-empty" hidden>
+                        No papers are available in this category.
+                    </div>
+                </section>
+            
+                <section class="news-group" aria-labelledby="developments-heading">
+                    <div class="news-group-heading">
+                        <p class="section-label">NEWS &amp; DEVELOPMENTS</p>
+                        <h3 id="developments-heading">Latest News &amp; Developments</h3>
+                        <p>Clinical milestones, proton center openings, technology
+                           updates, and professional announcements.</p>
+                    </div>
+            
+                    <div class="news-grid" id="developments-grid" aria-live="polite">
+                        <div class="news-loading">Loading news updates...</div>
+                    </div>
+            
+                    <div class="news-empty" id="developments-empty" hidden>
+                        No news updates are available in this category.
+                    </div>
+                </section>
+            
             </div>
 
         </section>
