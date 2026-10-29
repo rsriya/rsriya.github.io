@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T19:59:52.375274+00:00",
+  "updated_at": "2026-10-29T20:17:35.706915+00:00",
   "articles": [
     {
       "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
@@ -27,6 +27,24 @@
       "published_date": "2026-10-28",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42949277/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261028222758&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42949277/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
+    },
+    {
+      "title": "Daily Multi-Leaf Collimator positional error prediction using machine learning",
+      "summary": "Researchers developed a machine learning model using LightGBM to predict multi-leaf collimator (MLC) positional errors. This approach offers a potentially efficient tool for patient-specific quality assurance in intensity-modulated radiotherapy.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42947351/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261029161711&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42947351/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
+    },
+    {
+      "title": "Quantitative assessment of deformable image registration accuracy for cumulative dose estimation in multi-site stereotactic re-irradiation",
+      "summary": "This study evaluates the accuracy of deformable image registration for tracking cumulative radiation doses in re-irradiation scenarios. The findings support the integration of validated registration tools with biological dose modeling to enhance safety and precision in complex treatment workflows.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42947123/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029161709&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42947123/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     },
     {
       "title": "Impact of anatomical changes on simulated proton arc therapy and intensity-modulated proton therapy for lung cancer",
@@ -137,31 +155,13 @@
       "id": "pubmed.ncbi.nlm.nih.gov/42945740/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     },
     {
-      "title": "DoseRAD2026: A benchmark dataset for AI-accelerated photon and proton dose calculation in radiotherapy",
-      "summary": "This article introduces the DoseRAD2026 benchmark dataset designed to support research in fast and accurate dose calculation for both CT and MRI-guided radiotherapy. The dataset aims to facilitate the development of AI-driven solutions for real-time adaptive treatment planning.",
-      "category": "AI & Imaging",
+      "title": "Differences in Biological Responses to Ultra-high Dose Rate Proton Irradiation Between Entrance and SOBP Regions In Vitro",
+      "summary": "This study examines the biological impact of ultra-high dose rate proton irradiation at different depths. Researchers observed dose-rate-dependent survival differences in the entrance region, suggesting that the radiobiological effects of FLASH proton therapy may vary based on the irradiation depth.",
+      "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42928698/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261026170815&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42928698/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
-    },
-    {
-      "title": "Dose-Informed Surgical Margin in Mandibular Osteoradionecrosis Surgery: Integrating Radiation Biology into Osteotomy Planning",
-      "summary": "This study explores moving beyond anatomical landmarks by integrating radiation biology into surgical planning for mandibular osteoradionecrosis. The researchers aim to improve outcomes for head and neck radiotherapy patients through more biologically informed surgical margins.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42930379/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42930379/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "Diagnostic CT-Based Palliative Radiotherapy Using kV Image Verification: A Prospective Feasibility Study",
-      "summary": "This feasibility study investigates the use of existing diagnostic CT scans for palliative radiotherapy planning instead of dedicated simulation CTs. The workflow, utilizing kV image verification, aims to increase access and efficiency for patients with bone metastases.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+      "published_date": "2026-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42946440/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029161707&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42946440/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     }
   ]
 }
