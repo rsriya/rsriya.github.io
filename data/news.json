@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:49:08.318125+00:00",
+  "updated_at": "2026-10-29T23:20:35.088650+00:00",
   "articles": [
     {
       "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
@@ -27,6 +27,15 @@
       "published_date": "2026-10-29",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029174900&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Yttrium-90 Radioembolization for Hepatocellular Carcinoma: Clinical Evidence, Evolving Indications, and Research-Frontier Mapping",
+      "summary": "This review summarizes the clinical role of Yttrium-90 radioembolization in treating hepatocellular carcinoma. It highlights evidence supporting personalized dosimetry and the therapy's expanding utility as a locoregional treatment and potential partner for systemic therapy.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029192027&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     },
     {
       "title": "Linac performance benchmarking: Feasibility of a web-based tool for comparison of local machine performance check (MPC) results with the global community",
@@ -63,6 +72,24 @@
       "published_date": "2026-10-28",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42947123/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029161709&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42947123/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Fine-mapping of microbeam radiation therapy-induced DNA damage in 2D cell and 3D epidermis models",
+      "summary": "Researchers utilized CBMN-based biological dosimetry and 3D tissue models to map DNA damage patterns in microbeam radiation therapy. The findings offer insights into persistent complex damage in peak regions and transient bystander effects in valley regions of the dose distribution.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42947151/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029192027&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42947151/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Patient selection strategies for deep inspiration breath-hold in left-sided breast cancer: a review of current evidence and future directions",
+      "summary": "This review discusses the clinical application of the deep inspiration breath-hold (DIBH) technique for left-sided breast cancer patients. It examines the efficacy of the technique in reducing heart and coronary artery radiation exposure while noting the resource-intensive challenges associated with implementation.",
+      "category": "Radiation Oncology",
+      "source": "PubMed AI",
+      "published_date": "2026-10-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42948033/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261029192029&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42948033/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
     },
     {
       "title": "Impact of anatomical changes on simulated proton arc therapy and intensity-modulated proton therapy for lung cancer",
@@ -135,33 +162,6 @@
       "published_date": "2026-10-27",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42940059/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261027124104&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42940059/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
-    },
-    {
-      "title": "Scintillating Micro-Probe Detectors for Conventional and FLASH Proton Dosimetry",
-      "summary": "This article discusses the characterization of optical fiber-based inorganic scintillating detectors for use in proton beams. The research addresses challenges in modeling optical transport and geometry for high-flux and FLASH delivery conditions.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42939044/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027172054&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42939044/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "A cascade deep learning network for simultaneous prediction of dose and linear energy transfer in proton therapy of prostate cancer",
-      "summary": "This research introduces a deep learning framework designed to predict both dose and dose-averaged linear energy transfer (LETd) distributions for prostate proton therapy. The model aims to support LET-aware treatment planning and evaluation in clinical practice.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42945684/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261028222755&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42945684/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
-    },
-    {
-      "title": "Skill mix redesign in Italian radiation oncology: A technical note on advanced practice radiation therapists",
-      "summary": "This technical note discusses the implementation of Advanced Practice Radiation Therapists (APRTs) in Italy. It argues that such roles serve as a strategic workforce management tool to support medical decision-making and improve departmental workflow resilience.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42946635/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261028222756&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42946635/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     }
   ]
 }
