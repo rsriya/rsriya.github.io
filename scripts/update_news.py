@@ -87,7 +87,7 @@ RSS_FEEDS = [
 ]
 
 LOOKBACK_DAYS = 30
-
+NEWS_LOOKBACK_DAYS = 90
 # ---------------------------------------------------------------------
 # GEMINI STRUCTURED OUTPUT
 # ---------------------------------------------------------------------
@@ -262,10 +262,6 @@ def parse_entry_date(entry) -> datetime | None:
 def fetch_rss_articles() -> list[dict]:
     """Fetch recent articles from all configured RSS feeds."""
 
-    cutoff = datetime.now(timezone.utc) - timedelta(
-        days=LOOKBACK_DAYS
-    )
-
     candidates = []
 
     for feed_info in RSS_FEEDS:
@@ -305,7 +301,20 @@ def fetch_rss_articles() -> list[dict]:
                 f"{feed_info['name']}",
                 file=sys.stderr,
             )
-
+        is_news_source = feed_info["name"] in {
+            "NAPT News",
+            "NCI Cancer Currents",
+        }
+        
+        lookback = (
+            NEWS_LOOKBACK_DAYS
+            if is_news_source
+            else LOOKBACK_DAYS
+        )
+        
+        cutoff = datetime.now(timezone.utc) - timedelta(
+            days=lookback
+        )
         for entry in feed.entries:
 
             title = (
