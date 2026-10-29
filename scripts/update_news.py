@@ -462,9 +462,14 @@ RSS feeds.
 Your task is to select ONLY genuinely useful articles for the
 organization's professional audience.
 
-The articles were collected from:
-{cutoff.isoformat()} onward.
+RECENCY REQUIREMENTS
 
+- Scientific publications: last 30 days.
+- Industry news and organizational announcements: last 90 days.
+- Articles have already passed the appropriate date filter.
+- Do not reject an eligible article solely because it is older
+  than 30 days.
+  
 Return 0 to 6 selected articles.
 
 PRIORITY TOPICS
@@ -480,7 +485,22 @@ PRIORITY TOPICS
 7. Major professional, clinical, regulatory, technology, or research
    developments involving proton therapy
 8. Important developments in Washington DC, Maryland, or Virginia
+9. Proton therapy reimbursement, Medicare and Medicaid policy,
+   insurance coverage, healthcare regulations, and patient access.
+10. Proton center openings, first-patient treatments,
+    expansions, closures, and financial sustainability.
 
+EDITORIAL GUIDANCE
+
+- Include important proton therapy policy and reimbursement
+  developments even when published by advocacy organizations.
+- Distinguish factual policy developments from advocacy opinions.
+- Summarize proposed regulations as proposals, not final decisions.
+- Do not exclude a significant policy story merely because the
+  source is an advocacy organization.
+- Avoid publishing multiple articles covering substantially
+  the same policy development.
+  
 DO NOT SELECT
 
 - Generic cancer stories without meaningful radiation relevance
