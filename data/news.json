@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T20:17:35.706915+00:00",
+  "updated_at": "2026-10-29T21:49:08.318125+00:00",
   "articles": [
     {
       "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
@@ -9,6 +9,24 @@
       "published_date": "2026-10-29",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029155942&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "When toxicity limits cure: Repositioning radiation in esophageal and rectal cancers by proton therapy",
+      "summary": "This article highlights the clinical potential of proton therapy to reduce radiation-induced toxicity to critical organs in esophageal and rectal cancer treatments. It explores how leveraging proton beam physics can improve patient quality of life and outcomes compared to conventional radiotherapy.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42955957/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029174859&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42955957/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Is full re-optimization necessary in adaptive radiotherapy for head and neck cancer? A systematic review",
+      "summary": "A systematic review evaluates the necessity of full re-optimization during adaptive radiotherapy for head and neck cancer. The study synthesizes current evidence on dosimetric and clinical outcomes to help determine optimal adaptive workflows.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029174900&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     },
     {
       "title": "Linac performance benchmarking: Feasibility of a web-based tool for comparison of local machine performance check (MPC) results with the global community",
@@ -144,24 +162,6 @@
       "published_date": "2026-10-27",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42946635/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261028222756&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42946635/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "Radiation-induced brain necrosis among patients with nasopharyngeal cancer treated with proton vs photon radiotherapy",
-      "summary": "A study comparing the incidence of radiation-induced brain necrosis in nasopharyngeal carcinoma patients treated with proton versus photon therapy. Findings indicated no statistically significant difference in necrosis risk or survival outcomes between the two modalities.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42945740/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029155942&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42945740/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
-    },
-    {
-      "title": "Differences in Biological Responses to Ultra-high Dose Rate Proton Irradiation Between Entrance and SOBP Regions In Vitro",
-      "summary": "This study examines the biological impact of ultra-high dose rate proton irradiation at different depths. Researchers observed dose-rate-dependent survival differences in the entrance region, suggesting that the radiobiological effects of FLASH proton therapy may vary based on the irradiation depth.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42946440/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029161707&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42946440/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     }
   ]
 }
