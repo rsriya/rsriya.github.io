@@ -423,6 +423,7 @@ def fetch_rss_articles() -> list[dict]:
 def build_prompt(
     candidates: list[dict],
     existing_articles: list[dict],
+    editorial_type: str = "research",
 ) -> str:
     """Build the Gemini article-selection prompt."""
 
@@ -446,7 +447,39 @@ def build_prompt(
         indent=2,
         ensure_ascii=False,
     )
-
+    if editorial_type == "news":
+        editorial_instructions = """
+    You are selecting INDUSTRY NEWS, not scientific papers.
+    
+    Prioritize:
+    - New proton therapy centers beginning patient treatments.
+    - Proton center openings, expansions, and closures.
+    - Medicare reimbursement and insurance coverage changes.
+    - Healthcare policy affecting proton therapy access.
+    - Important professional and technology announcements.
+    - Regional proton therapy developments.
+    
+    IMPORTANT:
+    A significant Medicare reimbursement proposal affecting proton
+    therapy centers is relevant professional news.
+    
+    Do not reject an article merely because it comes from an
+    advocacy organization. Evaluate the factual development and
+    distinguish reported facts from opinions.
+    
+    Avoid redundant coverage of the same development.
+    Return 0 to 4 relevant news articles.
+    """
+    else:
+        editorial_instructions = """
+    You are selecting SCIENTIFIC RESEARCH PUBLICATIONS.
+    
+    Prioritize important advances in proton therapy,
+    radiation oncology, medical physics, treatment planning,
+    dosimetry, and relevant AI applications.
+    
+    Return 0 to 6 relevant research articles.
+    """
     return f"""
 You are the news editor for the DMV Proton Therapy Collaborative.
 
@@ -464,13 +497,11 @@ organization's professional audience.
 
 RECENCY REQUIREMENTS
 
-- Scientific publications: last 30 days.
-- Industry news and organizational announcements: last 90 days.
-- Articles have already passed the appropriate date filter.
-- Do not reject an eligible article solely because it is older
-  than 30 days.
-  
-Return 0 to 6 selected articles.
+Research publications have a 30-day lookback.
+Industry news has a 90-day lookback.
+Candidates have already passed the appropriate date filters. 
+
+{editorial_instructions}
 
 PRIORITY TOPICS
 
@@ -567,6 +598,7 @@ def select_articles_with_gemini(
     client: genai.Client,
     candidates: list[dict],
     existing_articles: list[dict],
+    editorial_type: str = "research",
 ) -> list[dict]:
     """Ask Gemini to select and summarize relevant RSS articles."""
 
@@ -578,6 +610,7 @@ def select_articles_with_gemini(
         contents=build_prompt(
             candidates,
             existing_articles,
+            editorial_type,
         ),
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
@@ -726,11 +759,52 @@ def main() -> int:
         f"using model: {MODEL}"
     )
 
-    new_articles = select_articles_with_gemini(
+    news_sources = {
+        "NAPT News",
+        "NCI Cancer Currents",
+    }
+    
+    news_candidates = [
+        article for article in candidates
+        if article["source"] in news_sources
+    ]
+    
+    research_candidates = [
+        article for article in candidates
+        if article["source"] not in news_sources
+    ]
+    
+    print(f"\nEvaluating {len(news_candidates)} news articles...")
+    
+    selected_news = select_articles_with_gemini(
         client,
-        candidates,
+        news_candidates,
         existing_articles,
+        editorial_type="news",
     )
+    
+    print(f"Gemini selected {len(selected_news)} news articles.")
+    
+    for article in selected_news:
+        print(f"  [NEWS] {article['title']}")
+    
+    
+    print(f"\nEvaluating {len(research_candidates)} research papers...")
+    
+    selected_research = select_articles_with_gemini(
+        client,
+        research_candidates,
+        existing_articles,
+        editorial_type="research",
+    )
+
+print(f"Gemini selected {len(selected_research)} research papers.")
+
+for article in selected_research:
+    print(f"  [RESEARCH] {article['title']}")
+
+
+new_articles = selected_news + selected_research
 
     print(
         f"Gemini selected "
