@@ -4,8 +4,12 @@
 
 const NEWS_DATA_URL = "../data/news.json";
 
-const newsGrid = document.getElementById("news-grid");
-const newsEmpty = document.getElementById("news-empty");
+const researchGrid = document.getElementById("research-grid");
+const researchEmpty = document.getElementById("research-empty");
+
+const developmentsGrid = document.getElementById("developments-grid");
+const developmentsEmpty = document.getElementById("developments-empty");
+
 const newsUpdated = document.getElementById("news-updated");
 const filterButtons = document.querySelectorAll(".news-filter");
 
@@ -47,27 +51,9 @@ function formatDate(dateString) {
 /* -----------------------------------------------------
    RENDER
 ----------------------------------------------------- */
-
-function renderNews() {
-
-    const filteredStories =
-        activeCategory === "All"
-            ? allStories
-            : allStories.filter(
-                story => story.category === activeCategory
-            );
-
-    if (!filteredStories.length) {
-        newsGrid.innerHTML = "";
-        newsEmpty.hidden = false;
-        return;
-    }
-
-    newsEmpty.hidden = true;
-
-    newsGrid.innerHTML = filteredStories
+function renderCards(stories) {
+    return stories
         .map(story => {
-
             const title = escapeHTML(story.title);
             const summary = escapeHTML(story.summary);
             const source = escapeHTML(story.source);
@@ -122,6 +108,27 @@ function renderNews() {
         .join("");
 }
 
+function renderNews() {
+    const filteredStories = activeCategory === "All"
+        ? allStories
+        : allStories.filter(
+            story => story.category === activeCategory
+        );
+
+    const papers = filteredStories.filter(
+        story => storyType(story) === "paper"
+    );
+
+    const developments = filteredStories.filter(
+        story => storyType(story) === "news"
+    );
+
+    researchGrid.innerHTML = renderCards(papers);
+    researchEmpty.hidden = papers.length > 0;
+
+    developmentsGrid.innerHTML = renderCards(developments);
+    developmentsEmpty.hidden = developments.length > 0;
+}
 
 /* -----------------------------------------------------
    LOAD
@@ -165,16 +172,16 @@ async function loadNews() {
 
     } catch (error) {
 
-        console.error(error);
+      const unavailable =
+          '<div class="news-loading">News is temporarily unavailable.</div>';
+      
+      researchGrid.innerHTML = unavailable;
+      developmentsGrid.innerHTML = unavailable;
+      
+      researchEmpty.hidden = true;
+      developmentsEmpty.hidden = true;
+      newsUpdated.textContent = "";
 
-        newsGrid.innerHTML = `
-            <div class="news-loading">
-                News is temporarily unavailable.
-                Please check back soon.
-            </div>
-        `;
-
-        newsUpdated.textContent = "";
     }
 }
 
