@@ -294,6 +294,54 @@
 }
 
 
+/* =====================================================
+   RESEARCH AND NEWS GROUPS
+===================================================== */
+
+.news-groups {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 85px;
+}
+
+.news-group-heading {
+    margin-bottom: 30px;
+}
+
+.news-group-heading h3 {
+    margin: 10px 0 12px;
+
+    font-size: clamp(27px, 2.8vw, 38px);
+    line-height: 1.15;
+
+    color: #172a3a;
+}
+
+.news-group-heading > p:last-child {
+    max-width: 760px;
+
+    font-size: 15px;
+    line-height: 1.65;
+    color: #526570;
+}
+
+.news-group + .news-group {
+    border-top: 1px solid #dce4e8;
+    padding-top: 75px;
+}
+
+@media (max-width: 768px) {
+    .news-groups {
+        gap: 55px;
+    }
+
+    .news-group + .news-group {
+        padding-top: 55px;
+    }
+}
+
 /* -----------------------------------------------------
    RESPONSIVE
 ----------------------------------------------------- */
