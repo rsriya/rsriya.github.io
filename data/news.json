@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-10-29T02:28:04.584270+00:00",
+  "updated_at": "2026-10-29T19:59:52.375274+00:00",
   "articles": [
+    {
+      "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
+      "summary": "This study explores the use of multipole permanent magnets within a proton pencil beam scanning nozzle to reduce spot size. The proposed design facilitates the creation of modulated beams and proton minibeams for potential clinical or preclinical use.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029155942&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
     {
       "title": "Linac performance benchmarking: Feasibility of a web-based tool for comparison of local machine performance check (MPC) results with the global community",
       "summary": "This study demonstrates the feasibility of a web-based tool for benchmarking linear accelerator performance against a global database. The tool allows clinics to identify machine trends and may assist under-resourced centers in maintaining safe and accurate radiotherapy delivery.",
@@ -119,6 +128,15 @@
       "id": "pubmed.ncbi.nlm.nih.gov/42946635/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
     },
     {
+      "title": "Radiation-induced brain necrosis among patients with nasopharyngeal cancer treated with proton vs photon radiotherapy",
+      "summary": "A study comparing the incidence of radiation-induced brain necrosis in nasopharyngeal carcinoma patients treated with proton versus photon therapy. Findings indicated no statistically significant difference in necrosis risk or survival outcomes between the two modalities.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42945740/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029155942&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42945740/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
       "title": "DoseRAD2026: A benchmark dataset for AI-accelerated photon and proton dose calculation in radiotherapy",
       "summary": "This article introduces the DoseRAD2026 benchmark dataset designed to support research in fast and accurate dose calculation for both CT and MRI-guided radiotherapy. The dataset aims to facilitate the development of AI-driven solutions for real-time adaptive treatment planning.",
       "category": "AI & Imaging",
@@ -144,24 +162,6 @@
       "published_date": "2026-10-26",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261026172256&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42930144/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "A novel automatic real-time motion tracking method in MRI-guided radiotherapy",
-      "summary": "Researchers have developed an automatic real-time markerless motion tracking method for MRI-guided radiotherapy (MRIgRT). The study demonstrates high precision in tracking and segmentation, suggesting significant potential for improving radiotherapy efficacy.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261026172258&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42928203/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
-    },
-    {
-      "title": "Curative-intent management of de novo metastatic nasopharyngeal carcinoma: an evidence-based consensus guideline from the International Collaborating Oncology Organisations",
-      "summary": "An international panel of 54 experts developed consensus guidelines for managing de novo metastatic nasopharyngeal carcinoma, highlighting the shift toward curative-intent protocols. The recommendations integrate modern systemic therapy with targeted local radiation strategies to improve long-term survival outcomes.",
-      "category": "Research",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42933448/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027063622&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42933448/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     }
   ]
 }
