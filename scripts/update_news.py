@@ -798,13 +798,13 @@ def main() -> int:
         editorial_type="research",
     )
 
-print(f"Gemini selected {len(selected_research)} research papers.")
-
-for article in selected_research:
-    print(f"  [RESEARCH] {article['title']}")
-
-
-new_articles = selected_news + selected_research
+    print(f"Gemini selected {len(selected_research)} research papers.")
+    
+    for article in selected_research:
+        print(f"  [RESEARCH] {article['title']}")
+    
+    
+    new_articles = selected_news + selected_research
 
     print(
         f"Gemini selected "
