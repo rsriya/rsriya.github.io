@@ -32,7 +32,7 @@ import requests
 import feedparser
 from google import genai
 from google.genai import types
-
+from news_pages import fetch_news_pages
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_FILE = ROOT / "data" / "news.json"
@@ -83,6 +83,41 @@ RSS_FEEDS = [
     {
         "name": "NAPT News",
         "url": "https://proton-therapy.org/category/napt-news/feed/",
+    },
+    {
+        "name": "AAPM News",
+        "url": "https://www.aapm.org/rss/feed.asp",
+    },
+    {
+        "name": "ASTRO News",
+        "url": (
+            "https://news.google.com/rss/search?"
+            "q=site%3Aastro.org%20%22radiation%20therapy%22"
+            "&hl=en-US&gl=US&ceid=US:en"
+        ),
+    },
+]
+
+NEWS_SOURCES = {
+    "NAPT News",
+    "NCI Cancer Currents",
+    "AAPM News",
+    "ASTRO News",
+    *(page["name"] for page in NEWS_PAGES),
+}
+
+NEWS_PAGES = [
+    {
+        "name": "Penn Radiation Medicine",
+        "url": "https://rmi.pennmedicine.org/news/",
+    },
+    {
+        "name": "UF Health Proton Therapy",
+        "url": "https://www.floridaproton.org/news",
+    },
+    {
+        "name": "Connecticut Proton Center",
+        "url": "https://ctproton.org/news-press/",
     },
 ]
 
@@ -289,22 +324,25 @@ def fetch_rss_articles() -> list[dict]:
                 feed = feedparser.parse(response.content)
         
                 if not feed.entries:
-                    print(f"WARNING: No entries found in {url}")
+                    print(
+                        f"WARNING: No entries found in "
+                        f"{feed_info['name']}"
+                    )
+                    continue
     
         except requests.RequestException as e:
-            print(f"WARNING: Could not access {url}: {e}")
+            print(
+                f"WARNING: Could not access "
+                f"{feed_info['name']} ({feed_info['url']}): {e}"
+            )
             continue
-
         if getattr(feed, "bozo", False):
             print(
                 f"WARNING: RSS feed may be malformed: "
                 f"{feed_info['name']}",
                 file=sys.stderr,
             )
-        is_news_source = feed_info["name"] in {
-            "NAPT News",
-            "NCI Cancer Currents",
-        }
+        is_news_source = feed_info["name"] in NEWS_SOURCES
         
         lookback = (
             NEWS_LOOKBACK_DAYS
@@ -352,7 +390,7 @@ def fetch_rss_articles() -> list[dict]:
             source_count += 1
         print(
             f"  Total RSS entries: {len(feed.entries)}"
-            f" | Within {LOOKBACK_DAYS} days: {source_count}"
+            f" | Within {lookback} days: {source_count}"
         )
 
     # Deduplicate RSS results by URL.
@@ -373,14 +411,14 @@ def fetch_rss_articles() -> list[dict]:
     )
     
     # Prioritize all recent NAPT and NCI articles.
-    priority_sources = {
-        "NAPT News",
-        "NCI Cancer Currents",
-    }
-    
     priority_articles = [
         article for article in candidates
-        if article["source"] in priority_sources
+        if article["source"] in NEWS_SOURCES
+    ]
+    
+    pubmed_articles = [
+        article for article in candidates
+        if article["source"] not in NEWS_SOURCES
     ]
     
     pubmed_articles = [
@@ -520,6 +558,26 @@ PRIORITY TOPICS
    insurance coverage, healthcare regulations, and patient access.
 10. Proton center openings, first-patient treatments,
     expansions, closures, and financial sustainability.
+
+PRIORITY NEWS
+
+1. New proton therapy centers opening or beginning patient treatments.
+2. Existing centers expanding, upgrading, or introducing new technologies.
+3. Important radiation oncology clinical guidelines from ASTRO
+   and other professional societies.
+4. Medicare reimbursement, insurance coverage, and patient access.
+5. Major medical physics guidance, standards, and safety developments.
+6. First-in-human proton therapy trials and major clinical milestones.
+7. Important proton therapy equipment and technology developments.
+
+Do not include routine staffing announcements, patient testimonials,
+marketing claims, or minor corporate updates.
+
+For manufacturer press releases, distinguish contracts and planned
+installations from completed installations and clinical operations.
+
+Deduplicate events across sources, even when their headlines and
+URLs differ.
 
 EDITORIAL GUIDANCE
 
@@ -782,12 +840,26 @@ def main() -> int:
         f"{len(RSS_FEEDS)} sources..."
     )
 
-    candidates = fetch_rss_articles()
-
-    print(
-        f"Found {len(candidates)} recent RSS "
-        f"candidate articles."
+    rss_candidates = fetch_rss_articles()
+    
+    web_candidates = fetch_news_pages(
+        NEWS_PAGES,
+        lookback_days=NEWS_LOOKBACK_DAYS,
+        max_per_source=5,
     )
+    
+    # Combine RSS and webpage candidates.
+    by_url = {}
+    
+    for article in rss_candidates + web_candidates:
+        key = normalize_url(article["url"]).lower()
+        by_url[key] = article
+    
+    candidates = list(by_url.values())
+    
+    print(f"\nRSS candidates: {len(rss_candidates)}")
+    print(f"Webpage candidates: {len(web_candidates)}")
+    print(f"Combined unique candidates: {len(candidates)}")
 
     if not candidates:
         print(
@@ -808,20 +880,15 @@ def main() -> int:
         f"Sending candidates to Gemini "
         f"using model: {MODEL}"
     )
-
-    news_sources = {
-        "NAPT News",
-        "NCI Cancer Currents",
-    }
     
     news_candidates = [
         article for article in candidates
-        if article["source"] in news_sources
+        if article["source"] in NEWS_SOURCES
     ]
     
     research_candidates = [
         article for article in candidates
-        if article["source"] not in news_sources
+        if article["source"] not in NEWS_SOURCES
     ]
     
     print(f"\nEvaluating {len(news_candidates)} news articles...")
