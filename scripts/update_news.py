@@ -637,11 +637,12 @@ def select_articles_with_gemini(
 # MERGE
 # ---------------------------------------------------------------------
 
+
 def merge_articles(
     existing: list[dict],
     new_articles: list[dict],
 ) -> list[dict]:
-    """Validate, deduplicate, sort, and limit the news feed."""
+    """Validate, deduplicate, and balance research and news."""
 
     by_url: dict[str, dict] = {}
 
@@ -651,29 +652,78 @@ def merge_articles(
             continue
 
         article = dict(article)
+        article["url"] = normalize_url(article["url"])
+        article["id"] = article.get("id") or make_id(article)
 
-        article["url"] = normalize_url(
-            article["url"]
-        )
-
-        article["id"] = (
-            article.get("id")
-            or make_id(article)
-        )
+        # Preserve explicit type, otherwise infer from source.
+        if article.get("content_type") not in {"paper", "news"}:
+            article["content_type"] = (
+                "paper"
+                if "pubmed" in article["source"].lower()
+                else "news"
+            )
 
         key = article["url"].lower()
 
-        if key not in by_url:
-            by_url[key] = article
+        # Prefer the newly generated version if a URL repeats.
+        by_url[key] = article
 
     articles = list(by_url.values())
 
-    articles.sort(
-        key=lambda article: article["published_date"],
+    papers = sorted(
+        [a for a in articles if a["content_type"] == "paper"],
+        key=lambda a: a["published_date"],
         reverse=True,
     )
 
-    return articles[:MAX_STORIES]
+    news = sorted(
+        [a for a in articles if a["content_type"] == "news"],
+        key=lambda a: a["published_date"],
+        reverse=True,
+    )
+
+    # Reserve slots for both sections.
+    selected_papers = papers[:12]
+    selected_news = news[:6]
+
+    # Fill unused slots with the newest remaining articles.
+    remaining = (
+        papers[len(selected_papers):]
+        + news[len(selected_news):]
+    )
+
+    remaining.sort(
+        key=lambda a: a["published_date"],
+        reverse=True,
+    )
+
+    available_slots = MAX_STORIES - (
+        len(selected_papers) + len(selected_news)
+    )
+
+    merged = (
+        selected_papers
+        + selected_news
+        + remaining[:max(0, available_slots)]
+    )
+
+    merged.sort(
+        key=lambda a: a["published_date"],
+        reverse=True,
+    )
+
+    print("\nFinal published articles:")
+    print(
+        f"  Research: "
+        f"{sum(a['content_type'] == 'paper' for a in merged)}"
+    )
+    print(
+        f"  News: "
+        f"{sum(a['content_type'] == 'news' for a in merged)}"
+    )
+
+    return merged
+
 
 
 # ---------------------------------------------------------------------
