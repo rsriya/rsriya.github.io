@@ -422,11 +422,6 @@ def fetch_rss_articles() -> list[dict]:
         if article["source"] not in NEWS_SOURCES
     ]
     
-    pubmed_articles = [
-        article for article in candidates
-        if article["source"] not in priority_sources
-    ]
-    
     # Reserve slots for NAPT and NCI.
     remaining_slots = max(
         0,
