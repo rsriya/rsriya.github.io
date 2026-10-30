@@ -98,13 +98,6 @@ RSS_FEEDS = [
     },
 ]
 
-NEWS_SOURCES = {
-    "NAPT News",
-    "NCI Cancer Currents",
-    "AAPM News",
-    "ASTRO News",
-    *(page["name"] for page in NEWS_PAGES),
-}
 
 NEWS_PAGES = [
     {
@@ -120,6 +113,14 @@ NEWS_PAGES = [
         "url": "https://ctproton.org/news-press/",
     },
 ]
+
+NEWS_SOURCES = {
+    "NAPT News",
+    "NCI Cancer Currents",
+    "AAPM News",
+    "ASTRO News",
+    *(page["name"] for page in NEWS_PAGES),
+}
 
 LOOKBACK_DAYS = 30
 NEWS_LOOKBACK_DAYS = 90
