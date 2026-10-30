@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T18:40:34.741025+00:00",
+  "updated_at": "2026-10-30T19:20:27.355957+00:00",
   "articles": [
     {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
@@ -132,34 +132,14 @@
       "content_type": "paper"
     },
     {
-      "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
-      "summary": "This study explores the use of multipole permanent magnets within a proton pencil beam scanning nozzle to reduce spot size. The proposed design facilitates the creation of modulated beams and proton minibeams for potential clinical or preclinical use.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029155942&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42952162/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "When toxicity limits cure: Repositioning radiation in esophageal and rectal cancers by proton therapy",
-      "summary": "This article highlights the clinical potential of proton therapy to reduce radiation-induced toxicity to critical organs in esophageal and rectal cancer treatments. It explores how leveraging proton beam physics can improve patient quality of life and outcomes compared to conventional radiotherapy.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42955957/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261029174859&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42955957/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Is full re-optimization necessary in adaptive radiotherapy for head and neck cancer? A systematic review",
-      "summary": "A systematic review evaluates the necessity of full re-optimization during adaptive radiotherapy for head and neck cancer. The study synthesizes current evidence on dosimetric and clinical outcomes to help determine optimal adaptive workflows.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029174900&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42955959/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
+      "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
+      "summary": "A recent study highlights that 50 million Americans reside in counties lacking a radiation oncology clinic, underscoring significant geographic disparities in access to cancer treatment. This data provides professional context regarding the current landscape of radiation therapy distribution across the United States.",
+      "category": "Radiation Oncology",
+      "source": "ASTRO News",
+      "published_date": "2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQYWxaLTRZVHRIUFJnYXhnUEptU2lBMHlKRDRhZ09KWEdTdUJDRVpJODk3ZXpfUGJnRDdmRXR6YVBQQjJwbmdPWUg1SzZOMDVCUElqWHZ4Ul9sTXhBRGtTOGhvV0JSQnJwRTMwZ0FxcjhPcGZETDZJUUY0TlF4MFVZQWt5dUNCTTZZQVhFMU9wQTVld2pDTUs0NFdXNkhfWkJhdUZjZU4wZWR5aUh0cGx4akNCZzRTZXllZ1hsT1c0NmViaUl1RUxmTXEwT1NtUW85ZkxlcnhlNnQ1N1VOMk1ZSHdudzI2WTFKWDRLZXk1SmJiaFluNmRnOWJrUmlrbDVGc01DemJKbF9kR281VktVeGVLYmIybnFxT2dYcmRNd3hseDNDNzJwMjZLVWVmX3hLb1ZjZUZqUjJwdHB4a2c?oc=5",
+      "id": "news.google.com/rss/articles/CBMivgJBVV95cUxQYWxaLTRZVHRIUFJnYXhnUEptU2lBMHlKRDRhZ09KWEdTdUJDRVpJODk3ZXpfUGJnRDdmRXR6YVBQQjJwbmdPWUg1SzZOMDVCUElqWHZ4Ul9sTXhBRGtTOGhvV0JSQnJwRTMwZ0F",
+      "content_type": "news"
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
@@ -172,8 +152,28 @@
       "content_type": "news"
     },
     {
+      "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
+      "summary": "The first patient has been treated in a clinical trial evaluating ConformalFLASH® proton therapy for head and neck cancer. This milestone represents a significant step in assessing the clinical feasibility of ultra-high dose rate proton irradiation.",
+      "category": "Proton Therapy",
+      "source": "Proton Center Developments",
+      "published_date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
+      "id": "news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
+      "content_type": "news"
+    },
+    {
+      "title": "Hampton University Proton Cancer Institute opens new wellness space for patients and caregivers",
+      "summary": "The Hampton University Proton Cancer Institute has inaugurated a new wellness space designed to support patients and caregivers throughout their treatment journey. This development reflects the regional growth and commitment to patient-centered care within the DMV area.",
+      "category": "Regional",
+      "source": "Proton Center Developments",
+      "published_date": "2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJrajVNRXRvcWZpdEVuS0ZCa0RjNGx3MGFCaXJpazhnbWZPdGF3WUpmUUdDS1pOQjNodVFKek1qX08yVFdSVjJaSE1tUTliWDU1YzhMZUE1ejBuYkF1NGdFcXRXNDBkMFFvYk1mWWgxZW1lSFJldXhULWdB?oc=5",
+      "id": "news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJ",
+      "content_type": "news"
+    },
+    {
       "title": "Medicare change could cost standalone proton therapy centers millions",
-      "summary": "Proposed Medicare pricing adjustments could result in a nearly 30% reduction in reimbursement for standalone proton therapy centers starting in 2027. Stakeholders express concern that this policy may impact the financial sustainability of non-hospital facilities and potentially restrict patient access to proton radiation services.",
+      "summary": "A proposed Medicare pricing change threatens the financial stability of standalone proton therapy centers by potentially reducing reimbursements by nearly 30% compared to hospital-based departments. This policy development remains a critical area of concern for equitable access to proton therapy and the future viability of independent centers.",
       "category": "Proton Therapy",
       "source": "NAPT News",
       "published_date": "2026-10-09",
