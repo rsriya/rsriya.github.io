@@ -32,7 +32,8 @@ import requests
 import feedparser
 from google import genai
 from google.genai import types
-from news_pages import fetch_news_pages
+
+from urllib.parse import urlencode
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_FILE = ROOT / "data" / "news.json"
@@ -63,6 +64,18 @@ CATEGORIES = [
 # The exact RSS URL for a source can change, so check each source's
 # current feed URL if a feed stops working.
 #
+
+def google_news_rss(query):
+    return (
+        "https://news.google.com/rss/search?"
+        + urlencode({
+            "q": query,
+            "hl": "en-US",
+            "gl": "US",
+            "ceid": "US:en",
+        })
+    )
+    
 RSS_FEEDS = [
     {
         "name": "NCI Cancer Currents",
@@ -89,37 +102,26 @@ RSS_FEEDS = [
         "url": "https://www.aapm.org/rss/feed.asp",
     },
     {
+        "name": "Proton Center Developments",
+        "url": google_news_rss(
+            '"proton therapy" ("new center" OR "first patient" OR "opens")'
+        ),
+    },
+    {
         "name": "ASTRO News",
-        "url": (
-            "https://news.google.com/rss/search?"
-            "q=site%3Aastro.org%20%22radiation%20therapy%22"
-            "&hl=en-US&gl=US&ceid=US:en"
+        "url": google_news_rss(
+            'site:astro.org "radiation therapy"'
         ),
     },
 ]
 
-
-NEWS_PAGES = [
-    {
-        "name": "Penn Radiation Medicine",
-        "url": "https://rmi.pennmedicine.org/news/",
-    },
-    {
-        "name": "UF Health Proton Therapy",
-        "url": "https://www.floridaproton.org/news",
-    },
-    {
-        "name": "Connecticut Proton Center",
-        "url": "https://ctproton.org/news-press/",
-    },
-]
 
 NEWS_SOURCES = {
     "NAPT News",
     "NCI Cancer Currents",
     "AAPM News",
     "ASTRO News",
-    *(page["name"] for page in NEWS_PAGES),
+    "Proton Center Developments",
 }
 
 LOOKBACK_DAYS = 30
