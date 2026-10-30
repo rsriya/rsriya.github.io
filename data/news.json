@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T17:04:01.095513+00:00",
+  "updated_at": "2026-10-30T18:40:34.741025+00:00",
   "articles": [
     {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
@@ -72,6 +72,66 @@
       "content_type": "paper"
     },
     {
+      "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
+      "summary": "This study assesses radiation safety for FLASH proton therapy using the Varian ProBeam system within existing conventional shielding. The results demonstrate that occupational and environmental radiation doses remain within safe limits, supporting the potential clinical implementation of FLASH technology in standard facilities.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "A cell-type resolved proton RBE model for potential clinical application",
+      "summary": "Researchers have developed a cell-type resolved relative biological effectiveness (RBE) model for proton therapy. The model identifies that variations in cell repair capacity significantly influence RBE and demonstrates strong alignment with experimental data for clinical consideration.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Differentiable Autoplanning Algorithm for Proton Therapy Based on Deep Learning: A Proof-of-Concept",
+      "summary": "This study introduces a deep learning-based framework for the joint optimization of proton therapy beam parameters. By using a differentiable dose engine, the approach provides a foundation for more efficient, automated treatment planning systems.",
+      "category": "AI & Imaging",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Angle-Dependent Dose Transformer Algorithm for Fast Proton Therapy Dose Calculations",
+      "summary": "Researchers developed a transformer-based deep learning algorithm, ADoTA, for rapid proton dose calculations. The model achieves near-Monte Carlo accuracy at the beamlet level and shows potential for clinical implementation in thoracic treatment planning.",
+      "category": "AI & Imaging",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Experimental validation of time-driven proton PBS FLASH delivery on a clinical proton therapy system",
+      "summary": "This study validates a time-driven delivery method for proton pencil beam scanning (PBS) to achieve ultra-high dose rates (UHDR). The findings offer a practical platform for future radiobiological research and dosimetric standardization of FLASH delivery.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261030144008&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Artificial intelligence in image-guided cervical interventional radiotherapy: a systematic review",
+      "summary": "A systematic review of AI applications in image-guided cervical brachytherapy finds that while AI can assist in workflow automation and decision support, current methods are largely in the proof-of-concept stage. The authors emphasize the need for robust external validation before clinical integration.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261030144011&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
+      "content_type": "paper"
+    },
+    {
       "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
       "summary": "This study explores the use of multipole permanent magnets within a proton pencil beam scanning nozzle to reduce spot size. The proposed design facilitates the creation of modulated beams and proton minibeams for potential clinical or preclinical use.",
       "category": "Proton Therapy",
@@ -102,74 +162,14 @@
       "content_type": "paper"
     },
     {
-      "title": "Yttrium-90 Radioembolization for Hepatocellular Carcinoma: Clinical Evidence, Evolving Indications, and Research-Frontier Mapping",
-      "summary": "This review summarizes the clinical role of Yttrium-90 radioembolization in treating hepatocellular carcinoma. It highlights evidence supporting personalized dosimetry and the therapy's expanding utility as a locoregional treatment and potential partner for systemic therapy.",
+      "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
+      "summary": "The American Society for Radiation Oncology (ASTRO) has issued an updated clinical guideline for the use of shorter-course radiation therapy in the treatment of localized prostate cancer. This update provides clinicians with evidence-based recommendations to optimize treatment protocols for patients.",
       "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029192027&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Experimental feasibility study of proton therapy range verification by a digital tracking calorimeter prototype",
-      "summary": "This research investigates the use of a silicon-pixel-based sampling calorimeter for proton range verification. By measuring secondary radiation, this technique offers a potential method to ensure the Bragg peak is accurately delivered according to the treatment plan.",
-      "category": "Medical Physics",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42956465/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42956465/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Evaluation of Dose to Medium and Dose to Water with the Acuros XB Algorithm for SABR: Clinical and Phantom-Based Observations",
-      "summary": "This study evaluates the clinical and dosimetric impact of reporting dose to medium (Dm) versus dose to water (Dw) using the Acuros XB algorithm in stereotactic ablative body radiotherapy (SABR). It provides essential insights for medical physicists regarding the implications of reporting modes on treatment planning and protocol consistency.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42956405/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261030130352&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42956405/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Cardiovascular Effects of Childhood Radiotherapy",
-      "summary": "This review provides a comprehensive analysis of the long-term cardiovascular risks associated with radiotherapy in pediatric and adolescent cancer survivors. It highlights the importance of understanding the mechanisms of radiation-induced cardiac injury to guide surveillance and survivorship care strategies.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-29",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42951882/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030130350&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42951882/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Linac performance benchmarking: Feasibility of a web-based tool for comparison of local machine performance check (MPC) results with the global community",
-      "summary": "This study demonstrates the feasibility of a web-based tool for benchmarking linear accelerator performance against a global database. The tool allows clinics to identify machine trends and may assist under-resourced centers in maintaining safe and accurate radiotherapy delivery.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-28",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42949303/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261028222756&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42949303/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "A generalizable 3D dose prediction across heterogeneous cohorts: A framework developed for the 2025 AAPM GDP-HMM challenge",
-      "summary": "Researchers developed a generalizable 3D dose prediction framework that meets strict runtime requirements while preserving geometric plan features and clinical endpoints. The study highlights the role of engineered loss formulations in achieving cross-institutional model generalization.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-28",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42949277/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261028222758&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42949277/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Daily Multi-Leaf Collimator positional error prediction using machine learning",
-      "summary": "Researchers developed a machine learning model using LightGBM to predict multi-leaf collimator (MLC) positional errors. This approach offers a potentially efficient tool for patient-specific quality assurance in intensity-modulated radiotherapy.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-28",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42947351/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261029161711&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42947351/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
-      "content_type": "paper"
+      "source": "ASTRO News",
+      "published_date": "2026-10-27",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVllpc20wUkRhampGTlFsV00wY2RKUVJiRU5IME9PNE5xSDRFUncyd1hDaDJQelRQT0ZWLVoxdXVUUWkyblBQR19TM2RJRS1nOVBTTzZpVTVtMW9yS043SGVyQUdkT3RzRTU3UWxYemtCRkthclNXRzBiR0dWcWxkSEQycXJnVVIydEtwS1NUMFgzRHNjZmZqbUhka3c5UDFYOW1fWnV1em0yTm5QZVZZVkM5RWRkcEcxY21XbUF0bWNBOWIxcGkydkFUbUx3cXlLRU4yakl3MHlkZXdxa280Z05MM0k0ZHhZb0NxWlBKRUVMUkFwc3VwQUdkdmJXOVBxZG9ibg?oc=5",
+      "id": "news.google.com/rss/articles/CBMihAJBVV95cUxOVllpc20wUkRhampGTlFsV00wY2RKUVJiRU5IME9PNE5xSDRFUncyd1hDaDJQelRQT0ZWLVoxdXVUUWkyblBQR19TM2RJRS1nOVBTTzZpVTVtMW9yS043SGVyQUdkT3RzRTU3UWx",
+      "content_type": "news"
     },
     {
       "title": "Medicare change could cost standalone proton therapy centers millions",
