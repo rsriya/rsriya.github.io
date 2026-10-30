@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:20:27.355957+00:00",
+  "updated_at": "2026-10-30T21:32:09.190546+00:00",
   "articles": [
     {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
@@ -122,16 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "Artificial intelligence in image-guided cervical interventional radiotherapy: a systematic review",
-      "summary": "A systematic review of AI applications in image-guided cervical brachytherapy finds that while AI can assist in workflow automation and decision support, current methods are largely in the proof-of-concept stage. The authors emphasize the need for robust external validation before clinical integration.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261030144011&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that 50 million Americans reside in counties lacking a radiation oncology clinic, underscoring significant geographic disparities in access to cancer treatment. This data provides professional context regarding the current landscape of radiation therapy distribution across the United States.",
       "category": "Radiation Oncology",
@@ -172,13 +162,23 @@
       "content_type": "news"
     },
     {
-      "title": "Medicare change could cost standalone proton therapy centers millions",
-      "summary": "A proposed Medicare pricing change threatens the financial stability of standalone proton therapy centers by potentially reducing reimbursements by nearly 30% compared to hospital-based departments. This policy development remains a critical area of concern for equitable access to proton therapy and the future viability of independent centers.",
+      "title": "First Patient Treated in the C-FLASH-01 ConformalFLASH® Clinical Trial",
+      "summary": "A patient has been treated in the C-FLASH-01 trial investigating ConformalFLASH® proton therapy for head and neck cancer. This represents a significant milestone in advancing ultra-high dose rate radiation clinical research.",
       "category": "Proton Therapy",
-      "source": "NAPT News",
-      "published_date": "2026-10-09",
-      "url": "https://proton-therapy.org/medicare-change-could-cost-standalone-proton-therapy-centers-millions/?utm_source=rss&utm_medium=rss&utm_campaign=medicare-change-could-cost-standalone-proton-therapy-centers-millions",
-      "id": "proton-therapy.org/medicare-change-could-cost-standalone-proton-therapy-centers-millions/?utm_source=rss&utm_medium=rss&utm_campaign=medicare-change-could-cost-standalone-proton-th",
+      "source": "Proton Center Developments",
+      "published_date": "2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc1Y0VDRURBa1dsZHFzRkZFM0N5dHBrdUlERHUwNUhPNDU0RndNOVhENmNobnA5N0gyYU54ckZUeElKZ2RBWDRsZjVIbmxsRnFlcnNwM0tVbWJOTDZNT29MTl9uRThJZGVfNjRGZDMtR1YxZW12UG_SAeABQVVfeXFMTndEZ3lDbDVsODNfTnpVVXR2b0xIaXBGSFV1ZDVtTFpLdWZYNWlFSFJCM3RKcjdkZ1lpdURVQVFJSWI2Y1ZDUDlZZWhmMkxJRTYtV29Pd1gtb1c1QmdUQ3ZmaTN5c0YxWDF1ZnNkUEx0ZjdMSVlCVElGZWY5cU5nYXk3QTNPUVB4dDV6Q3c0cWNacVdrRXgyMzJNczR5WEtBaXllUzZTYmdFRzJOVUhONTVlOHZWX3ZybVhXS0JFYlZXTFo2RVZmMDZGODlfTWFHeVo1WFU5cnM1MGJucTUwQV8?oc=5",
+      "id": "news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc",
+      "content_type": "news"
+    },
+    {
+      "title": "BayCare opens proton therapy center at Tampa's St. Joseph’s Hospital",
+      "summary": "BayCare has officially opened a $33 million proton therapy center at St. Joseph’s Hospital in Tampa. The new facility expands access to advanced radiation technology in the region.",
+      "category": "Proton Therapy",
+      "source": "Proton Center Developments",
+      "published_date": "2026-10-16",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZOaDF5VWlNVmRGV2lhV2o0c1RlaGdJTlpnLVp5UkZKMV9sbkw5V3U1RDg3QmxjS2ppMEcxYmZhTU1oZnRTQU0yQV9oV0Jpbw?oc=5",
+      "id": "news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZ",
       "content_type": "news"
     }
   ]
