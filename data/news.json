@@ -1,6 +1,51 @@
 {
-  "updated_at": "2026-10-29T23:20:35.088650+00:00",
+  "updated_at": "2026-10-30T16:55:22.289767+00:00",
   "articles": [
+    {
+      "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
+      "summary": "This study demonstrates that existing conventional shielding for the Varian ProBeam system is sufficient for FLASH irradiation, ensuring radiation safety for staff and the surrounding environment. The findings provide a justification for implementing FLASH techniques in current proton therapy clinical settings.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "A cell-type resolved proton RBE model for potential clinical application",
+      "summary": "Researchers have developed a cell-type resolved RBE model that accounts for variations in cellular repair capabilities. This model shows strong agreement with experimental data, offering a more precise approach to RBE determination for clinical proton therapy.",
+      "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Differentiable Autoplanning Algorithm for Proton Therapy Based on Deep Learning: A Proof-of-Concept",
+      "summary": "This study introduces a deep learning framework capable of joint, gradient-based optimization of proton therapy beam parameters. The methodology lays the groundwork for next-generation automated treatment planning systems with clinical potential.",
+      "category": "AI & Imaging",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Angle-Dependent Dose Transformer Algorithm for Fast Proton Therapy Dose Calculations",
+      "summary": "The researchers developed a beamlet angle-aware deep learning algorithm that provides Monte Carlo-level accuracy for proton dose calculations. This approach significantly improves calculation speed while maintaining precision, particularly for thoracic treatment plans.",
+      "category": "AI & Imaging",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
+    {
+      "title": "Experimental validation of time-driven proton PBS FLASH delivery on a clinical proton therapy system",
+      "summary": "This study validates a time-driven delivery method for proton PBS at ultra-high dose rates. The approach allows for reproducible dosimetry suitable for both clinical and preclinical radiobiological research on FLASH effects.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
+    },
     {
       "title": "Spot size reduction and minibeam creation in a proton PBS nozzle using multipole permanent magnets",
       "summary": "This study explores the use of multipole permanent magnets within a proton pencil beam scanning nozzle to reduce spot size. The proposed design facilitates the creation of modulated beams and proton minibeams for potential clinical or preclinical use.",
@@ -36,6 +81,15 @@
       "published_date": "2026-10-29",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261029192027&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42955573/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
+    },
+    {
+      "title": "Experimental feasibility study of proton therapy range verification by a digital tracking calorimeter prototype",
+      "summary": "This research investigates the use of a silicon-pixel-based sampling calorimeter for proton range verification. By measuring secondary radiation, this technique offers a potential method to ensure the Bragg peak is accurately delivered according to the treatment plan.",
+      "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42956465/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42956465/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
     },
     {
       "title": "Linac performance benchmarking: Feasibility of a web-based tool for comparison of local machine performance check (MPC) results with the global community",
@@ -108,60 +162,6 @@
       "published_date": "2026-10-27",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42935071/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027063624&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42935071/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "Photon Versus Proton Whole-Body Irradiation Combined with Olaparib in C57BL/6 Mice",
-      "summary": "This study examines the multi-organ oxidative toxicity in mice following whole-body irradiation with either photons or protons, combined with the PARP inhibitor olaparib. The findings provide insights into potential differences in radiosensitizing effects and systemic toxicity between these two radiation modalities.",
-      "category": "Research",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42939939/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027124100&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42939939/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
-    },
-    {
-      "title": "Model-Based Normal Tissue Complication Probability Comparison Between Proton and Photon Therapies for Brain Tumors",
-      "summary": "This planning comparison study indicates that proton beam therapy may reduce the risk of secondary cancers in patients with brain tumors compared to IMRT, while photon therapy shows advantages regarding specific toxicities like blindness and brain necrosis. The study emphasizes the value of using radiotherapy treatment planning guidelines for objective clinical comparison.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42936426/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261027124100&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42936426/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f"
-    },
-    {
-      "title": "Clinical Outcomes and Safety of Spatially Fractionated Radiotherapy for Malignant Tumors",
-      "summary": "A systematic review evaluating the clinical outcomes and safety profiles of spatially fractionated radiotherapy (SFRT) across various malignant tumors. The report highlights the current evidence base and identifies key considerations for the use of this technique in clinical practice.",
-      "category": "Radiation Oncology",
-      "source": "PubMed AI",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42936872/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261027124104&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42936872/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
-    },
-    {
-      "title": "Six-year data from three magnetic resonance-guided radiotherapy systems demonstrate long-term stability of linear accelerator quality assurance",
-      "summary": "This study analyzed six years of data from three MR-guided radiotherapy systems to assess the long-term stability of quality assurance programs. The results support a potential reconsideration of traditional QA schedules based on the demonstrated performance consistency.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42935700/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027124101&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42935700/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "Preliminary evaluation of ProSpare for rectal protection in prostate bed radiotherapy",
-      "summary": "Results from the multicenter POPS trial indicate that the use of a rectal obturator, ProSpare, during prostate bed radiotherapy leads to a measurable reduction in acute bowel toxicity. Patient-reported outcomes and dosimetric improvements support its potential utility in clinical settings.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42935520/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261027124101&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42935520/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f"
-    },
-    {
-      "title": "Artificial Intelligence, Multi-Omics, and Multimodal Integration in Precision Radiotherapy for Head and Neck Cancer",
-      "summary": "This review explores how integrating AI, multi-omics, and multimodal clinical data can enhance precision in radiotherapy for head and neck cancers. It discusses the current state of research and the challenges of linking these technologies to clinical decision-making.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42940059/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261027124104&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42940059/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f"
     }
   ]
 }
