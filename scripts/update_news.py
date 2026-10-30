@@ -41,9 +41,8 @@ NEWS_FILE = ROOT / "data" / "news.json"
 MODEL = os.getenv("GEMINI_NEWS_MODEL") or "gemini-3.1-flash-lite"
 
 MAX_STORIES = 18
-LOOKBACK_DAYS = 7
 MAX_CANDIDATES = 40
-
+MAX_NEWS_CANDIDATES = 20
 
 CATEGORIES = [
     "Proton Therapy",
@@ -413,26 +412,29 @@ def fetch_rss_articles() -> list[dict]:
         reverse=True,
     )
     
-    # Prioritize all recent NAPT and NCI articles.
-    priority_articles = [
+    # Separate news and research candidates.
+    news_articles = [
         article for article in candidates
         if article["source"] in NEWS_SOURCES
     ]
     
-    pubmed_articles = [
+    research_articles = [
         article for article in candidates
         if article["source"] not in NEWS_SOURCES
     ]
     
-    # Reserve slots for NAPT and NCI.
+    # Both lists are already sorted newest first.
+    selected_news = news_articles[:MAX_NEWS_CANDIDATES]
+    
+    # Fill the remaining slots with research papers.
     remaining_slots = max(
         0,
-        MAX_CANDIDATES - len(priority_articles)
+        MAX_CANDIDATES - len(selected_news)
     )
     
-    selected_pubmed = pubmed_articles[:remaining_slots]
+    selected_research = research_articles[:remaining_slots]
     
-    final_candidates = priority_articles + selected_pubmed
+    final_candidates = selected_news + selected_research
     
     print("\nArticles sent to Gemini:")
     
@@ -838,25 +840,7 @@ def main() -> int:
         f"{len(RSS_FEEDS)} sources..."
     )
 
-    rss_candidates = fetch_rss_articles()
-    
-    web_candidates = fetch_news_pages(
-        NEWS_PAGES,
-        lookback_days=NEWS_LOOKBACK_DAYS,
-        max_per_source=5,
-    )
-    
-    # Combine RSS and webpage candidates.
-    by_url = {}
-    
-    for article in rss_candidates + web_candidates:
-        key = normalize_url(article["url"]).lower()
-        by_url[key] = article
-    
-    candidates = list(by_url.values())
-    
-    print(f"\nRSS candidates: {len(rss_candidates)}")
-    print(f"Webpage candidates: {len(web_candidates)}")
+    candidates = fetch_rss_articles()
     print(f"Combined unique candidates: {len(candidates)}")
 
     if not candidates:
