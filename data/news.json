@@ -1,6 +1,36 @@
 {
-  "updated_at": "2026-10-30T21:32:09.190546+00:00",
+  "updated_at": "2026-10-31T10:57:42.967184+00:00",
   "articles": [
+    {
+      "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
+      "summary": "This phase 2 trial evaluates the effectiveness and safety of proton re-irradiation for patients with previously treated head and neck cancer. While the study demonstrates encouraging locoregional control and survival, it highlights the importance of monitoring late toxicities in heavily pretreated populations.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963935/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261031065613&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963935/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "AAPM Medical Physics Practice Guideline 18.a: Superficial radiation therapy using low-energy kilovoltage x-rays",
+      "summary": "The AAPM has released comprehensive practice guidelines for superficial radiation therapy (SRT) using low-energy kilovoltage x-rays. This report provides technical overviews and establishes minimum standards for SRT delivery in dermatology and radiation oncology clinical settings.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261031065614&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "A Large Language Model Framework for Seed Implant Brachytherapy: Adaptive Weight Optimization via Retrieval-Augmented Generation",
+      "summary": "Researchers propose an adaptive weight optimization framework for seed implant brachytherapy planning using a locally deployed large language model. By integrating the LLM with an automatic planning algorithm, the study aims to improve plan quality and efficiency by automating manual adjustments of objective function weights.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261031065617&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
+      "content_type": "paper"
+    },
     {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
       "summary": "This study demonstrates that existing conventional shielding for the Varian ProBeam system is sufficient for FLASH irradiation, ensuring radiation safety for staff and the surrounding environment. The findings provide a justification for implementing FLASH techniques in current proton therapy clinical settings.",
@@ -92,36 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "Differentiable Autoplanning Algorithm for Proton Therapy Based on Deep Learning: A Proof-of-Concept",
-      "summary": "This study introduces a deep learning-based framework for the joint optimization of proton therapy beam parameters. By using a differentiable dose engine, the approach provides a foundation for more efficient, automated treatment planning systems.",
-      "category": "AI & Imaging",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Angle-Dependent Dose Transformer Algorithm for Fast Proton Therapy Dose Calculations",
-      "summary": "Researchers developed a transformer-based deep learning algorithm, ADoTA, for rapid proton dose calculations. The model achieves near-Monte Carlo accuracy at the beamlet level and shows potential for clinical implementation in thoracic treatment planning.",
-      "category": "AI & Imaging",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Experimental validation of time-driven proton PBS FLASH delivery on a clinical proton therapy system",
-      "summary": "This study validates a time-driven delivery method for proton pencil beam scanning (PBS) to achieve ultra-high dose rates (UHDR). The findings offer a practical platform for future radiobiological research and dosimetric standardization of FLASH delivery.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261030144008&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that 50 million Americans reside in counties lacking a radiation oncology clinic, underscoring significant geographic disparities in access to cancer treatment. This data provides professional context regarding the current landscape of radiation therapy distribution across the United States.",
       "category": "Radiation Oncology",
@@ -133,7 +133,7 @@
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "The American Society for Radiation Oncology (ASTRO) has issued an updated clinical guideline for the use of shorter-course radiation therapy in the treatment of localized prostate cancer. This update provides clinicians with evidence-based recommendations to optimize treatment protocols for patients.",
+      "summary": "The American Society for Radiation Oncology has issued an updated clinical guideline regarding the use of shorter-course radiation therapy for the treatment of localized prostate cancer. This update provides clinicians with current standards for optimizing treatment regimens.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-27",
@@ -142,8 +142,8 @@
       "content_type": "news"
     },
     {
-      "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
-      "summary": "The first patient has been treated in a clinical trial evaluating ConformalFLASH® proton therapy for head and neck cancer. This milestone represents a significant step in assessing the clinical feasibility of ultra-high dose rate proton irradiation.",
+      "title": "IBA treats first patient in clinical trial of FLASH proton therapy",
+      "summary": "IBA has successfully treated the first patient in a clinical trial evaluating ConformalFLASH proton therapy for head and neck cancer. This milestone marks a significant step in the clinical development and assessment of ultra-high dose rate radiation delivery.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-26",
