@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T10:57:42.967184+00:00",
+  "updated_at": "2026-10-31T20:27:50.622407+00:00",
   "articles": [
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
@@ -28,6 +28,26 @@
       "source": "PubMed AI",
       "published_date": "2026-10-31",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261031065617&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "AAPM Medical Physics Practice Guideline 18.a: Superficial radiation therapy using low-energy kilovoltage x-rays",
+      "summary": "This guideline provides a comprehensive technical overview and framework for the clinical delivery of superficial radiation therapy (SRT) in the 50-100 kVp range. It is designed to assist medical physicists and clinicians in adhering to minimum safety and quality standards for treating non-melanoma skin cancer and benign conditions.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261031162739&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "A Large Language Model Framework for Seed Implant Brachytherapy: Adaptive Weight Optimization via Retrieval-Augmented Generation",
+      "summary": "This study introduces an adaptive framework using a locally deployed large language model to optimize objective function weights in seed implant brachytherapy. The integration of LLMs with automated planning algorithms aims to improve clinical planning efficiency and plan quality.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261031162741&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
       "content_type": "paper"
     },
@@ -102,26 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
-      "summary": "This study assesses radiation safety for FLASH proton therapy using the Varian ProBeam system within existing conventional shielding. The results demonstrate that occupational and environmental radiation doses remain within safe limits, supporting the potential clinical implementation of FLASH technology in standard facilities.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "A cell-type resolved proton RBE model for potential clinical application",
-      "summary": "Researchers have developed a cell-type resolved relative biological effectiveness (RBE) model for proton therapy. The model identifies that variations in cell repair capacity significantly influence RBE and demonstrates strong alignment with experimental data for clinical consideration.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030144006&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that 50 million Americans reside in counties lacking a radiation oncology clinic, underscoring significant geographic disparities in access to cancer treatment. This data provides professional context regarding the current landscape of radiation therapy distribution across the United States.",
       "category": "Radiation Oncology",
@@ -133,7 +133,7 @@
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "The American Society for Radiation Oncology has issued an updated clinical guideline regarding the use of shorter-course radiation therapy for the treatment of localized prostate cancer. This update provides clinicians with current standards for optimizing treatment regimens.",
+      "summary": "The American Society for Radiation Oncology (ASTRO) has updated its clinical guidelines regarding the use of shorter-course (hypofractionated) radiation therapy for localized prostate cancer. This update provides evidence-based recommendations to help clinicians determine the most appropriate treatment schedules for patients.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-27",
