@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T11:51:48.160643+00:00",
+  "updated_at": "2026-11-01T17:56:41.125888+00:00",
   "articles": [
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
@@ -52,6 +52,26 @@
       "content_type": "paper"
     },
     {
+      "title": "Generalized multi-energy model for computing radiation treatment parameters",
+      "summary": "This study presents a general n-energy mathematical model for predicting relative electron density, effective atomic number, and stopping power ratio from CT images. It offers a standardized algorithm for model selection, incorporating existing methods as special cases for improved treatment planning.",
+      "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261101125623&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42964685/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Automated verification of source dwell position in lunar ovoid applicators",
+      "summary": "This research introduces a methodology to improve source path verification for complex brachytherapy applicators. The approach aims to reduce manual intervention and geometric uncertainties in clinical treatment planning and quality assurance.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963831/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261101125624&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963831/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "content_type": "paper"
+    },
+    {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
       "summary": "This study demonstrates that existing conventional shielding for the Varian ProBeam system is sufficient for FLASH irradiation, ensuring radiation safety for staff and the surrounding environment. The findings provide a justification for implementing FLASH techniques in current proton therapy clinical settings.",
       "category": "Proton Therapy",
@@ -99,26 +119,6 @@
       "published_date": "2026-10-30",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
       "id": "pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Radiation therapy quality assurance (RT QA) of adjuvant fractionated radiotherapy for WHO grade 2 atypical meningioma in the ROAM/EORTC1308 trial",
-      "summary": "This study underscores the critical importance of prospective independent central reviews (ICRs) to ensure high-quality and consistent radiotherapy delivery across clinical sites for complex tumors. The researchers conclude that pre-trial QA alone is insufficient for robust trial outcomes in uncommon tumor cohorts.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959875/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030130350&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959875/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Artificial intelligence in image-guided cervical interventional radiotherapy: a systematic review",
-      "summary": "This systematic review explores the current landscape of AI applications in image-guided cervical brachytherapy. The authors emphasize that while AI shows promise for workflow automation, further clinical validation is necessary before integration into standard practice.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261030130354&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959106/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
       "content_type": "paper"
     },
     {
