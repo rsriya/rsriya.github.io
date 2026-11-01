@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T17:56:41.125888+00:00",
+  "updated_at": "2026-11-01T22:03:54.296088+00:00",
   "articles": [
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
@@ -73,7 +73,7 @@
     },
     {
       "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
-      "summary": "This study demonstrates that existing conventional shielding for the Varian ProBeam system is sufficient for FLASH irradiation, ensuring radiation safety for staff and the surrounding environment. The findings provide a justification for implementing FLASH techniques in current proton therapy clinical settings.",
+      "summary": "This study assesses radiation safety for FLASH proton therapy in existing clinical settings using a Varian ProBeam system. The authors conclude that environmental and occupational dose limits remain safe and controllable under current shielding configurations, supporting the clinical implementation of FLASH technology.",
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
@@ -83,8 +83,8 @@
     },
     {
       "title": "A cell-type resolved proton RBE model for potential clinical application",
-      "summary": "Researchers have developed a cell-type resolved RBE model that accounts for variations in cellular repair capabilities. This model shows strong agreement with experimental data, offering a more precise approach to RBE determination for clinical proton therapy.",
-      "category": "Medical Physics",
+      "summary": "Researchers have developed a cell-type resolved proton relative biological effectiveness (RBE) model that accounts for variations in cellular repair capabilities. This model demonstrates improved agreement with experimental data and offers a pathway for more precise biological modeling in clinical proton therapy planning.",
+      "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
@@ -93,7 +93,7 @@
     },
     {
       "title": "Differentiable Autoplanning Algorithm for Proton Therapy Based on Deep Learning: A Proof-of-Concept",
-      "summary": "This study introduces a deep learning framework capable of joint, gradient-based optimization of proton therapy beam parameters. The methodology lays the groundwork for next-generation automated treatment planning systems with clinical potential.",
+      "summary": "This proof-of-concept study introduces a gradient-based optimization framework for proton therapy beam parameters using a differentiable deep learning dose engine. The approach lays a foundation for next-generation automated treatment planning systems capable of patient-specific optimization.",
       "category": "AI & Imaging",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
@@ -113,7 +113,7 @@
     },
     {
       "title": "Experimental validation of time-driven proton PBS FLASH delivery on a clinical proton therapy system",
-      "summary": "This study validates a time-driven delivery method for proton PBS at ultra-high dose rates. The approach allows for reproducible dosimetry suitable for both clinical and preclinical radiobiological research on FLASH effects.",
+      "summary": "This research validates a time-driven method for delivering Pencil Beam Scanning (PBS) FLASH irradiation on a clinical proton therapy system. The methodology maintains beam characteristics suitable for dosimetry and radiobiological research, providing a reliable platform for future UHDR studies.",
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
@@ -142,10 +142,10 @@
       "content_type": "news"
     },
     {
-      "title": "IBA treats first patient in clinical trial of FLASH proton therapy",
-      "summary": "The first patient has been treated in the C-FLASH-01 clinical trial utilizing ConformalFLASH proton therapy technology. This trial evaluates the safety and technical feasibility of FLASH delivery for head and neck cancer patients.",
+      "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
+      "summary": "IBA has announced the first patient treatment in the C-FLASH-01 clinical trial, which investigates the safety and efficacy of ConformalFLASH proton therapy. This milestone represents a significant advancement in ultra-high dose rate radiation research for head and neck malignancies.",
       "category": "Proton Therapy",
-      "source": "Proton Center Developments",
+      "source": "DOTmed",
       "published_date": "2026-10-26",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
       "id": "news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
