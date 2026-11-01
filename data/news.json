@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T20:27:50.622407+00:00",
+  "updated_at": "2026-11-01T11:51:48.160643+00:00",
   "articles": [
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
@@ -123,7 +123,7 @@
     },
     {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
-      "summary": "A recent study highlights that 50 million Americans reside in counties lacking a radiation oncology clinic, underscoring significant geographic disparities in access to cancer treatment. This data provides professional context regarding the current landscape of radiation therapy distribution across the United States.",
+      "summary": "A recent study highlights that approximately 50 million Americans reside in counties lacking access to local radiation oncology clinics. The findings underscore ongoing disparities in access to specialized cancer care services across the United States.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-28",
@@ -133,7 +133,7 @@
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "The American Society for Radiation Oncology (ASTRO) has updated its clinical guidelines regarding the use of shorter-course (hypofractionated) radiation therapy for localized prostate cancer. This update provides evidence-based recommendations to help clinicians determine the most appropriate treatment schedules for patients.",
+      "summary": "The American Society for Radiation Oncology (ASTRO) has released updated clinical guidelines regarding the use of hypofractionated or shorter-course radiation therapy regimens for the treatment of localized prostate cancer.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-27",
@@ -143,7 +143,7 @@
     },
     {
       "title": "IBA treats first patient in clinical trial of FLASH proton therapy",
-      "summary": "IBA has successfully treated the first patient in a clinical trial evaluating ConformalFLASH proton therapy for head and neck cancer. This milestone marks a significant step in the clinical development and assessment of ultra-high dose rate radiation delivery.",
+      "summary": "The first patient has been treated in the C-FLASH-01 clinical trial utilizing ConformalFLASH proton therapy technology. This trial evaluates the safety and technical feasibility of FLASH delivery for head and neck cancer patients.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-26",
