@@ -1,6 +1,26 @@
 {
-  "updated_at": "2026-11-01T22:03:54.296088+00:00",
+  "updated_at": "2026-11-02T06:07:33.374068+00:00",
   "articles": [
+    {
+      "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
+      "summary": "This study evaluated real-world outcomes for oropharyngeal cancer patients receiving deep learning-based intensity-modulated proton therapy (IMPT) versus manual planning. The findings indicate no significant difference in oncological outcomes or side effects, supporting the clinical integration of automated planning workflows.",
+      "category": "Proton Therapy",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261102010655&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42967539/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "content_type": "paper"
+    },
+    {
+      "title": "Mapping the evolution of spatially fractionated radiation therapy: A comprehensive bibliometric analysis of research trends and future directions",
+      "summary": "This bibliometric analysis tracks the convergence of various spatially fractionated radiation therapy (SFRT) modalities into a unified field. It highlights critical research priorities, including standardizing clinical protocols and integrating emerging FLASH radiotherapy techniques.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967406/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261102010656&v=2.20.1",
+      "id": "pubmed.ncbi.nlm.nih.gov/42967406/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "content_type": "paper"
+    },
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
       "summary": "This phase 2 trial evaluates the effectiveness and safety of proton re-irradiation for patients with previously treated head and neck cancer. While the study demonstrates encouraging locoregional control and survival, it highlights the importance of monitoring late toxicities in heavily pretreated populations.",
@@ -102,26 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "Angle-Dependent Dose Transformer Algorithm for Fast Proton Therapy Dose Calculations",
-      "summary": "The researchers developed a beamlet angle-aware deep learning algorithm that provides Monte Carlo-level accuracy for proton dose calculations. This approach significantly improves calculation speed while maintaining precision, particularly for thoracic treatment plans.",
-      "category": "AI & Imaging",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959820/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Experimental validation of time-driven proton PBS FLASH delivery on a clinical proton therapy system",
-      "summary": "This research validates a time-driven method for delivering Pencil Beam Scanning (PBS) FLASH irradiation on a clinical proton therapy system. The methodology maintains beam characteristics suitable for dosimetry and radiobiological research, providing a reliable platform for future UHDR studies.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959518/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that approximately 50 million Americans reside in counties lacking access to local radiation oncology clinics. The findings underscore ongoing disparities in access to specialized cancer care services across the United States.",
       "category": "Radiation Oncology",
@@ -133,7 +133,7 @@
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "The American Society for Radiation Oncology (ASTRO) has released updated clinical guidelines regarding the use of hypofractionated or shorter-course radiation therapy regimens for the treatment of localized prostate cancer.",
+      "summary": "The American Society for Radiation Oncology has issued updated clinical guidance regarding the use of hypofractionated radiation therapy for patients with localized prostate cancer. These recommendations aim to standardize shorter treatment courses based on current evidence.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-27",
@@ -143,9 +143,9 @@
     },
     {
       "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
-      "summary": "IBA has announced the first patient treatment in the C-FLASH-01 clinical trial, which investigates the safety and efficacy of ConformalFLASH proton therapy. This milestone represents a significant advancement in ultra-high dose rate radiation research for head and neck malignancies.",
+      "summary": "IBA has successfully treated the first patient in the C-FLASH-01 clinical trial, which investigates the application of ConformalFLASH proton therapy for head and neck cancers. This milestone marks progress in testing the safety and clinical feasibility of ultra-high dose rate delivery in this patient population.",
       "category": "Proton Therapy",
-      "source": "DOTmed",
+      "source": "Proton Center Developments",
       "published_date": "2026-10-26",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
       "id": "news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
@@ -173,7 +173,7 @@
     },
     {
       "title": "BayCare opens proton therapy center at Tampa's St. Joseph’s Hospital",
-      "summary": "BayCare has officially opened a $33 million proton therapy center at St. Joseph’s Hospital in Tampa. The new facility expands access to advanced radiation technology in the region.",
+      "summary": "BayCare Health System has officially opened its new $33 million proton therapy center at St. Joseph's Hospital. The facility adds new proton beam capabilities to the region's existing oncology treatment infrastructure.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-16",
