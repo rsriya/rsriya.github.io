@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T06:07:33.374068+00:00",
+  "updated_at": "2026-11-02T17:28:37.694910+00:00",
   "articles": [
     {
       "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
@@ -7,8 +7,8 @@
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261102010655&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967539/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42967539",
       "content_type": "paper"
     },
     {
@@ -17,8 +17,28 @@
       "category": "Radiation Oncology",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967406/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261102010656&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967406/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967406/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42967406",
+      "content_type": "paper"
+    },
+    {
+      "title": "Gaussian process regression of HDR prostate biopsy dose for improved modelling of localization-induced uncertainty",
+      "summary": "This study proposes a Gaussian process regression framework to model localization-induced uncertainty in HDR prostate brachytherapy. The authors demonstrate that a spatially correlated model provides superior dose representation compared to voxelwise summaries, offering a practical tool for probabilistic quality assurance and dose-response analysis.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968298/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42968298",
+      "content_type": "paper"
+    },
+    {
+      "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
+      "summary": "This comparative study evaluates the plan quality of the ZAP-Axon Krylov optimizer against the Leksell Gamma Knife Lightning optimizer. Findings suggest that the Krylov optimizer performs comparably for large brain metastasis lesions and outperforms the Lightning optimizer for small lesions in the absence of manual adjustments.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967581/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42967581",
       "content_type": "paper"
     },
     {
@@ -27,28 +47,8 @@
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963935/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261031065613&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963935/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "AAPM Medical Physics Practice Guideline 18.a: Superficial radiation therapy using low-energy kilovoltage x-rays",
-      "summary": "The AAPM has released comprehensive practice guidelines for superficial radiation therapy (SRT) using low-energy kilovoltage x-rays. This report provides technical overviews and establishes minimum standards for SRT delivery in dermatology and radiation oncology clinical settings.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261031065614&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "A Large Language Model Framework for Seed Implant Brachytherapy: Adaptive Weight Optimization via Retrieval-Augmented Generation",
-      "summary": "Researchers propose an adaptive weight optimization framework for seed implant brachytherapy planning using a locally deployed large language model. By integrating the LLM with an automatic planning algorithm, the study aims to improve plan quality and efficiency by automating manual adjustments of objective function weights.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261031065617&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963935/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963935",
       "content_type": "paper"
     },
     {
@@ -57,8 +57,8 @@
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261031162739&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963823/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963823",
       "content_type": "paper"
     },
     {
@@ -67,8 +67,8 @@
       "category": "AI & Imaging",
       "source": "PubMed AI",
       "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&ff=20261031162741&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963884/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1FiYL_imNw8xy2fFLHvyWg5mfmFq-bGG9MIjBWDDgg_f-megfv&fc=20261026171942&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963884",
       "content_type": "paper"
     },
     {
@@ -77,8 +77,8 @@
       "category": "Medical Physics",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261101125623&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42964685/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42964685",
       "content_type": "paper"
     },
     {
@@ -87,8 +87,18 @@
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963831/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&ff=20261101125624&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963831/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1P9hIDIGI6NPG2TSIA1BW_OWoyQvN5KTS9D0K8drayqnxH2Yen&fc=20261026171808&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963831/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42963831",
+      "content_type": "paper"
+    },
+    {
+      "title": "In Vitro Alpha Particle Irradiation: Methodological Determinants of Experimental Reliability",
+      "summary": "This study establishes a reproducible methodological framework for conducting in vitro alpha particle irradiation experiments. By identifying key determinants of experimental reliability, the authors provide a practical platform for future research into the biological mechanisms of alpha particle radiation.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-10-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42966429/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42966429",
       "content_type": "paper"
     },
     {
@@ -97,8 +107,8 @@
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961338/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961338",
       "content_type": "paper"
     },
     {
@@ -107,18 +117,8 @@
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961330/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
-      "content_type": "paper"
-    },
-    {
-      "title": "Differentiable Autoplanning Algorithm for Proton Therapy Based on Deep Learning: A Proof-of-Concept",
-      "summary": "This proof-of-concept study introduces a gradient-based optimization framework for proton therapy beam parameters using a differentiable deep learning dose engine. The approach lays a foundation for next-generation automated treatment planning systems capable of patient-specific optimization.",
-      "category": "AI & Imaging",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&ff=20261030125456&v=2.20.1",
-      "id": "pubmed.ncbi.nlm.nih.gov/42959910/?utm_source=Python Requests&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1TyHVUJDxNJSqZjLRrxIc-xM-9cL987x7-RhQrikMJRwTmGQVM&fc=20261026170100&f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42961330",
       "content_type": "paper"
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "The American Society for Radiation Oncology has issued updated clinical guidance regarding the use of hypofractionated radiation therapy for patients with localized prostate cancer. These recommendations aim to standardize shorter treatment courses based on current evidence.",
+      "summary": "ASTRO has issued updated clinical guidelines focusing on the implementation of shorter-course radiation therapy for patients with localized prostate cancer. These recommendations aim to provide evidence-based standards for optimized treatment delivery.",
       "category": "Radiation Oncology",
       "source": "ASTRO News",
       "published_date": "2026-10-27",
