@@ -26,14 +26,13 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlparse
 
 import requests
 import feedparser
 from google import genai
 from google.genai import types
 
-from urllib.parse import urlencode
+from urllib.parse import urlsplit, urlunsplit, urlencode
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_FILE = ROOT / "data" / "news.json"
@@ -195,18 +194,33 @@ def load_existing() -> dict:
 # ---------------------------------------------------------------------
 
 def normalize_url(url: str) -> str:
-    """Normalize a URL for validation and deduplication."""
-
     url = url.strip()
 
-    parsed = urlparse(url)
+    parsed = urlsplit(url)
 
     if parsed.scheme not in {"http", "https"}:
         return ""
 
-    # Remove fragments because they do not identify a different article.
-    return url.split("#", 1)[0]
+    hostname = (parsed.hostname or "").lower()
 
+    # PubMed: use the stable article URL without RSS tracking.
+    if hostname in {
+        "pubmed.ncbi.nlm.nih.gov",
+        "www.pubmed.ncbi.nlm.nih.gov",
+    }:
+        pmid = parsed.path.strip("/").split("/")[0]
+
+        if pmid.isdigit():
+            return f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+
+    # Preserve meaningful query parameters on other websites.
+    return urlunsplit((
+        parsed.scheme,
+        parsed.netloc,
+        parsed.path,
+        parsed.query,
+        ""
+    ))
 
 def make_id(article: dict) -> str:
     """Create a stable ID from the article URL."""
@@ -711,7 +725,7 @@ def merge_articles(
 
         article = dict(article)
         article["url"] = normalize_url(article["url"])
-        article["id"] = article.get("id") or make_id(article)
+        article["id"] = make_id(article)
 
         # Preserve explicit type, otherwise infer from source.
         if article.get("content_type") not in {"paper", "news"}:
