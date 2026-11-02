@@ -332,6 +332,130 @@
     padding-top: 75px;
 }
 
+
+/* =====================================================
+   NEWS SUBSCRIPTION
+===================================================== */
+
+.news-subscribe {
+    padding: 85px 7%;
+    background: #e7f0f4;
+}
+
+.news-subscribe-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.news-subscribe-content h2 {
+    margin: 12px 0 20px;
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1.15;
+    color: #172a3a;
+}
+
+.news-subscribe-content > p:last-child {
+    max-width: 530px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #526570;
+}
+
+.embeddable-buttondown-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.embeddable-buttondown-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #172a3a;
+}
+
+.subscribe-input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.embeddable-buttondown-form input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+
+    border: 1px solid #cbd7dd;
+    border-radius: 5px;
+
+    background: #fff;
+    color: #172a3a;
+    font: inherit;
+    font-size: 14px;
+}
+
+.embeddable-buttondown-form input[type="email"]:focus {
+    outline: 2px solid #1677a8;
+    outline-offset: 2px;
+}
+
+.embeddable-buttondown-form button {
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #1677a8;
+    color: #ffffff;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.embeddable-buttondown-form button:hover {
+    background: #105d85;
+}
+
+.subscribe-note {
+    margin: 0;
+    font-size: 12px;
+    color: #60717d;
+}
+
+.subscribe-note a {
+    color: #1677a8;
+}
+
+/* -----------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .news-subscribe {
+        padding: 65px 7%;
+    }
+
+    .news-subscribe-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-input-row {
+        flex-direction: column;
+    }
+
+    .embeddable-buttondown-form button {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .news-groups {
         gap: 55px;
@@ -341,10 +465,6 @@
         padding-top: 55px;
     }
 }
-
-/* -----------------------------------------------------
-   RESPONSIVE
------------------------------------------------------ */
 
 @media (max-width: 1100px) {
 
