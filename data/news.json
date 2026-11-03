@@ -1,6 +1,16 @@
 {
-  "updated_at": "2026-11-03T00:59:36.293582+00:00",
+  "updated_at": "2026-11-03T14:18:26.188980+00:00",
   "articles": [
+    {
+      "title": "Reliability-weighted patch learning for synthetic CT reconstruction in head and neck adaptive radiotherapy: A proof-of-concept study",
+      "summary": "This study introduces HQ-PatchNet, a computationally efficient AI approach for improving CBCT-to-synthetic CT image quality in adaptive radiation therapy. The findings suggest the method can facilitate online adaptive workflows, though further multi-institutional validation is required.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973126/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42973126",
+      "content_type": "paper"
+    },
     {
       "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
       "summary": "This study evaluated the impact of extended field-of-view (eFOV) CT reconstruction on image quality, stopping power ratio, and subsequent proton dose calculations. The findings provide insights into using wider CT scan ranges for improved immobilization and target coverage in proton therapy planning.",
@@ -9,6 +19,26 @@
       "published_date": "2026-11-02",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42970220/",
       "id": "pubmed.ncbi.nlm.nih.gov/42970220",
+      "content_type": "paper"
+    },
+    {
+      "title": "High-dose reirradiation of in-field recurrence lung cancer in the THOrax (RETHO): toxicity analysis of a prospective trial",
+      "summary": "A prospective clinical trial evaluated the feasibility of high-dose thoracic reirradiation for recurrent lung cancer. Results indicate the approach is clinically feasible while maintaining acceptable safety profiles for critical organs at risk, provided cumulative dose constraints are respected.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971440/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42971440",
+      "content_type": "paper"
+    },
+    {
+      "title": "Pre-treatment machine learning prediction of local failure and time to local failure after Gamma Knife radiosurgery for radioresistant brain metastases",
+      "summary": "Researchers developed a machine learning model to predict local recurrence following Gamma Knife radiosurgery for radioresistant brain metastases. The study highlights the potential for this model to support individualized clinical risk stratification and follow-up strategies.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-11-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970176/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42970176",
       "content_type": "paper"
     },
     {
@@ -89,36 +119,6 @@
       "published_date": "2026-10-31",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/",
       "id": "pubmed.ncbi.nlm.nih.gov/42964685",
-      "content_type": "paper"
-    },
-    {
-      "title": "Automated verification of source dwell position in lunar ovoid applicators",
-      "summary": "This research introduces a methodology to improve source path verification for complex brachytherapy applicators. The approach aims to reduce manual intervention and geometric uncertainties in clinical treatment planning and quality assurance.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963831/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963831",
-      "content_type": "paper"
-    },
-    {
-      "title": "In Vitro Alpha Particle Irradiation: Methodological Determinants of Experimental Reliability",
-      "summary": "This study establishes a reproducible methodological framework for conducting in vitro alpha particle irradiation experiments. By identifying key determinants of experimental reliability, the authors provide a practical platform for future research into the biological mechanisms of alpha particle radiation.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42966429/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42966429",
-      "content_type": "paper"
-    },
-    {
-      "title": "Analysis on radiation protection of FLASH treatment in conventional proton therapy facilities",
-      "summary": "This study assesses radiation safety for FLASH proton therapy in existing clinical settings using a Varian ProBeam system. The authors conclude that environmental and occupational dose limits remain safe and controllable under current shielding configurations, supporting the clinical implementation of FLASH technology.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961338/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961338",
       "content_type": "paper"
     },
     {
