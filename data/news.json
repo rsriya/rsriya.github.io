@@ -1,10 +1,20 @@
 {
-  "updated_at": "2026-11-02T17:28:37.694910+00:00",
+  "updated_at": "2026-11-03T00:59:36.293582+00:00",
   "articles": [
     {
+      "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
+      "summary": "This study evaluated the impact of extended field-of-view (eFOV) CT reconstruction on image quality, stopping power ratio, and subsequent proton dose calculations. The findings provide insights into using wider CT scan ranges for improved immobilization and target coverage in proton therapy planning.",
+      "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-11-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970220/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42970220",
+      "content_type": "paper"
+    },
+    {
       "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
-      "summary": "This study evaluated real-world outcomes for oropharyngeal cancer patients receiving deep learning-based intensity-modulated proton therapy (IMPT) versus manual planning. The findings indicate no significant difference in oncological outcomes or side effects, supporting the clinical integration of automated planning workflows.",
-      "category": "Proton Therapy",
+      "summary": "This matched cohort study found no significant difference in oncological outcomes or side effects between deep learning-based intensity-modulated proton therapy (IMPT) and manual planning for oropharyngeal cancer patients. The results support the clinical adoption of automated planning workflows.",
+      "category": "AI & Imaging",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-11-01",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/",
@@ -13,7 +23,7 @@
     },
     {
       "title": "Mapping the evolution of spatially fractionated radiation therapy: A comprehensive bibliometric analysis of research trends and future directions",
-      "summary": "This bibliometric analysis tracks the convergence of various spatially fractionated radiation therapy (SFRT) modalities into a unified field. It highlights critical research priorities, including standardizing clinical protocols and integrating emerging FLASH radiotherapy techniques.",
+      "summary": "This bibliometric analysis tracks the convergence of spatially fractionated radiation therapy (SFRT) modalities into a unified field. It identifies future research priorities including dosimetry advancement, biological mechanism elucidation, and integration with FLASH radiotherapy.",
       "category": "Radiation Oncology",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -23,7 +33,7 @@
     },
     {
       "title": "Gaussian process regression of HDR prostate biopsy dose for improved modelling of localization-induced uncertainty",
-      "summary": "This study proposes a Gaussian process regression framework to model localization-induced uncertainty in HDR prostate brachytherapy. The authors demonstrate that a spatially correlated model provides superior dose representation compared to voxelwise summaries, offering a practical tool for probabilistic quality assurance and dose-response analysis.",
+      "summary": "Researchers utilized a Gaussian process regression framework to model dose distribution in HDR prostate brachytherapy, accounting for localization uncertainty. This approach offers a robust method for probabilistic quality assurance and future dose-response analysis.",
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -33,7 +43,7 @@
     },
     {
       "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
-      "summary": "This comparative study evaluates the plan quality of the ZAP-Axon Krylov optimizer against the Leksell Gamma Knife Lightning optimizer. Findings suggest that the Krylov optimizer performs comparably for large brain metastasis lesions and outperforms the Lightning optimizer for small lesions in the absence of manual adjustments.",
+      "summary": "A comparative analysis of two optimization algorithms for brain metastasis stereotactic radiosurgery showed that the Krylov optimizer performs better for small lesions, while both methods are comparable for larger lesions. These findings aid in optimizing treatment planning workflows in radiation oncology.",
       "category": "Radiation Oncology",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -43,7 +53,7 @@
     },
     {
       "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
-      "summary": "This phase 2 trial evaluates the effectiveness and safety of proton re-irradiation for patients with previously treated head and neck cancer. While the study demonstrates encouraging locoregional control and survival, it highlights the importance of monitoring late toxicities in heavily pretreated populations.",
+      "summary": "This phase 2 multicenter trial evaluated the safety and efficacy of proton beam re-irradiation for head and neck cancer patients. The study reports encouraging locoregional control and survival rates, though late-term toxicity remains a critical consideration.",
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-10-31",
@@ -112,16 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "A cell-type resolved proton RBE model for potential clinical application",
-      "summary": "Researchers have developed a cell-type resolved proton relative biological effectiveness (RBE) model that accounts for variations in cellular repair capabilities. This model demonstrates improved agreement with experimental data and offers a pathway for more precise biological modeling in clinical proton therapy planning.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-30",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961330/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42961330",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that approximately 50 million Americans reside in counties lacking access to local radiation oncology clinics. The findings underscore ongoing disparities in access to specialized cancer care services across the United States.",
       "category": "Radiation Oncology",
@@ -143,7 +143,7 @@
     },
     {
       "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
-      "summary": "IBA has successfully treated the first patient in the C-FLASH-01 clinical trial, which investigates the application of ConformalFLASH proton therapy for head and neck cancers. This milestone marks progress in testing the safety and clinical feasibility of ultra-high dose rate delivery in this patient population.",
+      "summary": "IBA has announced the treatment of the first patient in the C-FLASH-01 clinical trial, which investigates the use of ConformalFLASH proton therapy for head and neck cancer. This milestone marks a significant step in assessing the clinical application of ultra-high dose rate radiation delivery.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-26",
