@@ -13,6 +13,7 @@ concurrency:
 jobs:
   draft:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -22,24 +23,30 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: python -m pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Create draft only
+      - name: Create or update newsletter draft
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
-        run: python scripts/create_newsletter.py
+        run: |
+          python scripts/create_newsletter.py
 
-      - name: Commit draft history
+      - name: Commit newsletter history
         run: |
           git config user.name "DMV Proton News Agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/newsletter_history.json
+
           if git diff --cached --quiet; then
-            echo "No history changes."
+            echo "No newsletter history changes."
             exit 0
           fi
-          git commit -m "Record newsletter draft history"
+
+          git commit -m "Update newsletter draft history"
           git push
