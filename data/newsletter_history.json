@@ -1,6 +1,17 @@
 {
-  "active_draft_id": null,
-  "articles": [],
+  "active_draft_id": "em_7fc1djnwx297hbtqn3ctfvy3g1",
+  "articles": [
+    {
+      "title": "Impact of correlated PBPK parameters on intra-patient global sensitivity analysis in molecular radiotherapy",
+      "summary": "This study demonstrates that incorporating parameter correlations into intra-patient global sensitivity analysis reduces uncertainty in absorbed dose estimates. The findings underscore the importance of maintaining parameter dependencies to improve the accuracy of individualized molecular radiotherapy models.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973155/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42973155",
+      "content_type": "paper"
+    }
+  ],
   "sent_article_urls": [
     "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc1Y0VDRURBa1dsZHFzRkZFM0N5dHBrdUlERHUwNUhPNDU0RndNOVhENmNobnA5N0gyYU54ckZUeElKZ2RBWDRsZjVIbmxsRnFlcnNwM0tVbWJOTDZNT29MTl9uRThJZGVfNjRGZDMtR1YxZW12UG_SAeABQVVfeXFMTndEZ3lDbDVsODNfTnpVVXR2b0xIaXBGSFV1ZDVtTFpLdWZYNWlFSFJCM3RKcjdkZ1lpdURVQVFJSWI2Y1ZDUDlZZWhmMkxJRTYtV29Pd1gtb1c1QmdUQ3ZmaTN5c0YxWDF1ZnNkUEx0ZjdMSVlCVElGZWY5cU5nYXk3QTNPUVB4dDV6Q3c0cWNacVdrRXgyMzJNczR5WEtBaXllUzZTYmdFRzJOVUhONTVlOHZWX3ZybVhXS0JFYlZXTFo2RVZmMDZGODlfTWFHeVo1WFU5cnM1MGJucTUwQV8?oc=5",
     "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJrajVNRXRvcWZpdEVuS0ZCa0RjNGx3MGFCaXJpazhnbWZPdGF3WUpmUUdDS1pOQjNodVFKek1qX08yVFdSVjJaSE1tUTliWDU1YzhMZUE1ejBuYkF1NGdFcXRXNDBkMFFvYk1mWWgxZW1lSFJldXhULWdB?oc=5",
