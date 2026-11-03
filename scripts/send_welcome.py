@@ -250,19 +250,31 @@ def update_state(session, subscriber, status, email_id):
 # SEND INDIVIDUALLY
 # --------------------------------------------------
 
+
 def send_to_subscriber(session, subscriber_id, email_id):
-    """Send one finalized newsletter to one subscriber."""
+    """Send one published newsletter to one subscriber."""
 
     url = (
         f"{API}/subscribers/{subscriber_id}"
         f"/emails/{email_id}"
     )
 
-    response = request(
-        session,
-        "POST",
+    response = session.post(
         url,
+        timeout=30,
     )
+
+    if not response.ok:
+        print("Buttondown HTTP status:", response.status_code)
+
+        try:
+            error = response.json()
+            print("Buttondown error code:", error.get("code"))
+            print("Buttondown error detail:", error.get("detail"))
+        except ValueError:
+            print("Buttondown returned a non-JSON error.")
+
+        response.raise_for_status()
 
     return response.status_code
 
