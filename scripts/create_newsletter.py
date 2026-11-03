@@ -79,12 +79,13 @@ def collect_articles(history, feed):
 
 
 def make_body(articles):
-    """Build a clean newsletter with one heading per section."""
+    """Build a clean, organized newsletter."""
+
     lines = [
-        "# DMV Proton Therapy Collaborative",
+        "Your curated digest of proton therapy, radiation "
+        "oncology, medical physics, and related research.",
         "",
-        "Curated news and research in proton therapy, "
-        "radiation oncology, and medical physics.",
+        "---",
         "",
     ]
 
@@ -101,25 +102,34 @@ def make_body(articles):
         if not stories:
             continue
 
-        lines.extend([f"## {heading}", ""])
+        lines.extend([
+            f"## {heading}",
+            "",
+        ])
 
         for story in stories:
             title = " ".join(str(story["title"]).split())
+            date = story.get("published_date", "")
+            source = story.get("source", "")
 
             lines.extend([
                 f"### {title}",
+                "",
+                f"*{source} | {date}*",
                 "",
                 str(story["summary"]).strip(),
                 "",
                 f"[Read original article]({story['url']})",
                 "",
+                "---",
+                "",
             ])
 
     lines.extend([
-        "---",
+        "Explore the latest updates on our "
+        "[news page](https://dmv-proton.org/news.html).",
         "",
         "DMV Proton Therapy Collaborative",
-        "",
     ])
 
     return "\n".join(lines)
