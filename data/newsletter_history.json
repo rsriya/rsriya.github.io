@@ -1,195 +1,25 @@
 {
-  "active_draft_id": "em_2zf4x4syjp81dss1et5ta7jn2c",
-  "articles": [
-    {
-      "title": "Reliability-weighted patch learning for synthetic CT reconstruction in head and neck adaptive radiotherapy: A proof-of-concept study",
-      "summary": "This study introduces HQ-PatchNet, a computationally efficient AI approach for improving CBCT-to-synthetic CT image quality in adaptive radiation therapy. The findings suggest the method can facilitate online adaptive workflows, though further multi-institutional validation is required.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-11-03",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42973126/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42973126",
-      "content_type": "paper"
-    },
-    {
-      "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
-      "summary": "This study evaluated the impact of extended field-of-view (eFOV) CT reconstruction on image quality, stopping power ratio, and subsequent proton dose calculations. The findings provide insights into using wider CT scan ranges for improved immobilization and target coverage in proton therapy planning.",
-      "category": "Medical Physics",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-11-02",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42970220/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42970220",
-      "content_type": "paper"
-    },
-    {
-      "title": "High-dose reirradiation of in-field recurrence lung cancer in the THOrax (RETHO): toxicity analysis of a prospective trial",
-      "summary": "A prospective clinical trial evaluated the feasibility of high-dose thoracic reirradiation for recurrent lung cancer. Results indicate the approach is clinically feasible while maintaining acceptable safety profiles for critical organs at risk, provided cumulative dose constraints are respected.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-11-02",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42971440/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42971440",
-      "content_type": "paper"
-    },
-    {
-      "title": "Pre-treatment machine learning prediction of local failure and time to local failure after Gamma Knife radiosurgery for radioresistant brain metastases",
-      "summary": "Researchers developed a machine learning model to predict local recurrence following Gamma Knife radiosurgery for radioresistant brain metastases. The study highlights the potential for this model to support individualized clinical risk stratification and follow-up strategies.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-11-02",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42970176/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42970176",
-      "content_type": "paper"
-    },
-    {
-      "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
-      "summary": "This matched cohort study found no significant difference in oncological outcomes or side effects between deep learning-based intensity-modulated proton therapy (IMPT) and manual planning for oropharyngeal cancer patients. The results support the clinical adoption of automated planning workflows.",
-      "category": "AI & Imaging",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967539",
-      "content_type": "paper"
-    },
-    {
-      "title": "Mapping the evolution of spatially fractionated radiation therapy: A comprehensive bibliometric analysis of research trends and future directions",
-      "summary": "This bibliometric analysis tracks the convergence of spatially fractionated radiation therapy (SFRT) modalities into a unified field. It identifies future research priorities including dosimetry advancement, biological mechanism elucidation, and integration with FLASH radiotherapy.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967406/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967406",
-      "content_type": "paper"
-    },
-    {
-      "title": "Gaussian process regression of HDR prostate biopsy dose for improved modelling of localization-induced uncertainty",
-      "summary": "Researchers utilized a Gaussian process regression framework to model dose distribution in HDR prostate brachytherapy, accounting for localization uncertainty. This approach offers a robust method for probabilistic quality assurance and future dose-response analysis.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42968298/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42968298",
-      "content_type": "paper"
-    },
-    {
-      "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
-      "summary": "A comparative analysis of two optimization algorithms for brain metastasis stereotactic radiosurgery showed that the Krylov optimizer performs better for small lesions, while both methods are comparable for larger lesions. These findings aid in optimizing treatment planning workflows in radiation oncology.",
-      "category": "Radiation Oncology",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967581/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967581",
-      "content_type": "paper"
-    },
-    {
-      "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
-      "summary": "This phase 2 multicenter trial evaluated the safety and efficacy of proton beam re-irradiation for head and neck cancer patients. The study reports encouraging locoregional control and survival rates, though late-term toxicity remains a critical consideration.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963935/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963935",
-      "content_type": "paper"
-    },
-    {
-      "title": "AAPM Medical Physics Practice Guideline 18.a: Superficial radiation therapy using low-energy kilovoltage x-rays",
-      "summary": "This guideline provides a comprehensive technical overview and framework for the clinical delivery of superficial radiation therapy (SRT) in the 50-100 kVp range. It is designed to assist medical physicists and clinicians in adhering to minimum safety and quality standards for treating non-melanoma skin cancer and benign conditions.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963823",
-      "content_type": "paper"
-    },
-    {
-      "title": "A Large Language Model Framework for Seed Implant Brachytherapy: Adaptive Weight Optimization via Retrieval-Augmented Generation",
-      "summary": "This study introduces an adaptive framework using a locally deployed large language model to optimize objective function weights in seed implant brachytherapy. The integration of LLMs with automated planning algorithms aims to improve clinical planning efficiency and plan quality.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963884",
-      "content_type": "paper"
-    },
-    {
-      "title": "Generalized multi-energy model for computing radiation treatment parameters",
-      "summary": "This study presents a general n-energy mathematical model for predicting relative electron density, effective atomic number, and stopping power ratio from CT images. It offers a standardized algorithm for model selection, incorporating existing methods as special cases for improved treatment planning.",
-      "category": "Medical Physics",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42964685",
-      "content_type": "paper"
-    },
-    {
-      "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
-      "summary": "A recent study highlights that approximately 50 million Americans reside in counties lacking access to local radiation oncology clinics. The findings underscore ongoing disparities in access to specialized cancer care services across the United States.",
-      "category": "Radiation Oncology",
-      "source": "ASTRO News",
-      "published_date": "2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQYWxaLTRZVHRIUFJnYXhnUEptU2lBMHlKRDRhZ09KWEdTdUJDRVpJODk3ZXpfUGJnRDdmRXR6YVBQQjJwbmdPWUg1SzZOMDVCUElqWHZ4Ul9sTXhBRGtTOGhvV0JSQnJwRTMwZ0FxcjhPcGZETDZJUUY0TlF4MFVZQWt5dUNCTTZZQVhFMU9wQTVld2pDTUs0NFdXNkhfWkJhdUZjZU4wZWR5aUh0cGx4akNCZzRTZXllZ1hsT1c0NmViaUl1RUxmTXEwT1NtUW85ZkxlcnhlNnQ1N1VOMk1ZSHdudzI2WTFKWDRLZXk1SmJiaFluNmRnOWJrUmlrbDVGc01DemJKbF9kR281VktVeGVLYmIybnFxT2dYcmRNd3hseDNDNzJwMjZLVWVmX3hLb1ZjZUZqUjJwdHB4a2c?oc=5",
-      "id": "news.google.com/rss/articles/CBMivgJBVV95cUxQYWxaLTRZVHRIUFJnYXhnUEptU2lBMHlKRDRhZ09KWEdTdUJDRVpJODk3ZXpfUGJnRDdmRXR6YVBQQjJwbmdPWUg1SzZOMDVCUElqWHZ4Ul9sTXhBRGtTOGhvV0JSQnJwRTMwZ0F",
-      "content_type": "news"
-    },
-    {
-      "title": "ASTRO updates guideline on shorter-course radiation therapy for localized prostate cancer",
-      "summary": "ASTRO has issued updated clinical guidelines focusing on the implementation of shorter-course radiation therapy for patients with localized prostate cancer. These recommendations aim to provide evidence-based standards for optimized treatment delivery.",
-      "category": "Radiation Oncology",
-      "source": "ASTRO News",
-      "published_date": "2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVllpc20wUkRhampGTlFsV00wY2RKUVJiRU5IME9PNE5xSDRFUncyd1hDaDJQelRQT0ZWLVoxdXVUUWkyblBQR19TM2RJRS1nOVBTTzZpVTVtMW9yS043SGVyQUdkT3RzRTU3UWxYemtCRkthclNXRzBiR0dWcWxkSEQycXJnVVIydEtwS1NUMFgzRHNjZmZqbUhka3c5UDFYOW1fWnV1em0yTm5QZVZZVkM5RWRkcEcxY21XbUF0bWNBOWIxcGkydkFUbUx3cXlLRU4yakl3MHlkZXdxa280Z05MM0k0ZHhZb0NxWlBKRUVMUkFwc3VwQUdkdmJXOVBxZG9ibg?oc=5",
-      "id": "news.google.com/rss/articles/CBMihAJBVV95cUxOVllpc20wUkRhampGTlFsV00wY2RKUVJiRU5IME9PNE5xSDRFUncyd1hDaDJQelRQT0ZWLVoxdXVUUWkyblBQR19TM2RJRS1nOVBTTzZpVTVtMW9yS043SGVyQUdkT3RzRTU3UWx",
-      "content_type": "news"
-    },
-    {
-      "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
-      "summary": "IBA has announced the treatment of the first patient in the C-FLASH-01 clinical trial, which investigates the use of ConformalFLASH proton therapy for head and neck cancer. This milestone marks a significant step in assessing the clinical application of ultra-high dose rate radiation delivery.",
-      "category": "Proton Therapy",
-      "source": "Proton Center Developments",
-      "published_date": "2026-10-26",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
-      "id": "news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
-      "content_type": "news"
-    },
-    {
-      "title": "Hampton University Proton Cancer Institute opens new wellness space for patients and caregivers",
-      "summary": "The Hampton University Proton Cancer Institute has inaugurated a new wellness space designed to support patients and caregivers throughout their treatment journey. This development reflects the regional growth and commitment to patient-centered care within the DMV area.",
-      "category": "Regional",
-      "source": "Proton Center Developments",
-      "published_date": "2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJrajVNRXRvcWZpdEVuS0ZCa0RjNGx3MGFCaXJpazhnbWZPdGF3WUpmUUdDS1pOQjNodVFKek1qX08yVFdSVjJaSE1tUTliWDU1YzhMZUE1ejBuYkF1NGdFcXRXNDBkMFFvYk1mWWgxZW1lSFJldXhULWdB?oc=5",
-      "id": "news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJ",
-      "content_type": "news"
-    },
-    {
-      "title": "First Patient Treated in the C-FLASH-01 ConformalFLASH® Clinical Trial",
-      "summary": "A patient has been treated in the C-FLASH-01 trial investigating ConformalFLASH® proton therapy for head and neck cancer. This represents a significant milestone in advancing ultra-high dose rate radiation clinical research.",
-      "category": "Proton Therapy",
-      "source": "Proton Center Developments",
-      "published_date": "2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc1Y0VDRURBa1dsZHFzRkZFM0N5dHBrdUlERHUwNUhPNDU0RndNOVhENmNobnA5N0gyYU54ckZUeElKZ2RBWDRsZjVIbmxsRnFlcnNwM0tVbWJOTDZNT29MTl9uRThJZGVfNjRGZDMtR1YxZW12UG_SAeABQVVfeXFMTndEZ3lDbDVsODNfTnpVVXR2b0xIaXBGSFV1ZDVtTFpLdWZYNWlFSFJCM3RKcjdkZ1lpdURVQVFJSWI2Y1ZDUDlZZWhmMkxJRTYtV29Pd1gtb1c1QmdUQ3ZmaTN5c0YxWDF1ZnNkUEx0ZjdMSVlCVElGZWY5cU5nYXk3QTNPUVB4dDV6Q3c0cWNacVdrRXgyMzJNczR5WEtBaXllUzZTYmdFRzJOVUhONTVlOHZWX3ZybVhXS0JFYlZXTFo2RVZmMDZGODlfTWFHeVo1WFU5cnM1MGJucTUwQV8?oc=5",
-      "id": "news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc",
-      "content_type": "news"
-    },
-    {
-      "title": "BayCare opens proton therapy center at Tampa's St. Joseph’s Hospital",
-      "summary": "BayCare Health System has officially opened its new $33 million proton therapy center at St. Joseph's Hospital. The facility adds new proton beam capabilities to the region's existing oncology treatment infrastructure.",
-      "category": "Proton Therapy",
-      "source": "Proton Center Developments",
-      "published_date": "2026-10-16",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZOaDF5VWlNVmRGV2lhV2o0c1RlaGdJTlpnLVp5UkZKMV9sbkw5V3U1RDg3QmxjS2ppMEcxYmZhTU1oZnRTQU0yQV9oV0Jpbw?oc=5",
-      "id": "news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZ",
-      "content_type": "news"
-    },
-    {
-      "title": "Fully automated AI-based quantification of tumour volume on PSMA PET-CT images is associated with overall survival in prostate cancer",
-      "summary": "This study demonstrates that fully automated AI-derived total lesion volume (TLV) from PSMA PET-CT imaging is a significant prognostic indicator for overall survival in prostate cancer. The findings highlight the potential for AI-based quantification to serve as a standardized imaging biomarker in radiation treatment planning and assessment.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-11-03",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42973055/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42973055",
-      "content_type": "paper"
-    }
+  "active_draft_id": null,
+  "articles": [],
+  "sent_article_urls": [
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeU11elExaHdTbHFfWkhSeHRzbXp1MVFHM2Z0Vm51aDZ0TDRFRm1kT1M2cDY5eGlEVE1feFBaWm5FVm5zWFViaUtMMUQ4YTFVdW5EQnFLN2l3UVBXSEg2QXdjbjFLdDFMVEJsOTc1Y0VDRURBa1dsZHFzRkZFM0N5dHBrdUlERHUwNUhPNDU0RndNOVhENmNobnA5N0gyYU54ckZUeElKZ2RBWDRsZjVIbmxsRnFlcnNwM0tVbWJOTDZNT29MTl9uRThJZGVfNjRGZDMtR1YxZW12UG_SAeABQVVfeXFMTndEZ3lDbDVsODNfTnpVVXR2b0xIaXBGSFV1ZDVtTFpLdWZYNWlFSFJCM3RKcjdkZ1lpdURVQVFJSWI2Y1ZDUDlZZWhmMkxJRTYtV29Pd1gtb1c1QmdUQ3ZmaTN5c0YxWDF1ZnNkUEx0ZjdMSVlCVElGZWY5cU5nYXk3QTNPUVB4dDV6Q3c0cWNacVdrRXgyMzJNczR5WEtBaXllUzZTYmdFRzJOVUhONTVlOHZWX3ZybVhXS0JFYlZXTFo2RVZmMDZGODlfTWFHeVo1WFU5cnM1MGJucTUwQV8?oc=5",
+    "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPempNS09teVB2OFV1WkNnNTNpV25oWXdFLTV5YXk1S3p3NEF4ek1iRUZWeXRYdVlkSHRjUlZ4TW1VVlFkX2x2U0RpcjA3bTJ3ZmQwWThmZlpGOGN0V0hDcmtpSERRN2VOZjgwdVJrajVNRXRvcWZpdEVuS0ZCa0RjNGx3MGFCaXJpazhnbWZPdGF3WUpmUUdDS1pOQjNodVFKek1qX08yVFdSVjJaSE1tUTliWDU1YzhMZUE1ejBuYkF1NGdFcXRXNDBkMFFvYk1mWWgxZW1lSFJldXhULWdB?oc=5",
+    "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZbDRsU202UFFzZTdRaWdPamdoa1hqVjJtZXRKOHE3ODlKVkZMY1Uxa1duaGZjSmQzMFhRS1RFc3dwelVWOUlHal9vWmJhSy1s?oc=5",
+    "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVllpc20wUkRhampGTlFsV00wY2RKUVJiRU5IME9PNE5xSDRFUncyd1hDaDJQelRQT0ZWLVoxdXVUUWkyblBQR19TM2RJRS1nOVBTTzZpVTVtMW9yS043SGVyQUdkT3RzRTU3UWxYemtCRkthclNXRzBiR0dWcWxkSEQycXJnVVIydEtwS1NUMFgzRHNjZmZqbUhka3c5UDFYOW1fWnV1em0yTm5QZVZZVkM5RWRkcEcxY21XbUF0bWNBOWIxcGkydkFUbUx3cXlLRU4yakl3MHlkZXdxa280Z05MM0k0ZHhZb0NxWlBKRUVMUkFwc3VwQUdkdmJXOVBxZG9ibg?oc=5",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZOaDF5VWlNVmRGV2lhV2o0c1RlaGdJTlpnLVp5UkZKMV9sbkw5V3U1RDg3QmxjS2ppMEcxYmZhTU1oZnRTQU0yQV9oV0Jpbw?oc=5",
+    "https://news.google.com/rss/articles/CBMivgJBVV95cUxQYWxaLTRZVHRIUFJnYXhnUEptU2lBMHlKRDRhZ09KWEdTdUJDRVpJODk3ZXpfUGJnRDdmRXR6YVBQQjJwbmdPWUg1SzZOMDVCUElqWHZ4Ul9sTXhBRGtTOGhvV0JSQnJwRTMwZ0FxcjhPcGZETDZJUUY0TlF4MFVZQWt5dUNCTTZZQVhFMU9wQTVld2pDTUs0NFdXNkhfWkJhdUZjZU4wZWR5aUh0cGx4akNCZzRTZXllZ1hsT1c0NmViaUl1RUxmTXEwT1NtUW85ZkxlcnhlNnQ1N1VOMk1ZSHdudzI2WTFKWDRLZXk1SmJiaFluNmRnOWJrUmlrbDVGc01DemJKbF9kR281VktVeGVLYmIybnFxT2dYcmRNd3hseDNDNzJwMjZLVWVmX3hLb1ZjZUZqUjJwdHB4a2c?oc=5",
+    "https://pubmed.ncbi.nlm.nih.gov/42963823/",
+    "https://pubmed.ncbi.nlm.nih.gov/42963884/",
+    "https://pubmed.ncbi.nlm.nih.gov/42963935/",
+    "https://pubmed.ncbi.nlm.nih.gov/42964685/",
+    "https://pubmed.ncbi.nlm.nih.gov/42967406/",
+    "https://pubmed.ncbi.nlm.nih.gov/42967539/",
+    "https://pubmed.ncbi.nlm.nih.gov/42967581/",
+    "https://pubmed.ncbi.nlm.nih.gov/42968298/",
+    "https://pubmed.ncbi.nlm.nih.gov/42970176/",
+    "https://pubmed.ncbi.nlm.nih.gov/42970220/",
+    "https://pubmed.ncbi.nlm.nih.gov/42971440/",
+    "https://pubmed.ncbi.nlm.nih.gov/42973055/",
+    "https://pubmed.ncbi.nlm.nih.gov/42973126/"
   ]
 }
