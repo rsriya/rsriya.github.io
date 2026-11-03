@@ -3,6 +3,14 @@ name: Create Newsletter Draft
 on:
   workflow_dispatch:
 
+  workflow_run:
+    workflows:
+      - Update Proton Therapy News
+    types:
+      - completed
+    branches:
+      - master
+
 permissions:
   contents: write
 
@@ -12,6 +20,10 @@ concurrency:
 
 jobs:
   draft:
+    if: >-
+        github.event_name == 'workflow_dispatch' ||
+        github.event.workflow_run.conclusion == 'success'
+
     runs-on: ubuntu-latest
 
     steps:
