@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T20:22:25.027545+00:00",
+  "updated_at": "2026-11-03T22:00:41.368890+00:00",
   "articles": [
     {
       "title": "Reliability-weighted patch learning for synthetic CT reconstruction in head and neck adaptive radiotherapy: A proof-of-concept study",
@@ -22,6 +22,16 @@
       "content_type": "paper"
     },
     {
+      "title": "Impact of correlated PBPK parameters on intra-patient global sensitivity analysis in molecular radiotherapy",
+      "summary": "This study demonstrates that incorporating parameter correlations into intra-patient global sensitivity analysis reduces uncertainty in absorbed dose estimates. The findings underscore the importance of maintaining parameter dependencies to improve the accuracy of individualized molecular radiotherapy models.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973155/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42973155",
+      "content_type": "paper"
+    },
+    {
       "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
       "summary": "This study evaluated the impact of extended field-of-view (eFOV) CT reconstruction on image quality, stopping power ratio, and subsequent proton dose calculations. The findings provide insights into using wider CT scan ranges for improved immobilization and target coverage in proton therapy planning.",
       "category": "Medical Physics",
@@ -33,7 +43,7 @@
     },
     {
       "title": "High-dose reirradiation of in-field recurrence lung cancer in the THOrax (RETHO): toxicity analysis of a prospective trial",
-      "summary": "This prospective trial demonstrates the feasibility of high-dose thoracic reirradiation for recurrent lung cancer while managing cumulative dose constraints to organs at risk. Findings indicate acceptable toxicity profiles, with no high-grade airway or spinal cord injuries reported despite the intensive treatment regimens.",
+      "summary": "This prospective trial analysis indicates that thoracic reirradiation for recurrent lung cancer is feasible while respecting organs-at-risk constraints. The study highlights correlations between cumulative mean lung dose and V20 with radiation pneumonitis risk.",
       "category": "Radiation Oncology",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-02",
@@ -53,7 +63,7 @@
     },
     {
       "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
-      "summary": "This matched cohort study evaluated the real-world clinical implementation of deep learning-based intensity-modulated proton therapy (IMPT) for oropharyngeal cancer. The results show that deep learning-assisted planning produces oncological outcomes and side-effect profiles comparable to traditional manual planning, supporting the safety of this automated approach.",
+      "summary": "This comparative study found no significant difference in oncological outcomes or side effects between deep learning-based intensity-modulated proton therapy (IMPT) and manual planning for oropharyngeal cancer. The results support the clinical adoption of automated planning workflows.",
       "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-11-01",
@@ -73,7 +83,7 @@
     },
     {
       "title": "Gaussian process regression of HDR prostate biopsy dose for improved modelling of localization-induced uncertainty",
-      "summary": "This research introduces a Gaussian process regression framework to better account for localization-induced uncertainty in HDR prostate brachytherapy. The model provides a covariance-informed approach to dose interpretation, offering a robust foundation for probabilistic quality assurance and future dose-response correlation studies.",
+      "summary": "The researchers developed a Gaussian process regression framework to model dose uncertainty in HDR prostate brachytherapy. This approach provides a spatially correlated, probabilistic assessment of dose delivery, improving quality assurance compared to traditional voxelwise methods.",
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -83,7 +93,7 @@
     },
     {
       "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
-      "summary": "This comparative study evaluates treatment plan quality between two distinct optimization systems for brain metastasis radiosurgery. Results suggest that the Krylov optimizer provides superior plan quality for small lesion volumes compared to the Lightning optimizer, while performance for larger lesions remains comparable.",
+      "summary": "A comparative analysis of treatment plan optimization for brain metastases shows that the ZAP-Axon Krylov optimizer produces comparable results to Leksell Gamma Knife Lightning for large lesions, while offering superior performance for small lesions.",
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -109,16 +119,6 @@
       "published_date": "2026-10-31",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/",
       "id": "pubmed.ncbi.nlm.nih.gov/42963823",
-      "content_type": "paper"
-    },
-    {
-      "title": "A Large Language Model Framework for Seed Implant Brachytherapy: Adaptive Weight Optimization via Retrieval-Augmented Generation",
-      "summary": "This study introduces an adaptive framework using a locally deployed large language model to optimize objective function weights in seed implant brachytherapy. The integration of LLMs with automated planning algorithms aims to improve clinical planning efficiency and plan quality.",
-      "category": "AI & Imaging",
-      "source": "PubMed AI",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963884",
       "content_type": "paper"
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "title": "BayCare opens proton therapy center at Tampa's St. Joseph’s Hospital",
-      "summary": "BayCare Health System has officially opened its new $33 million proton therapy center at St. Joseph's Hospital. The facility adds new proton beam capabilities to the region's existing oncology treatment infrastructure.",
+      "summary": "BayCare Health System has officially opened a new $33 million proton therapy center at St. Joseph's Hospital. This facility expands regional access to advanced radiation treatment technology in the Florida market.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-16",
