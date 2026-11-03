@@ -180,6 +180,16 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZOaDF5VWlNVmRGV2lhV2o0c1RlaGdJTlpnLVp5UkZKMV9sbkw5V3U1RDg3QmxjS2ppMEcxYmZhTU1oZnRTQU0yQV9oV0Jpbw?oc=5",
       "id": "news.google.com/rss/articles/CBMiswFBVV95cUxNMVZFSlhReTJoTjlJVndETkJfb1dvTDlYVEo2TU5rWDFWMW5JRnByeGxwOVlnbnp0bzA3eFVnTGpzZU1IeXYtQmhUNHpUZEx2VXNDakNQeFpYR1lDcEtmT3Q4MTV0WWNMdEY0OVZ",
       "content_type": "news"
+    },
+    {
+      "title": "Fully automated AI-based quantification of tumour volume on PSMA PET-CT images is associated with overall survival in prostate cancer",
+      "summary": "This study demonstrates that fully automated AI-derived total lesion volume (TLV) from PSMA PET-CT imaging is a significant prognostic indicator for overall survival in prostate cancer. The findings highlight the potential for AI-based quantification to serve as a standardized imaging biomarker in radiation treatment planning and assessment.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973055/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42973055",
+      "content_type": "paper"
     }
   ]
 }
