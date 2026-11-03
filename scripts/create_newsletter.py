@@ -1,4 +1,9 @@
-"""Accumulate distinct stories in one Buttondown draft; never send emails."""
+"""Rebuild a single Buttondown draft from its existing articles plus news.json.
+
+Safety: update drafts only; never send emails. Existing stories are recovered
+from the Buttondown draft before rebuilding, so they do not disappear when
+news.json rotates. No cap on the article count.
+"""
 
 import json
 import os
@@ -7,7 +12,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
-# Windows/Miniconda certificate support.
 if os.name == "nt":
     try:
         import truststore
@@ -20,317 +24,183 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_FILE = ROOT / "data" / "news.json"
 HISTORY_FILE = ROOT / "data" / "newsletter_history.json"
-API_URL = "https://api.buttondown.com/v1/emails"
+API = "https://api.buttondown.com/v1/emails"
 
 
 def canonical_url(url):
-    parsed = urlsplit(str(url or "").strip())
-
-    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+    p = urlsplit(str(url or "").strip())
+    if p.scheme not in ("http", "https") or not p.hostname:
         return ""
-
-    if parsed.hostname.lower() in {
-        "pubmed.ncbi.nlm.nih.gov",
-        "www.pubmed.ncbi.nlm.nih.gov",
-    }:
-        match = re.match(r"^/(\d+)/?", parsed.path)
-        if match:
-            return f"https://pubmed.ncbi.nlm.nih.gov/{match.group(1)}/"
-
-    return urlunsplit((
-        parsed.scheme.lower(),
-        parsed.netloc.lower(),
-        parsed.path,
-        parsed.query,
-        "",
-    ))
+    if p.hostname.lower() in ("pubmed.ncbi.nlm.nih.gov", "www.pubmed.ncbi.nlm.nih.gov"):
+        m = re.match(r"^/(\d+)/?", p.path)
+        if m:
+            return f"https://pubmed.ncbi.nlm.nih.gov/{m.group(1)}/"
+    return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path, p.query, ""))
 
 
-def links_in_body(body):
-    # Read existing Markdown or HTML article links.
-    links = re.findall(r"\]\((https?://[^\s)]+)\)", body)
-    links += re.findall(
-        r"""href=["'](https?://[^"']+)["']""",
-        body,
-    )
-
-    return {
-        canonical_url(url)
-        for url in links
-        if canonical_url(url)
-    }
-
-
-def choose_articles(articles, excluded):
-    seen = set(excluded)
-    news = []
-    research = []
-
-    articles = sorted(
-        articles,
-        key=lambda a: a.get("published_date", ""),
-        reverse=True,
-    )
-
-    for item in articles:
-        url = canonical_url(item.get("url"))
-
-        if not url or url in seen:
-            continue
-
-        if not item.get("title") or not item.get("summary"):
-            continue
-
-        article = {**item, "url": url}
-
-        is_paper = (
-            article.get("content_type") == "paper"
-            or (
-                not article.get("content_type")
-                and "pubmed" in article.get("source", "").lower()
-            )
-        )
-
-        if is_paper:
-            research.append(article)
-        else:
-            news.append(article)
-
-        seen.add(url)
-
-    return news, research
-
-
-def format_additions(news, research):
-    sections = []
-
-    for heading, articles in (
-        ("News & Developments", news),
-        ("Research & Publications", research),
+def event_key(item):
+    """Identify identical titles and the known C-FLASH first-patient event."""
+    title = item["title"].lower()
+    condensed = re.sub(r"[^a-z0-9]+", "", title)
+    if ("cflash01" in condensed or "conformalflash" in condensed) and (
+        "firstpatient" in condensed or "patienttreated" in condensed or "treatsfirstpatient" in condensed
     ):
-        if not articles:
+        return "event:cflash01-first-patient"
+    return "title:" + condensed
+
+
+def parse_existing_body(body):
+    """Recover all Markdown article blocks from earlier append-style drafts."""
+    if not isinstance(body, str):
+        raise RuntimeError("Buttondown did not return a readable Markdown body.")
+
+    current_type = None
+    recovered = []
+    lines = body.splitlines()
+    headings_seen = 0
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line == "## News & Developments":
+            current_type = "news"
+            i += 1
+            continue
+        if line == "## Research & Publications":
+            current_type = "paper"
+            i += 1
+            continue
+        if not line.startswith("### "):
+            i += 1
             continue
 
-        block = [f"## {heading}", ""]
+        headings_seen += 1
+        title = line[4:].strip()
+        i += 1
+        content = []
+        while i < len(lines) and not lines[i].strip().startswith(("### ", "## ")):
+            content.append(lines[i].strip())
+            i += 1
 
-        for item in articles:
-            title = item["title"].replace("\n", " ").strip()
+        chunk = "\n".join(content)
+        links = re.findall(r"\[Read (?:the )?original(?: article)?\]\((https?://[^\s)]+)\)", chunk, re.I)
+        if not links or current_type is None:
+            raise RuntimeError(f"Could not safely recover article: {title!r}. Draft unchanged.")
+        url = canonical_url(links[-1])
+        if not url:
+            raise RuntimeError(f"Invalid article URL in existing draft: {title!r}")
+        summary = re.sub(
+            r"\[Read (?:the )?original(?: article)?\]\(https?://[^\s)]+\)", "", chunk, flags=re.I
+        ).strip()
+        recovered.append({
+            "title": title,
+            "summary": summary,
+            "url": url,
+            "content_type": current_type,
+            "published_date": "",
+        })
 
-            block.extend([
-                f"### {title}",
-                "",
-                item["summary"].strip(),
-                "",
-                f"[Read original article]({item['url']})",
-                "",
+    if body.strip() and headings_seen != len(recovered):
+        raise RuntimeError("Draft parsing was incomplete. No changes made.")
+    if body.strip() and not recovered:
+        raise RuntimeError("Existing draft has content but no recoverable article blocks. No changes made.")
+    return recovered
+
+
+def distinct_articles(old, latest):
+    by_url = {}
+    ordered = []
+    for item in old + latest:
+        url = canonical_url(item.get("url"))
+        if not url or not item.get("title") or not item.get("summary"):
+            continue
+        current = dict(item)
+        current["url"] = url
+        if current.get("content_type") not in ("paper", "news"):
+            current["content_type"] = "paper" if "pubmed" in current.get("source", "").lower() else "news"
+        if url not in by_url:
+            by_url[url] = current
+            ordered.append(url)
+        else:
+            # Keep the existing draft text, but recover publication date when available.
+            if not by_url[url].get("published_date"):
+                by_url[url]["published_date"] = current.get("published_date", "")
+
+    result = []
+    seen_events = set()
+    for url in ordered:
+        item = by_url[url]
+        key = event_key(item)
+        if key in seen_events:
+            continue
+        seen_events.add(key)
+        result.append(item)
+    return result
+
+
+def render(articles):
+    parts = [
+        "# DMV Proton Therapy Collaborative",
+        "",
+        "Curated news and research in proton therapy, radiation oncology, and medical physics.",
+        "",
+    ]
+    for heading, kind in (("News & Developments", "news"), ("Research & Publications", "paper")):
+        items = [a for a in articles if a["content_type"] == kind]
+        items.sort(key=lambda a: a.get("published_date") or "", reverse=True)
+        if not items:
+            continue
+        parts.extend([f"## {heading}", ""])
+        for a in items:
+            parts.extend([
+                "### " + a["title"].replace("\n", " ").strip(), "",
+                a["summary"].strip(), "",
+                f"[Read original article]({a['url']})", "",
             ])
-
-        sections.append("\n".join(block).rstrip())
-
-    return "\n\n".join(sections)
-
-
-def save_history(history):
-    HISTORY_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    HISTORY_FILE.write_text(
-        json.dumps(history, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    parts.extend(["---", "", "DMV Proton Therapy Collaborative", ""])
+    return "\n".join(parts)
 
 
 def main():
-    key = os.getenv("BUTTONDOWN_API_KEY")
-
-    if not key:
+    token = os.environ.get("BUTTONDOWN_API_KEY")
+    if not token:
         raise RuntimeError("BUTTONDOWN_API_KEY is missing")
-
-    feed = json.loads(
-        NEWS_FILE.read_text(encoding="utf-8")
+    if not HISTORY_FILE.exists():
+        raise RuntimeError("Newsletter history is missing. Refusing to create a new draft.")
+    history = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+    draft_id = history.get("active_draft_id") or next(
+        (x.get("buttondown_email_id") for x in reversed(history.get("drafts", [])) if x.get("buttondown_email_id")),
+        None,
     )
-
-    history = (
-        json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-        if HISTORY_FILE.exists()
-        else {"drafted_article_urls": [], "drafts": []}
-    )
+    if not draft_id:
+        raise RuntimeError("No existing Buttondown draft ID in history; no changes made.")
 
     session = requests.Session()
-    session.headers.update({
-        "Authorization": f"Token {key}",
-        "Content-Type": "application/json",
-    })
+    session.headers.update({"Authorization": f"Token {token}", "Content-Type": "application/json"})
+    response = session.get(f"{API}/{draft_id}", timeout=30)
+    response.raise_for_status()
+    remote = response.json()
+    if remote.get("status") != "draft":
+        raise RuntimeError(f"Email {draft_id} status is {remote.get('status')!r}, not draft. Nothing modified.")
 
-    # Reuse the latest previously recorded draft.
-    draft_id = history.get("active_draft_id")
+    old = parse_existing_body(remote.get("body"))
+    feed = json.loads(NEWS_FILE.read_text(encoding="utf-8"))
+    articles = distinct_articles(old, feed.get("articles", []))
+    new_body = render(articles)
+    print(f"Recovered {len(old)} existing article blocks; rebuilt {len(articles)} distinct articles.")
+    print(f"News: {sum(a['content_type']=='news' for a in articles)}; Research: {sum(a['content_type']=='paper' for a in articles)}")
 
-    if not draft_id and history.get("drafts"):
-        draft_id = history["drafts"][-1].get(
-            "buttondown_email_id"
-        )
-
-    existing_body = ""
-    included = set()
-
-    if draft_id:
-        response = session.get(
-            f"{API_URL}/{draft_id}",
-            timeout=30,
-        )
-        response.raise_for_status()
-
-        remote = response.json()
-        status = remote.get("status")
-
-        if status == "draft":
-            existing_body = remote.get("body")
-
-            if not isinstance(existing_body, str):
-                raise RuntimeError(
-                    "Draft body not readable; refusing to overwrite"
-                )
-
-            included = links_in_body(existing_body)
-
-            if history.get("active_draft_id") == draft_id:
-                included.update(
-                    canonical_url(u)
-                    for u in history.get(
-                        "active_article_urls", []
-                    )
-                )
-            else:
-                for old in reversed(history.get("drafts", [])):
-                    if old.get("buttondown_email_id") == draft_id:
-                        included.update(
-                            canonical_url(u)
-                            for u in old.get("article_urls", [])
-                        )
-                        break
-
-        elif status == "sent":
-            # Start a new issue after manual sending.
-            previously_sent = set(
-                history.get("sent_article_urls", [])
-            )
-
-            previously_sent.update(
-                canonical_url(u)
-                for u in history.get("active_article_urls", [])
-            )
-
-            previously_sent.update(
-                links_in_body(remote.get("body") or "")
-            )
-
-            history["sent_article_urls"] = sorted(
-                previously_sent
-            )
-            history["active_draft_id"] = None
-            history["active_article_urls"] = []
-            draft_id = None
-
-        else:
-            raise RuntimeError(
-                f"Draft {draft_id} is {status!r}; "
-                "nothing was modified"
-            )
-
-    excluded = (
-        included
-        if draft_id
-        else set(history.get("sent_article_urls", []))
-    )
-
-    news, research = choose_articles(
-        feed.get("articles", []),
-        excluded,
-    )
-
-    new_articles = news + research
-
-    if not new_articles:
-        print("No new distinct articles. Existing draft unchanged.")
-        save_history(history)
-        return
-
-    additions = format_additions(news, research)
-
-    print(
-        f"Adding {len(news)} news articles and "
-        f"{len(research)} research papers"
-    )
-
-    if draft_id:
-        # Append, preserving everything already in the draft.
-        new_body = (
-            existing_body.rstrip()
-            + "\n\n"
-            + additions
-            + "\n"
-        )
-
-        response = session.patch(
-            f"{API_URL}/{draft_id}",
-            json={"body": new_body},
-            timeout=30,
-        )
-        response.raise_for_status()
-
-        print("Updated existing Buttondown draft:", draft_id)
-
+    if new_body != remote["body"]:
+        patched = session.patch(f"{API}/{draft_id}", json={"body": new_body}, timeout=30)
+        patched.raise_for_status()
+        print("Updated existing draft:", draft_id)
     else:
-        body = (
-            "# DMV Proton Therapy Collaborative\n\n"
-            "Curated news and research in proton therapy, "
-            "radiation oncology, and medical physics.\n\n"
-            + additions
-            + "\n"
-        )
-
-        response = session.post(
-            API_URL,
-            json={
-                "subject": (
-                    "DMV Proton Therapy News — Working Draft"
-                ),
-                "body": body,
-                "status": "draft",
-            },
-            timeout=30,
-        )
-        response.raise_for_status()
-
-        draft_id = response.json().get("id")
-
-        if not draft_id:
-            raise RuntimeError(
-                "Buttondown did not return an email ID"
-            )
-
-        history.setdefault("drafts", []).append({
-            "buttondown_email_id": draft_id,
-            "created_at": datetime.now(
-                timezone.utc
-            ).isoformat(),
-            "article_urls": [
-                a["url"] for a in new_articles
-            ],
-        })
-
-        print("Created new working draft:", draft_id)
+        print("Draft already up to date:", draft_id)
 
     history["active_draft_id"] = draft_id
-    history["active_article_urls"] = sorted(
-        included | {a["url"] for a in new_articles}
-    )
-
-    save_history(history)
-
-    print("Draft history saved. Nothing was sent.")
+    history["active_article_urls"] = sorted({a["url"] for a in articles})
+    history["last_rebuilt_at"] = datetime.now(timezone.utc).isoformat()
+    HISTORY_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("No email was sent.")
 
 
 if __name__ == "__main__":
