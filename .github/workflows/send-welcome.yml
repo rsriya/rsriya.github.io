@@ -1,0 +1,38 @@
+name: Send Welcome Newsletter
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Every 30 minutes
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: send-welcome
+  cancel-in-progress: false
+
+jobs:
+  send-welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Check and send welcome newsletter
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          WELCOME_MODE: ${{ vars.WELCOME_MODE || 'check' }}
+          WELCOME_MAX_SENDS: "20"
+        run: python scripts/send_welcome.py
