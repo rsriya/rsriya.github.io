@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T14:18:26.188980+00:00",
+  "updated_at": "2026-11-03T20:22:25.027545+00:00",
   "articles": [
     {
       "title": "Reliability-weighted patch learning for synthetic CT reconstruction in head and neck adaptive radiotherapy: A proof-of-concept study",
@@ -9,6 +9,16 @@
       "published_date": "2026-11-03",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42973126/",
       "id": "pubmed.ncbi.nlm.nih.gov/42973126",
+      "content_type": "paper"
+    },
+    {
+      "title": "Fully automated AI-based quantification of tumour volume on PSMA PET-CT images is associated with overall survival in prostate cancer",
+      "summary": "This study demonstrates that fully automated AI-derived total lesion volume (TLV) from PSMA PET-CT imaging is a significant prognostic indicator for overall survival in prostate cancer. The findings highlight the potential for AI-based quantification to serve as a standardized imaging biomarker in radiation treatment planning and assessment.",
+      "category": "AI & Imaging",
+      "source": "PubMed AI",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973055/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42973055",
       "content_type": "paper"
     },
     {
@@ -23,7 +33,7 @@
     },
     {
       "title": "High-dose reirradiation of in-field recurrence lung cancer in the THOrax (RETHO): toxicity analysis of a prospective trial",
-      "summary": "A prospective clinical trial evaluated the feasibility of high-dose thoracic reirradiation for recurrent lung cancer. Results indicate the approach is clinically feasible while maintaining acceptable safety profiles for critical organs at risk, provided cumulative dose constraints are respected.",
+      "summary": "This prospective trial demonstrates the feasibility of high-dose thoracic reirradiation for recurrent lung cancer while managing cumulative dose constraints to organs at risk. Findings indicate acceptable toxicity profiles, with no high-grade airway or spinal cord injuries reported despite the intensive treatment regimens.",
       "category": "Radiation Oncology",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-02",
@@ -43,8 +53,8 @@
     },
     {
       "title": "Real world clinical outcomes of deep learning based versus manual proton therapy planning for oropharyngeal cancer: A matched cohort study",
-      "summary": "This matched cohort study found no significant difference in oncological outcomes or side effects between deep learning-based intensity-modulated proton therapy (IMPT) and manual planning for oropharyngeal cancer patients. The results support the clinical adoption of automated planning workflows.",
-      "category": "AI & Imaging",
+      "summary": "This matched cohort study evaluated the real-world clinical implementation of deep learning-based intensity-modulated proton therapy (IMPT) for oropharyngeal cancer. The results show that deep learning-assisted planning produces oncological outcomes and side-effect profiles comparable to traditional manual planning, supporting the safety of this automated approach.",
+      "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-11-01",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42967539/",
@@ -63,7 +73,7 @@
     },
     {
       "title": "Gaussian process regression of HDR prostate biopsy dose for improved modelling of localization-induced uncertainty",
-      "summary": "Researchers utilized a Gaussian process regression framework to model dose distribution in HDR prostate brachytherapy, accounting for localization uncertainty. This approach offers a robust method for probabilistic quality assurance and future dose-response analysis.",
+      "summary": "This research introduces a Gaussian process regression framework to better account for localization-induced uncertainty in HDR prostate brachytherapy. The model provides a covariance-informed approach to dose interpretation, offering a robust foundation for probabilistic quality assurance and future dose-response correlation studies.",
       "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
@@ -73,8 +83,8 @@
     },
     {
       "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
-      "summary": "A comparative analysis of two optimization algorithms for brain metastasis stereotactic radiosurgery showed that the Krylov optimizer performs better for small lesions, while both methods are comparable for larger lesions. These findings aid in optimizing treatment planning workflows in radiation oncology.",
-      "category": "Radiation Oncology",
+      "summary": "This comparative study evaluates treatment plan quality between two distinct optimization systems for brain metastasis radiosurgery. Results suggest that the Krylov optimizer provides superior plan quality for small lesion volumes compared to the Lightning optimizer, while performance for larger lesions remains comparable.",
+      "category": "Medical Physics",
       "source": "PubMed Medical Physics",
       "published_date": "2026-11-01",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42967581/",
@@ -109,16 +119,6 @@
       "published_date": "2026-10-31",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42963884/",
       "id": "pubmed.ncbi.nlm.nih.gov/42963884",
-      "content_type": "paper"
-    },
-    {
-      "title": "Generalized multi-energy model for computing radiation treatment parameters",
-      "summary": "This study presents a general n-energy mathematical model for predicting relative electron density, effective atomic number, and stopping power ratio from CT images. It offers a standardized algorithm for model selection, incorporating existing methods as special cases for improved treatment planning.",
-      "category": "Medical Physics",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42964685/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42964685",
       "content_type": "paper"
     },
     {
