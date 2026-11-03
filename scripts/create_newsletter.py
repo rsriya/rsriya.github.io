@@ -157,7 +157,10 @@ def main():
         "Authorization": f"Token {key}"
     })
 
-    body = make_body(articles)
+    body = (
+        "<!-- buttondown-editor-mode: plaintext -->\n"
+        + make_body(articles)
+    )
 
     if draft_id:
         # Update the same draft.
