@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:00:41.368890+00:00",
+  "updated_at": "2026-11-03T23:25:01.646195+00:00",
   "articles": [
     {
       "title": "Reliability-weighted patch learning for synthetic CT reconstruction in head and neck adaptive radiotherapy: A proof-of-concept study",
@@ -32,9 +32,29 @@
       "content_type": "paper"
     },
     {
-      "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
-      "summary": "This study evaluated the impact of extended field-of-view (eFOV) CT reconstruction on image quality, stopping power ratio, and subsequent proton dose calculations. The findings provide insights into using wider CT scan ranges for improved immobilization and target coverage in proton therapy planning.",
+      "title": "A Novel Medical Conformity Index (MCI) Integrating Spatial Distance and Target Volume Weighting for Enhanced Radiotherapy Plan Evaluation",
+      "summary": "This study introduces a new Medical Conformity Index (MCI) that integrates geometric conformity with clinical considerations to improve radiotherapy plan quality assessment. The proposed index accounts for spatial distance and target volume weighting to offer a more accurate measure of dose deviations.",
       "category": "Medical Physics",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975974/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42975974",
+      "content_type": "paper"
+    },
+    {
+      "title": "Comparative Analysis of Arc Geometrical Configurations and Jaw Tracking for Peripheral Low-Dose Bath in Whole Breast VMAT",
+      "summary": "Researchers evaluated the dosimetric impact of arc geometry and jaw tracking on low-dose radiation spillage in whole breast volumetric modulated arc therapy (VMAT). The study aims to characterize how these parameters can be optimized to minimize the low-dose bath in normal tissues.",
+      "category": "Medical Physics",
+      "source": "PubMed Medical Physics",
+      "published_date": "2026-11-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975951/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42975951",
+      "content_type": "paper"
+    },
+    {
+      "title": "Impact of extended field-of-view on image quality and stopping power ratio in proton therapy dose calculation",
+      "summary": "This study assessed how extended field-of-view (eFOV) in CT simulation affects image quality, stopping power ratio, and subsequent proton dose calculations. The results provide insights into maintaining precision when including immobilization devices within the scan field.",
+      "category": "Proton Therapy",
       "source": "PubMed Proton Therapy",
       "published_date": "2026-11-02",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42970220/",
@@ -59,6 +79,16 @@
       "published_date": "2026-11-02",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42970176/",
       "id": "pubmed.ncbi.nlm.nih.gov/42970176",
+      "content_type": "paper"
+    },
+    {
+      "title": "Topical Esomeprazole for the Prevention and Treatment of Radiation Dermatitis in Patients With Head and Neck Cancer: Protocol for a Phase 2 Randomized Controlled Trial",
+      "summary": "This article outlines the protocol for a phase 2 trial investigating the efficacy of topical esomeprazole in preventing and treating radiation-induced dermatitis in head and neck cancer patients. The trial aims to determine if this approach can reduce treatment-related morbidity and enhance patient quality of life.",
+      "category": "Radiation Oncology",
+      "source": "PubMed Proton Therapy",
+      "published_date": "2026-11-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970785/",
+      "id": "pubmed.ncbi.nlm.nih.gov/42970785",
       "content_type": "paper"
     },
     {
@@ -92,36 +122,6 @@
       "content_type": "paper"
     },
     {
-      "title": "Treatment plan quality comparison between ZAP-Axon( ) Krylov optimizer and Leksell Gamma Knife( ) Lightning optimizer for brain metastasis",
-      "summary": "A comparative analysis of treatment plan optimization for brain metastases shows that the ZAP-Axon Krylov optimizer produces comparable results to Leksell Gamma Knife Lightning for large lesions, while offering superior performance for small lesions.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-11-01",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42967581/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42967581",
-      "content_type": "paper"
-    },
-    {
-      "title": "A multicenter, prospective, phase 2 trial on proton re-irradiation for patients with previously treated head and neck cancer",
-      "summary": "This phase 2 multicenter trial evaluated the safety and efficacy of proton beam re-irradiation for head and neck cancer patients. The study reports encouraging locoregional control and survival rates, though late-term toxicity remains a critical consideration.",
-      "category": "Proton Therapy",
-      "source": "PubMed Proton Therapy",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963935/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963935",
-      "content_type": "paper"
-    },
-    {
-      "title": "AAPM Medical Physics Practice Guideline 18.a: Superficial radiation therapy using low-energy kilovoltage x-rays",
-      "summary": "This guideline provides a comprehensive technical overview and framework for the clinical delivery of superficial radiation therapy (SRT) in the 50-100 kVp range. It is designed to assist medical physicists and clinicians in adhering to minimum safety and quality standards for treating non-melanoma skin cancer and benign conditions.",
-      "category": "Medical Physics",
-      "source": "PubMed Medical Physics",
-      "published_date": "2026-10-31",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963823/",
-      "id": "pubmed.ncbi.nlm.nih.gov/42963823",
-      "content_type": "paper"
-    },
-    {
       "title": "50 million Americans live in counties without a radiation oncology clinic, study finds",
       "summary": "A recent study highlights that approximately 50 million Americans reside in counties lacking access to local radiation oncology clinics. The findings underscore ongoing disparities in access to specialized cancer care services across the United States.",
       "category": "Radiation Oncology",
@@ -143,7 +143,7 @@
     },
     {
       "title": "IBA treats first patient in clinical trial of FLASH proton therapy for head and neck cancer",
-      "summary": "IBA has announced the treatment of the first patient in the C-FLASH-01 clinical trial, which investigates the use of ConformalFLASH proton therapy for head and neck cancer. This milestone marks a significant step in assessing the clinical application of ultra-high dose rate radiation delivery.",
+      "summary": "The first patient has been treated in the C-FLASH-01 clinical trial utilizing ConformalFLASH proton therapy technology. This trial marks a significant milestone in evaluating the clinical application of ultra-high dose rate radiotherapy for head and neck malignancies.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-26",
@@ -173,7 +173,7 @@
     },
     {
       "title": "BayCare opens proton therapy center at Tampa's St. Joseph’s Hospital",
-      "summary": "BayCare Health System has officially opened a new $33 million proton therapy center at St. Joseph's Hospital. This facility expands regional access to advanced radiation treatment technology in the Florida market.",
+      "summary": "BayCare has officially opened a $33 million proton therapy center at St. Joseph’s Hospital in Tampa, expanding regional access to advanced radiotherapy. The new facility represents a significant infrastructure development in proton therapy capacity within the region.",
       "category": "Proton Therapy",
       "source": "Proton Center Developments",
       "published_date": "2026-10-16",
