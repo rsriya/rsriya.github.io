@@ -63,7 +63,7 @@ MODEL = (
 # Discover events from the previous calendar year
 # through the next three calendar years.
 PAST_YEARS = 1
-FUTURE_YEARS = 3
+FUTURE_YEARS = 1
 
 # Maximum webpage text sent to Gemini per source.
 MAX_PAGE_CHARS = 60000
