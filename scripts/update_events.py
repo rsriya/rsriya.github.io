@@ -101,35 +101,10 @@ EVENT_SOURCES = [
     },
 
     {
-        "organization": "PTCOG-NA",
-        "category": "Proton Therapy",
-        "urls": [
-            "https://www.ptcog-na.org/meetings-and-events",
-        ],
-    },
-
-    {
-        "organization": "ASTRO",
-        "category": "Radiation Oncology",
-        "urls": [
-            "https://www.astro.org/meetings-and-education/events",
-            "https://www.astro.org/meetings-and-education/micro-sites/2026/am-exhibitors/general-information/future-annual-meetings",
-        ],
-    },
-
-    {
         "organization": "NAPT",
         "category": "Proton Therapy",
         "urls": [
             "https://proton-therapy.org/events/",
-        ],
-    },
-
-    {
-        "organization": "ESTRO",
-        "category": "Radiation Oncology",
-        "urls": [
-            "https://www.estro.org/Congresses",
         ],
     },
 
