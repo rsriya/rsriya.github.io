@@ -1,13 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>News | DMV Proton Therapy Collaborative</title>
+    <title>News &amp; Events | DMV Proton Therapy Collaborative</title>
+
     <meta
         name="description"
-        content="Latest news, research, clinical developments, and innovations in proton therapy and radiation oncology."
+        content="Latest news, research, clinical developments, upcoming conferences, and professional events in proton therapy and radiation oncology."
     >
 
     <link rel="stylesheet" href="css/style.css">
@@ -22,27 +25,26 @@
 
     <div id="navigation"></div>
 
-
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
     <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
         <section class="page-hero page-hero--text news-hero">
 
             <div class="page-hero-content">
 
-                <p class="eyebrow">NEWS &amp; DEVELOPMENTS</p>
+                <p class="eyebrow">NEWS &amp; EVENTS</p>
 
                 <h1>
-                    The latest in
+                    Stay connected with
                     proton therapy.
                 </h1>
 
                 <p>
-                    A continuously updated collection of news,
-                    research, clinical developments, and innovations
+                    Explore the latest research, clinical developments,
+                    scientific conferences, and professional events
                     relevant to the proton therapy community.
                 </p>
 
@@ -52,128 +54,420 @@
 
 
         <!-- =================================================
-             LATEST NEWS
+             PAGE TABS
         ================================================== -->
 
-        <section class="news-section">
+        <section class="news-events-navigation">
 
-            <div class="news-heading">
+            <div
+                class="news-events-tabs"
+                role="tablist"
+                aria-label="News and Events"
+            >
 
-                <div>
-                    <p class="section-label">LATEST NEWS</p>
-                    <h2>Recent developments in the field.</h2>
-                </div>
-
-                <p class="news-updated" id="news-updated">
-                    Updating...
-                </p>
-
-            </div>
-
-
-            <div class="news-filters" aria-label="Filter news">
-
-                <button class="news-filter active" data-category="All">
-                    All
+                <button
+                    class="news-events-tab active"
+                    id="news-tab"
+                    role="tab"
+                    type="button"
+                    aria-selected="true"
+                    aria-controls="news-panel"
+                    data-tab="news"
+                >
+                    News &amp; Research
                 </button>
 
-                <button class="news-filter" data-category="Proton Therapy">
-                    Proton Therapy
+                <button
+                    class="news-events-tab"
+                    id="events-tab"
+                    role="tab"
+                    type="button"
+                    aria-selected="false"
+                    aria-controls="events-panel"
+                    tabindex="-1"
+                    data-tab="events"
+                >
+                    Events &amp; Conferences
                 </button>
 
-                <button class="news-filter" data-category="Radiation Oncology">
-                    Radiation Oncology
-                </button>
-
-                <button class="news-filter" data-category="Medical Physics">
-                    Medical Physics
-                </button>
-
-                <button class="news-filter" data-category="Research">
-                    Research
-                </button>
-
-                <button class="news-filter" data-category="AI & Imaging">
-                    AI &amp; Imaging
-                </button>
-
-                <button class="news-filter" data-category="Regional">
-                    Regional
-                </button>
-
-            </div>
-
-
-            
-            <div class="news-groups">
-            
-                <section class="news-group" aria-labelledby="research-heading">
-                    <div class="news-group-heading">
-                        <p class="section-label">RESEARCH &amp; PUBLICATIONS</p>
-                        <h3 id="research-heading">Latest Research &amp; Publications</h3>
-                        <p>Newly published studies in proton therapy, medical physics,
-                           radiation oncology, and related technologies.</p>
-                    </div>
-            
-                    <div class="news-grid" id="research-grid" aria-live="polite">
-                        <div class="news-loading">Loading research publications...</div>
-                    </div>
-            
-                    <div class="news-empty" id="research-empty" hidden>
-                        No papers are available in this category.
-                    </div>
-                </section>
-            
-                <section class="news-group" aria-labelledby="developments-heading">
-                    <div class="news-group-heading">
-                        <p class="section-label">NEWS &amp; DEVELOPMENTS</p>
-                        <h3 id="developments-heading">Latest News &amp; Developments</h3>
-                        <p>Clinical milestones, proton center openings, technology
-                           updates, and professional announcements.</p>
-                    </div>
-            
-                    <div class="news-grid" id="developments-grid" aria-live="polite">
-                        <div class="news-loading">Loading news updates...</div>
-                    </div>
-            
-                    <div class="news-empty" id="developments-empty" hidden>
-                        No news updates are available in this category.
-                    </div>
-                </section>
-            
             </div>
 
         </section>
-        
+
+
+        <!-- =================================================
+             NEWS PANEL
+        ================================================== -->
+
+        <div
+            id="news-panel"
+            class="news-events-panel"
+            role="tabpanel"
+            aria-labelledby="news-tab"
+        >
+
+            <section class="news-section">
+
+                <div class="news-heading">
+
+                    <div>
+                        <p class="section-label">LATEST NEWS</p>
+
+                        <h2>
+                            Recent developments in the field.
+                        </h2>
+                    </div>
+
+                    <p class="news-updated" id="news-updated">
+                        Updating...
+                    </p>
+
+                </div>
+
+
+                <!-- CATEGORY FILTERS -->
+
+                <div class="news-filters" aria-label="Filter news">
+
+                    <button class="news-filter active" data-category="All">
+                        All
+                    </button>
+
+                    <button class="news-filter" data-category="Proton Therapy">
+                        Proton Therapy
+                    </button>
+
+                    <button class="news-filter" data-category="Radiation Oncology">
+                        Radiation Oncology
+                    </button>
+
+                    <button class="news-filter" data-category="Medical Physics">
+                        Medical Physics
+                    </button>
+
+                    <button class="news-filter" data-category="Research">
+                        Research
+                    </button>
+
+                    <button class="news-filter" data-category="AI & Imaging">
+                        AI &amp; Imaging
+                    </button>
+
+                    <button class="news-filter" data-category="Regional">
+                        Regional
+                    </button>
+
+                </div>
+
+
+                <div class="news-groups">
+
+                    <!-- RESEARCH PUBLICATIONS -->
+
+                    <section
+                        class="news-group"
+                        aria-labelledby="research-heading"
+                    >
+
+                        <div class="news-group-heading">
+
+                            <p class="section-label">
+                                RESEARCH &amp; PUBLICATIONS
+                            </p>
+
+                            <h3 id="research-heading">
+                                Latest Research &amp; Publications
+                            </h3>
+
+                            <p>
+                                Newly published studies in proton therapy,
+                                medical physics, radiation oncology,
+                                and related technologies.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="news-grid"
+                            id="research-grid"
+                            aria-live="polite"
+                        >
+                            <div class="news-loading">
+                                Loading research publications...
+                            </div>
+                        </div>
+
+                        <div
+                            class="news-empty"
+                            id="research-empty"
+                            hidden
+                        >
+                            No papers are available in this category.
+                        </div>
+
+                    </section>
+
+
+                    <!-- NEWS AND DEVELOPMENTS -->
+
+                    <section
+                        class="news-group"
+                        aria-labelledby="developments-heading"
+                    >
+
+                        <div class="news-group-heading">
+
+                            <p class="section-label">
+                                NEWS &amp; DEVELOPMENTS
+                            </p>
+
+                            <h3 id="developments-heading">
+                                Latest News &amp; Developments
+                            </h3>
+
+                            <p>
+                                Clinical milestones, proton center openings,
+                                technology updates, and professional
+                                announcements.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="news-grid"
+                            id="developments-grid"
+                            aria-live="polite"
+                        >
+                            <div class="news-loading">
+                                Loading news updates...
+                            </div>
+                        </div>
+
+                        <div
+                            class="news-empty"
+                            id="developments-empty"
+                            hidden
+                        >
+                            No news updates are available in this category.
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- =================================================
+             EVENTS PANEL
+        ================================================== -->
+
+        <div
+            id="events-panel"
+            class="news-events-panel"
+            role="tabpanel"
+            aria-labelledby="events-tab"
+            hidden
+        >
+
+            <section class="news-section events-section">
+
+                <div class="news-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            CONFERENCES &amp; PROFESSIONAL MEETINGS
+                        </p>
+
+                        <h2>
+                            Connect with the scientific community.
+                        </h2>
+
+                    </div>
+
+                    <p class="news-updated" id="events-updated">
+                        Updating...
+                    </p>
+
+                </div>
+
+
+                <div class="news-groups">
+
+                    <!-- UPCOMING EVENTS -->
+
+                    <section
+                        class="news-group"
+                        aria-labelledby="upcoming-events-heading"
+                    >
+
+                        <div class="news-group-heading">
+
+                            <p class="section-label">
+                                UPCOMING EVENTS
+                            </p>
+
+                            <h3 id="upcoming-events-heading">
+                                Upcoming Events &amp; Conferences
+                            </h3>
+
+                            <p>
+                                Explore upcoming national, international,
+                                and regional conferences in proton therapy,
+                                radiation oncology, and medical physics.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="events-list"
+                            id="upcoming-events"
+                            aria-live="polite"
+                        >
+                            <div class="news-loading">
+                                Loading upcoming conferences...
+                            </div>
+                        </div>
+
+                        <div
+                            class="news-empty"
+                            id="upcoming-events-empty"
+                            hidden
+                        >
+                            No upcoming conferences are currently listed.
+                        </div>
+
+                    </section>
+
+
+                    <!-- PAST EVENTS -->
+
+                    <section
+                        class="news-group"
+                        aria-labelledby="past-events-heading"
+                    >
+
+                        <div class="news-group-heading">
+
+                            <p class="section-label">
+                                CONFERENCE ARCHIVE
+                            </p>
+
+                            <h3 id="past-events-heading">
+                                Past Events &amp; Conferences
+                            </h3>
+
+                            <p>
+                                Explore selected conferences and professional
+                                meetings from the current and previous year.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="events-archive"
+                            id="past-events"
+                            aria-live="polite"
+                        >
+                            <div class="news-loading">
+                                Loading past conferences...
+                            </div>
+                        </div>
+
+                        <div
+                            class="news-empty"
+                            id="past-events-empty"
+                            hidden
+                        >
+                            No past conferences are currently listed.
+                        </div>
+
+                    </section>
+
+
+                    <!-- DMV SYMPOSIUM -->
+
+                    <section
+                        class="news-group"
+                        aria-labelledby="regional-events-heading"
+                    >
+
+                        <div class="news-group-heading">
+
+                            <p class="section-label">
+                                REGIONAL EVENTS
+                            </p>
+
+                            <h3 id="regional-events-heading">
+                                DMV Proton Therapy Symposium
+                            </h3>
+
+                            <p>
+                                Our regional symposium brings together
+                                proton therapy professionals across
+                                Washington, DC, Maryland, and Virginia.
+                            </p>
+
+                            <a
+                                href="symposium.html"
+                                class="news-read"
+                            >
+                                Explore the DMV Proton Therapy Symposium ↗
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
         <!-- =================================================
              NEWS SUBSCRIPTION
+
+             Visible under both tabs.
         ================================================== -->
-        
-        <section class="news-subscribe" aria-labelledby="subscribe-heading">
+
+        <section
+            class="news-subscribe"
+            aria-labelledby="subscribe-heading"
+        >
+
             <div class="news-subscribe-inner">
-        
+
                 <div class="news-subscribe-content">
+
                     <p class="section-label">STAY INFORMED</p>
-        
+
                     <h2 id="subscribe-heading">
                         Subscribe to News Updates.
                     </h2>
-        
+
                     <p>
                         Receive updates on proton therapy, radiation
                         oncology, medical physics, and the latest
                         research and clinical developments.
                     </p>
+
                 </div>
-        
+
                 <form
                     action="https://buttondown.com/api/emails/embed-subscribe/dmvproton"
                     method="post"
                     class="embeddable-buttondown-form"
                 >
+
                     <label for="bd-email">Email address</label>
-        
+
                     <div class="subscribe-input-row">
+
                         <input
                             type="email"
                             name="email"
@@ -182,22 +476,30 @@
                             autocomplete="email"
                             required
                         >
-        
-                        <button type="submit">Subscribe</button>
+
+                        <button type="submit">
+                            Subscribe
+                        </button>
+
                     </div>
-        
+
                     <p class="subscribe-note">
+
                         Unsubscribe anytime.
                         Powered by
+
                         <a
                             href="https://buttondown.com/refer/dmvproton"
                             target="_blank"
                             rel="noopener noreferrer"
                         >Buttondown</a>.
+
                     </p>
+
                 </form>
-        
+
             </div>
+
         </section>
 
 
@@ -209,23 +511,31 @@
 
             <div class="news-note-inner">
 
-                <p class="section-label">ABOUT THIS FEED</p>
+                <p class="section-label">ABOUT THIS RESOURCE</p>
 
                 <h2>
                     Curated for the proton therapy community.
                 </h2>
 
                 <p>
-                    This page is automatically updated using an AI-assisted
-                    news workflow that searches for recent developments
-                    in proton therapy, radiation oncology, medical physics,
-                    research, and related technologies.
+                    News and research publications are automatically
+                    updated using an AI-assisted workflow that searches
+                    for recent developments in proton therapy, radiation
+                    oncology, medical physics, and related technologies.
                 </p>
 
                 <p>
-                    Summaries are generated from the original source.
-                    Please follow the source link for the complete article
-                    and original reporting.
+                    Summaries are generated from available source material.
+                    Please follow the source link for the complete
+                    article and original reporting.
+                </p>
+
+                <p>
+                    Conference listings provide information about
+                    selected scientific meetings and professional events.
+                    Please consult the official event website for
+                    registration, abstract submission deadlines, venue
+                    information, and schedule changes.
                 </p>
 
             </div>
@@ -234,12 +544,132 @@
 
     </main>
 
-<div id="footer"></div>
-<script src="js/footer.js"></script>
-<script src="js/components.js"></script>
 
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <div id="footer"></div>
+
+    <script src="js/footer.js"></script>
+    <script src="js/components.js"></script>
+
+
+    <!-- =====================================================
+         NEWS AND EVENTS SCRIPTS
+    ====================================================== -->
 
     <script src="js/news.js"></script>
+    <script src="js/events.js"></script>
+
+
+    <!-- =====================================================
+         TAB NAVIGATION
+    ====================================================== -->
+
+    <script>
+
+        const pageTabs = document.querySelectorAll(".news-events-tab");
+
+        function activateTab(tabName, updateHash = true) {
+
+            if (!["news", "events"].includes(tabName)) {
+                tabName = "news";
+            }
+
+            pageTabs.forEach(tab => {
+
+                const isActive = tab.dataset.tab === tabName;
+
+                tab.classList.toggle("active", isActive);
+
+                tab.setAttribute(
+                    "aria-selected",
+                    String(isActive)
+                );
+
+                tab.tabIndex = isActive ? 0 : -1;
+
+                document.getElementById(
+                    tab.getAttribute("aria-controls")
+                ).hidden = !isActive;
+
+            });
+
+            if (updateHash) {
+                history.replaceState(null, "", "#" + tabName);
+            }
+
+        }
+
+
+        pageTabs.forEach(tab => {
+
+            tab.addEventListener("click", () => {
+                activateTab(tab.dataset.tab);
+            });
+
+            tab.addEventListener("keydown", event => {
+
+                let nextTab;
+
+                if (
+                    event.key === "ArrowRight" ||
+                    event.key === "ArrowLeft"
+                ) {
+
+                    const currentIndex =
+                        Array.from(pageTabs).indexOf(tab);
+
+                    nextTab = pageTabs[
+                        (currentIndex + 1) % pageTabs.length
+                    ];
+
+                } else if (event.key === "Home") {
+
+                    nextTab = pageTabs[0];
+
+                } else if (event.key === "End") {
+
+                    nextTab = pageTabs[pageTabs.length - 1];
+
+                } else {
+
+                    return;
+
+                }
+
+                event.preventDefault();
+
+                activateTab(nextTab.dataset.tab);
+                nextTab.focus();
+
+            });
+
+        });
+
+
+        // Open the correct tab when visiting a direct link.
+        function activateFromHash() {
+
+            const hash = window.location.hash.slice(1);
+
+            activateTab(
+                hash === "events" ? "events" : "news",
+                false
+            );
+
+        }
+
+        window.addEventListener(
+            "hashchange",
+            activateFromHash
+        );
+
+        activateFromHash();
+
+    </script>
 
 </body>
+
 </html>
