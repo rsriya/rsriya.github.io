@@ -639,12 +639,23 @@
         container.replaceChildren();
 
         const today = getToday();
-
+         
+        const currentYear = Number(today.slice(0, 4));
+         
         const upcoming = events
-            .filter(event => event.end_date >= today)
-            .sort((a, b) =>
-                a.start_date.localeCompare(b.start_date)
-            );
+             .filter(event => {
+                 const eventYear = Number(
+                     event.start_date.slice(0, 4)
+                 );
+         
+                 return (
+                     event.end_date >= today &&
+                     eventYear <= currentYear + 1
+                 );
+             })
+             .sort((a, b) =>
+                 a.start_date.localeCompare(b.start_date)
+             );
 
         empty.hidden = upcoming.length > 0;
 
