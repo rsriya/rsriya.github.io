@@ -1,4 +1,3 @@
-
 name: Update Proton Therapy Events
 
 on:
@@ -23,12 +22,16 @@ jobs:
 
     timeout-minutes: 20
 
+    env:
+      TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+
     steps:
 
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -65,5 +68,5 @@ jobs:
 
           git commit -m "Update proton therapy conference calendar"
 
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
