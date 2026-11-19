@@ -8,7 +8,7 @@
 
     "use strict";
 
-    const EVENTS_DATA_URL = "data/events.json";
+    const EVENTS_DATA_URL = "../data/events.json";
 
     // Display completed conferences from the current
     // calendar year and the previous calendar year.
