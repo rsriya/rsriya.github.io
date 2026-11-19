@@ -336,11 +336,18 @@ def normalize_text(value: str) -> str:
         for char in value
     )
 
-    return re.sub(
-        r"\s+",
-        " ",
+    # Normalize whitespace.
+    value = re.sub(r"\s+", " ", value).strip()
+    
+    # Rejoin ordinal suffixes separated by HTML formatting.
+    # Examples: 12 th -> 12th, 21 st -> 21st.
+    value = re.sub(
+        r"\b(\d+)\s+(st|nd|rd|th)\b",
+        r"\1\2",
         value,
-    ).strip()
+    )
+    
+    return value
 
 
 def valid_url(url: str) -> bool:
