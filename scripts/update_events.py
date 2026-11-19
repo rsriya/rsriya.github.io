@@ -61,7 +61,7 @@ MODEL = (
 )
 
 # Discover events from the previous calendar year
-# through the next three calendar years.
+# through the next calendar year.
 PAST_YEARS = 1
 FUTURE_YEARS = 1
 
@@ -827,21 +827,6 @@ def extract_events(
                 event.get("title"),
             )
         
-            continue
-
-        normalized_page = normalize_text(
-            page_text
-        )
-
-        # Require the quoted evidence to actually occur
-        # in the downloaded webpage.
-        if not evidence or evidence not in normalized_page:
-
-            print(
-                "  Rejected unsupported evidence:",
-                event.get("title"),
-            )
-
             continue
 
         if not valid_event(event):
