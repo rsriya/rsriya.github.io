@@ -137,7 +137,7 @@ EVENT_SOURCES = [
         "organization": "MACAAPM",
         "category": "Regional",
         "urls": [
-            "https://macaapm.org/",
+            "https://macaapm.org/events/",
         ],
     },
 
@@ -734,9 +734,11 @@ def valid_evidence(
             return False
 
         if evidence not in normalized_page:
-
+        
             print(f"  Unsupported {field}")
-
+            print(f"  Event: {event.get('title')}")
+            print(f"  Evidence: {event.get(field)!r}")
+        
             return False
 
     date_evidence = normalize_text(
