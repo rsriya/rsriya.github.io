@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T22:02:53.893314+00:00",
+  "updated_at": "2026-11-19T22:18:56.857658+00:00",
   "events": [
     {
       "title": "2026 Spring Clinical Meeting",
@@ -42,6 +42,26 @@
       "id": "aapm|annual meeting and exhibition|2026"
     },
     {
+      "title": "2026 Annual Meeting",
+      "series": "Annual Meeting",
+      "start_date": "2026-10-09",
+      "end_date": "2026-10-10",
+      "location": "Baltimore, MD",
+      "description": "The annual meeting of the Mid-Atlantic Chapter of AAPM featuring continuing education credits, invited speakers, and an Early Career Investigator Symposium.",
+      "abstract_deadline": null,
+      "registration_deadline": null,
+      "evidence": "2026 Annual Meeting Oct 9th-10th, 2026 Baltimore, MD and Virtual",
+      "date_evidence": "Oct 9th-10th, 2026",
+      "location_evidence": "Baltimore, MD and Virtual",
+      "organizer_evidence": "The Mid-Atlantic Chapter of AAPM",
+      "organization": "MACAAPM",
+      "category": "Regional",
+      "url": "https://macaapm.org/events/",
+      "source_url": "https://macaapm.org/events/",
+      "verified_at": "2026-11-19T22:18:56.851912+00:00",
+      "id": "macaapm|annual meeting|2026"
+    },
+    {
       "title": "2027 National Proton Conference",
       "series": "National Proton Conference",
       "start_date": "2027-04-08",
@@ -58,7 +78,7 @@
       "category": "Proton Therapy",
       "url": "https://web.cvent.com/event/13cc571a-69b0-40e7-959c-e71cfbf10a0c/summary",
       "source_url": "https://proton-therapy.org/events/",
-      "verified_at": "2026-11-19T22:02:50.289021+00:00",
+      "verified_at": "2026-11-19T22:18:54.056958+00:00",
       "id": "napt|national proton conference|2027"
     },
     {
@@ -78,7 +98,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/spring-clinical/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:02:32.143788+00:00",
+      "verified_at": "2026-11-19T22:18:42.561434+00:00",
       "id": "aapm|spring clinical meeting|2027"
     },
     {
@@ -98,7 +118,7 @@
       "category": "Proton Therapy",
       "url": "https://ptcog.online/events/ptcog-65/",
       "source_url": "https://ptcog.online/future-ptcog-conferences/?print=print",
-      "verified_at": "2026-11-19T22:02:43.612735+00:00",
+      "verified_at": "2026-11-19T22:18:48.786377+00:00",
       "id": "ptcog|annual ptcog conference|2027"
     },
     {
@@ -118,7 +138,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/summer-school/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:02:32.148119+00:00",
+      "verified_at": "2026-11-19T22:18:42.566967+00:00",
       "id": "aapm|aapm summer school|2027"
     },
     {
@@ -138,7 +158,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/annual-meeting/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:02:32.152420+00:00",
+      "verified_at": "2026-11-19T22:18:42.572489+00:00",
       "id": "aapm|annual meeting and exhibition|2027"
     }
   ]
