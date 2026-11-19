@@ -712,8 +712,14 @@ def valid_evidence(
 ) -> bool:
     """Reject missing, unsupported or tentative evidence."""
 
-    normalized_page = normalize_text(page_text)
-
+    # Remove artificial URL annotations before
+    # validating textual evidence.
+    clean_page_text = re.sub(
+        r"\[URL:\s*[^\]]+\]",
+        " ",
+        page_text,
+    )
+    normalized_page = normalize_text(clean_page_text)
     required_fields = [
         "evidence",
         "date_evidence",
@@ -723,9 +729,15 @@ def valid_evidence(
 
     for field in required_fields:
 
-        evidence = normalize_text(
-            event.get(field)
+        raw_evidence = str(event.get(field) or "")
+        
+        clean_evidence = re.sub(
+            r"\[URL:\s*[^\]]+\]",
+            " ",
+            raw_evidence,
         )
+        
+        evidence = normalize_text(clean_evidence)
 
         if not evidence:
 
