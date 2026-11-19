@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T22:18:56.857658+00:00",
+  "updated_at": "2026-11-19T22:43:24.810788+00:00",
   "events": [
     {
       "title": "2026 Spring Clinical Meeting",
@@ -78,7 +78,7 @@
       "category": "Proton Therapy",
       "url": "https://web.cvent.com/event/13cc571a-69b0-40e7-959c-e71cfbf10a0c/summary",
       "source_url": "https://proton-therapy.org/events/",
-      "verified_at": "2026-11-19T22:18:54.056958+00:00",
+      "verified_at": "2026-11-19T22:43:23.931210+00:00",
       "id": "napt|national proton conference|2027"
     },
     {
@@ -98,7 +98,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/spring-clinical/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:18:42.561434+00:00",
+      "verified_at": "2026-11-19T22:43:16.054067+00:00",
       "id": "aapm|spring clinical meeting|2027"
     },
     {
@@ -110,15 +110,15 @@
       "description": "The 65th annual conference of the Particle Therapy Co-Operative Group.",
       "abstract_deadline": null,
       "registration_deadline": null,
-      "evidence": "PTCOG 65\nQueen Sirikit National Convention Center (QSNCC) [URL: https://www.qsncc.com/en/]\nJune 7-12, 2027",
+      "evidence": "PTCOG 65 Queen Sirikit National Convention Center (QSNCC) June 7-12, 2027",
       "date_evidence": "June 7-12, 2027",
       "location_evidence": "Queen Sirikit National Convention Center (QSNCC)",
       "organizer_evidence": "PTCOG Organizes Annual Conferences with Scientific Meetings and Educational Sessions",
       "organization": "PTCOG",
       "category": "Proton Therapy",
-      "url": "https://ptcog.online/events/ptcog-65/",
+      "url": "https://ptcog.online/future-ptcog-conferences/?print=print",
       "source_url": "https://ptcog.online/future-ptcog-conferences/?print=print",
-      "verified_at": "2026-11-19T22:18:48.786377+00:00",
+      "verified_at": "2026-11-19T22:43:20.332128+00:00",
       "id": "ptcog|annual ptcog conference|2027"
     },
     {
@@ -138,7 +138,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/summer-school/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:18:42.566967+00:00",
+      "verified_at": "2026-11-19T22:43:16.057972+00:00",
       "id": "aapm|aapm summer school|2027"
     },
     {
@@ -158,7 +158,7 @@
       "category": "Medical Physics",
       "url": "https://site.aapm.org/annual-meeting/2027",
       "source_url": "https://www.aapm.org/meetings/",
-      "verified_at": "2026-11-19T22:18:42.572489+00:00",
+      "verified_at": "2026-11-19T22:43:16.061833+00:00",
       "id": "aapm|annual meeting and exhibition|2027"
     }
   ]
