@@ -1,6 +1,38 @@
 {
   "updated_at": "2026-11-19T22:50:36.699030+00:00",
   "events": [
+    
+    {
+        "title": "ESTRO 2027",
+        "series": "ESTRO Congress",
+        "organization": "ESTRO",
+        "start_date": "2027-05-21",
+        "end_date": "2027-05-25",
+        "location": "Milan, Italy",
+        "category": "Radiation Oncology",
+        "description": "Annual European congress on radiation oncology and radiotherapy.",
+        "url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29",
+        "source_url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29",
+        "abstract_deadline": null,
+        "registration_deadline": null,
+        "id": "estro|estro congress|2027"
+    },
+    {
+        "title": "2027 ASTRO Annual Meeting",
+        "series": "ASTRO Annual Meeting",
+        "organization": "ASTRO",
+        "start_date": "2027-09-18",
+        "end_date": "2027-09-22",
+        "location": "Chicago, IL",
+        "category": "Radiation Oncology",
+        "description": "Annual scientific and educational meeting of the American Society for Radiation Oncology.",
+        "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/annual-meeting",
+        "source_url": "https://www.astro.org/news-and-publications/news-and-media-center/frequently-asked-questions",
+        "abstract_deadline": null,
+        "registration_deadline": null,
+        "id": "astro|astro annual meeting|2027"
+    }
+
     {
       "title": "2026 Spring Clinical Meeting",
       "series": "Spring Clinical Meeting",
@@ -66,18 +98,18 @@
       "series": "PTCOG-NA Annual Meeting",
       "start_date": "2026-11-06",
       "end_date": "2026-11-08",
-      "location": "Unknown",
+      "location": "Washington, DC",
+      "url": "https://www.ptcog-na.org/ptcog-na-12th-annual-meeting",
+      "source_url": "https://ptcog.online/join-us-in-washington-d-c-for-the-ptcog-na-12th-annual-meeting/",
+      "location_evidence": "Washington, DC"
       "description": "The 12th Annual Meeting of the Particle Therapy Cooperative Group - North America.",
       "abstract_deadline": null,
       "registration_deadline": null,
       "evidence": "PTCOG-NA 12th Annual Meeting November 6 - 8, 2026",
       "date_evidence": "November 6 - 8, 2026",
-      "location_evidence": "PTCOG-NA 12th Annual Meeting",
       "organizer_evidence": "PTCOG-NA",
       "organization": "PTCOG-NA",
       "category": "Proton Therapy",
-      "url": "https://www.ptcog-na.org/meetings-and-events",
-      "source_url": "https://www.ptcog-na.org/meetings-and-events",
       "verified_at": "2026-11-19T22:50:28.505841+00:00",
       "id": "ptcog na|ptcog na annual meeting|2026"
     },
