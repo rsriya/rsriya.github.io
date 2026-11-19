@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T22:43:24.810788+00:00",
+  "updated_at": "2026-11-19T22:50:36.699030+00:00",
   "events": [
     {
       "title": "2026 Spring Clinical Meeting",
@@ -62,6 +62,26 @@
       "id": "macaapm|annual meeting|2026"
     },
     {
+      "title": "PTCOG-NA 12th Annual Meeting",
+      "series": "PTCOG-NA Annual Meeting",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "location": "Unknown",
+      "description": "The 12th Annual Meeting of the Particle Therapy Cooperative Group - North America.",
+      "abstract_deadline": null,
+      "registration_deadline": null,
+      "evidence": "PTCOG-NA 12th Annual Meeting November 6 - 8, 2026",
+      "date_evidence": "November 6 - 8, 2026",
+      "location_evidence": "PTCOG-NA 12th Annual Meeting",
+      "organizer_evidence": "PTCOG-NA",
+      "organization": "PTCOG-NA",
+      "category": "Proton Therapy",
+      "url": "https://www.ptcog-na.org/meetings-and-events",
+      "source_url": "https://www.ptcog-na.org/meetings-and-events",
+      "verified_at": "2026-11-19T22:50:28.505841+00:00",
+      "id": "ptcog na|ptcog na annual meeting|2026"
+    },
+    {
       "title": "2027 National Proton Conference",
       "series": "National Proton Conference",
       "start_date": "2027-04-08",
@@ -78,7 +98,7 @@
       "category": "Proton Therapy",
       "url": "https://web.cvent.com/event/13cc571a-69b0-40e7-959c-e71cfbf10a0c/summary",
       "source_url": "https://proton-therapy.org/events/",
-      "verified_at": "2026-11-19T22:43:23.931210+00:00",
+      "verified_at": "2026-11-19T22:50:32.998753+00:00",
       "id": "napt|national proton conference|2027"
     },
     {
@@ -118,7 +138,7 @@
       "category": "Proton Therapy",
       "url": "https://ptcog.online/future-ptcog-conferences/?print=print",
       "source_url": "https://ptcog.online/future-ptcog-conferences/?print=print",
-      "verified_at": "2026-11-19T22:43:20.332128+00:00",
+      "verified_at": "2026-11-19T22:50:25.668528+00:00",
       "id": "ptcog|annual ptcog conference|2027"
     },
     {
