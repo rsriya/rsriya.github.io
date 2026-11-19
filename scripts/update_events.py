@@ -30,7 +30,7 @@ import unicodedata
 
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urljoin
 
 # Windows/Miniconda SSL support.
 if os.name == "nt":
@@ -161,6 +161,9 @@ SCHEMA = {
                         "type": "string",
                     },
 
+                    "event_url": {
+                        "type": ["string", "null"],
+                    },
                     "series": {
                         "type": "string",
                     },
@@ -439,6 +442,25 @@ def fetch_page(
     ]):
 
         element.decompose()
+ 
+    # Preserve hyperlinks in the webpage text.
+    for anchor in soup.find_all("a", href=True):
+    
+        href = urljoin(
+            response.url,
+            anchor["href"]
+        )
+    
+        label = anchor.get_text(
+            " ",
+            strip=True
+        )
+    
+        if label and valid_url(href):
+    
+            anchor.replace_with(
+                f"{label} [URL: {href}]"
+            )
 
     text = soup.get_text(
         separator="\n",
@@ -601,6 +623,19 @@ CONFERENCE DATES:
   conference date range.
 - If the actual conference dates cannot be
   established, exclude the event.
+
+CONFERENCE LINKS:
+
+- Extract the official conference-specific URL.
+- Prefer the individual conference homepage over
+  the organization's general meetings calendar.
+- Match the URL to the correct conference and year.
+- Use only URLs explicitly present in the supplied
+  webpage content.
+- Do not construct, guess, or invent URLs.
+- Do not select links to unrelated conferences,
+  previous editions, photographs, or login pages.
+- Return null if no conference-specific URL is available.
 
 ORGANIZATION:
 
@@ -812,9 +847,24 @@ def extract_events(
 
         event["category"] = source["category"]
 
-        event["url"] = url
-
+        event_url = event.pop("event_url", None)
+        
+        # Accept only URLs actually supplied to Gemini.
+        if (
+            event_url
+            and valid_url(event_url)
+            and f"[URL: {event_url}]" in page_text
+        ):
+        
+            event["url"] = event_url
+        
+        else:
+        
+            # Fall back to the official source page.
+            event["url"] = url
+        
         event["source_url"] = url
+
 
         event["verified_at"] = datetime.now(
             timezone.utc
