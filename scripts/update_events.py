@@ -430,17 +430,15 @@ def fetch_page(
         "html.parser",
     )
 
-    # Remove elements that are unlikely to contain
-    # meaningful conference information.
-    for element in soup([
-        "script",
-        "style",
-        "noscript",
-        "iframe",
-        "svg",
-        "footer",
-    ]):
-
+    # Remove elements unlikely to contain conference details.
+    for element in soup.select(
+        "script, style, noscript, iframe, svg, footer, "
+        "nav, aside, "
+        "[role='navigation'], "
+        "[role='search'], "
+        "[role='contentinfo']"
+    ):
+    
         element.decompose()
  
     # Preserve hyperlinks in the webpage text.
@@ -476,11 +474,17 @@ def fetch_page(
     text = "\n".join(lines)
 
     if len(text) < 200:
-
+    
         print(
-            "  WARNING: Insufficient webpage content."
+            f"  WARNING: Insufficient webpage content "
+            f"({len(text)} characters)."
         )
-
+    
+        print(f"  HTTP status: {response.status_code}")
+        print(f"  Final URL: {response.url}")
+        print(f"  Response size: {len(response.content)} bytes")
+        print(f"  Extracted text: {text[:500]!r}")
+    
         return None
 
     if len(text) > MAX_PAGE_CHARS:
@@ -745,14 +749,39 @@ def valid_evidence(
 
             return False
 
+
         if evidence not in normalized_page:
         
             print(f"  Unsupported {field}")
             print(f"  Event: {event.get('title')}")
             print(f"  Evidence: {event.get(field)!r}")
+            print(f"  Normalized evidence: {evidence!r}")
+        
+            if event.get("organization") == "PTCOG-NA":
+        
+                print("  Relevant webpage text:")
+        
+                lines = clean_page_text.splitlines()
+        
+                for i, line in enumerate(lines):
+        
+                    if any(
+                        term in line.lower()
+                        for term in [
+                            "annual meeting",
+                            "november",
+                            "12th",
+                        ]
+                    ):
+        
+                        start = max(0, i - 3)
+                        end = min(len(lines), i + 4)
+        
+                        print("\n".join(lines[start:end]))
+                        print("  --------------------")
         
             return False
-
+        
     date_evidence = normalize_text(
         event["date_evidence"]
     )
