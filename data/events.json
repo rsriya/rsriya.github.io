@@ -11,7 +11,7 @@
         "location": "Milan, Italy",
         "category": "Radiation Oncology",
         "description": "Annual European congress on radiation oncology and radiotherapy.",
-        "url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29",
+        "url": "https://www.estro.org/Congresses/ESTRO_20273718169791",
         "source_url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29",
         "abstract_deadline": null,
         "registration_deadline": null,
@@ -88,7 +88,7 @@
       "organizer_evidence": "The Mid-Atlantic Chapter of AAPM",
       "organization": "MACAAPM",
       "category": "Regional",
-      "url": "https://macaapm.org/events/",
+      "url": "https://macaapm.org/category/annual-meetings/",
       "source_url": "https://macaapm.org/events/",
       "verified_at": "2026-11-19T22:18:56.851912+00:00",
       "id": "macaapm|annual meeting|2026"
@@ -168,7 +168,7 @@
       "organizer_evidence": "PTCOG Organizes Annual Conferences with Scientific Meetings and Educational Sessions",
       "organization": "PTCOG",
       "category": "Proton Therapy",
-      "url": "https://ptcog.online/future-ptcog-conferences/?print=print",
+      "url": "https://ptcog.online/events/ptcog-65/",
       "source_url": "https://ptcog.online/future-ptcog-conferences/?print=print",
       "verified_at": "2026-11-19T22:50:25.668528+00:00",
       "id": "ptcog|annual ptcog conference|2027"
