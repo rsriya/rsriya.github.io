@@ -871,6 +871,205 @@
 
 
 /* =====================================================
+   CONFERENCE CARDS
+   Shared design with the News tab
+===================================================== */
+
+.news-card.conference-card {
+    min-width: 0;
+    min-height: 230px;
+    box-sizing: border-box;
+    padding: 28px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* -----------------------------------------------------
+   ORGANIZATION AND CATEGORY
+----------------------------------------------------- */
+
+.conference-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+
+    margin-bottom: 20px;
+}
+
+.conference-category {
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #60717d;
+}
+
+
+/* -----------------------------------------------------
+   CONFERENCE TITLE
+----------------------------------------------------- */
+
+.conference-card h3 {
+    margin: 0 0 18px;
+
+    font-size: 23px;
+    line-height: 1.25;
+
+    color: #172a3a;
+}
+
+
+/* -----------------------------------------------------
+   CONFERENCE DATE AND LOCATION
+----------------------------------------------------- */
+
+.conference-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-bottom: 24px;
+}
+
+.conference-date {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    color: #435765;
+}
+
+.conference-location {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #60717d;
+}
+
+
+/* -----------------------------------------------------
+   CONFERENCE DEADLINES
+----------------------------------------------------- */
+
+.conference-card .event-deadlines {
+    flex-direction: column;
+    gap: 6px;
+
+    margin: 0 0 20px;
+}
+
+.conference-card .event-status {
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+
+/* -----------------------------------------------------
+   CONFERENCE FOOTER
+----------------------------------------------------- */
+
+.conference-card .news-card-footer {
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+.conference-card .news-read:focus-visible {
+    outline: 2px solid #1677a8;
+    outline-offset: 4px;
+}
+
+
+/* -----------------------------------------------------
+   GRID ALIGNMENT
+----------------------------------------------------- */
+
+#upcoming-events.news-grid,
+.conference-grid {
+    width: 100%;
+    min-width: 0;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.events-year-group {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+
+/* =====================================================
+   RESPONSIVE: TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    #upcoming-events.news-grid,
+    .conference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE: MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #upcoming-events.news-grid,
+    .conference-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .news-card.conference-card {
+        min-height: 0;
+        padding: 26px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE: SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .news-card.conference-card {
+        padding: 24px;
+    }
+
+    .conference-card h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   REDUCED MOTION ACCESSIBILITY
+----------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .conference-card {
+        transition: none;
+    }
+
+    .conference-card:hover {
+        transform: none;
+    }
+
+}
+
+/* =====================================================
    RESPONSIVE: TABLET
 ===================================================== */
 
