@@ -142,36 +142,6 @@
     }
 
 
-    function getDateBoxValues(event) {
-
-        const start = parseDate(event.start_date);
-        const end = parseDate(event.end_date);
-
-        const month = start.toLocaleDateString("en-US", {
-            month: "short",
-            timeZone: "UTC"
-        }).toUpperCase();
-
-        let day = String(start.getUTCDate());
-
-        const sameMonth =
-            start.getUTCMonth() === end.getUTCMonth() &&
-            start.getUTCFullYear() === end.getUTCFullYear();
-
-        if (sameMonth && event.start_date !== event.end_date) {
-
-            day += `–${end.getUTCDate()}`;
-
-        }
-
-        return {
-            month: month,
-            day: day,
-            year: start.getUTCFullYear()
-        };
-
-    }
-
 
     /* =================================================
        EVENT VALIDATION
@@ -324,49 +294,6 @@
 
 
     /* =================================================
-       EVENT DATE BOX
-    ================================================= */
-
-    function createDateBox(event) {
-
-        const values = getDateBoxValues(event);
-
-        const dateBox = createElement(
-            "div",
-            "event-date-box"
-        );
-
-        // The complete date is displayed separately.
-        dateBox.setAttribute("aria-hidden", "true");
-
-        dateBox.append(
-
-            createElement(
-                "span",
-                "event-month",
-                values.month
-            ),
-
-            createElement(
-                "strong",
-                "event-day",
-                values.day
-            ),
-
-            createElement(
-                "span",
-                "event-year",
-                values.year
-            )
-
-        );
-
-        return dateBox;
-
-    }
-
-
-    /* =================================================
        EVENT DEADLINES
     ================================================= */
 
@@ -437,189 +364,147 @@
        EVENT CARD
     ================================================= */
 
+
     function createEventCard(event, isPast = false) {
-
-        const card = createElement(
-            "article",
-            isPast ? "event-card past" : "event-card"
-        );
-
-
-        // ---------------------------------------------
-        // DATE BOX
-        // ---------------------------------------------
-
-        card.appendChild(
-            createDateBox(event)
-        );
-
-
-        // ---------------------------------------------
-        // EVENT CONTENT
-        // ---------------------------------------------
-
-        const content = createElement(
-            "div",
-            "event-content"
-        );
-
-        const meta = createElement(
-            "div",
-            "event-meta"
-        );
-
-        meta.appendChild(
-
-            createElement(
-                "span",
-                "event-organization",
-                event.organization
-            )
-
-        );
-
-        if (event.category) {
-
-            meta.appendChild(
-
-                createElement(
-                    "span",
-                    "event-category",
-                    event.category
-                )
-
-            );
-
-        }
-
-        if (!isPast) {
-
-            const status = getEventStatus(event);
-
-            meta.appendChild(
-
-                createElement(
-                    "span",
-                    `event-status ${status.className}`,
-                    status.label
-                )
-
-            );
-
-        }
-
-        content.appendChild(meta);
-
-
-        // Event title.
-
-        content.appendChild(
-
-            createElement(
-                "h3",
-                "",
-                event.title
-            )
-
-        );
-
-
-        // Event location.
-
-        content.appendChild(
-
-            createElement(
-                "p",
-                "event-location",
-                event.location
-            )
-
-        );
-
-
-        // Complete conference dates.
-
-        content.appendChild(
-
-            createElement(
-                "p",
-                "event-full-date",
-                formatDateRange(
-                    event.start_date,
-                    event.end_date
-                )
-            )
-
-        );
-
-
-        // Optional description.
-
-        if (event.description) {
-
-            content.appendChild(
-
-                createElement(
-                    "p",
-                    "event-description",
-                    event.description
-                )
-
-            );
-
-        }
-
-
-        // Upcoming submission and registration deadlines.
-
-        if (!isPast) {
-
-            const deadlines = createDeadlines(event);
-
-            if (deadlines) {
-
-                content.appendChild(deadlines);
-
-            }
-
-        }
-
-        card.appendChild(content);
-
-
-        // ---------------------------------------------
-        // OFFICIAL EVENT LINK
-        // ---------------------------------------------
-
-        const actions = createElement(
-            "div",
-            "event-actions"
-        );
-
-        const link = createElement(
-            "a",
-            "event-link",
-            isPast
-                ? "Event Details ↗"
-                : "Conference Details ↗"
-        );
-
-        link.href = safeURL(event.url);
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-
-        link.setAttribute(
-            "aria-label",
-            `Official event details for ${event.title}`
-        );
-
-        actions.appendChild(link);
-
-        card.appendChild(actions);
-
-        return card;
-
+      
+          const card = createElement(
+              "article",
+              "news-card conference-card"
+          );
+      
+          // Organization and category.
+      
+          const meta = createElement(
+              "div",
+              "conference-meta"
+          );
+      
+          meta.appendChild(
+              createElement(
+                  "span",
+                  "news-category",
+                  event.organization
+              )
+          );
+      
+          if (event.category) {
+      
+              meta.appendChild(
+                  createElement(
+                      "span",
+                      "conference-category",
+                      event.category
+                  )
+              );
+      
+          }
+      
+          card.appendChild(meta);
+      
+      
+          // Conference title.
+      
+          card.appendChild(
+              createElement(
+                  "h3",
+                  "",
+                  event.title
+              )
+          );
+      
+      
+          // Conference dates and location.
+      
+          const details = createElement(
+              "div",
+              "conference-details"
+          );
+      
+          details.append(
+      
+              createElement(
+                  "p",
+                  "conference-date",
+                  formatDateRange(
+                      event.start_date,
+                      event.end_date
+                  )
+              ),
+      
+              createElement(
+                  "p",
+                  "conference-location",
+                  event.location
+              )
+      
+          );
+      
+          card.appendChild(details);
+      
+      
+          // Display status only for ongoing events.
+      
+          if (!isPast) {
+      
+              const status = getEventStatus(event);
+      
+              if (status.className === "ongoing") {
+      
+                  card.appendChild(
+                      createElement(
+                          "span",
+                          "event-status ongoing",
+                          "Ongoing"
+                      )
+                  );
+      
+              }
+      
+              // Show available upcoming deadlines.
+      
+              const deadlines = createDeadlines(event);
+      
+              if (deadlines) {
+      
+                  card.appendChild(deadlines);
+      
+              }
+      
+          }
+      
+      
+          // Conference website.
+      
+          const footer = createElement(
+              "div",
+              "news-card-footer"
+          );
+      
+          const link = createElement(
+              "a",
+              "news-read",
+              isPast
+                  ? "Event Details ↗"
+                  : "Conference Details ↗"
+          );
+      
+          link.href = safeURL(event.url);
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+      
+          link.setAttribute(
+              "aria-label",
+              `Official event details for ${event.title}`
+          );
+      
+          footer.appendChild(link);
+      
+          card.appendChild(footer);
+      
+          return card;
+      
     }
+      
 
 
     /* =================================================
@@ -637,7 +522,8 @@
         );
 
         container.replaceChildren();
-
+        container.classList.remove("events-list");
+        container.classList.add("news-grid");
         const today = getToday();
          
         const currentYear = Number(today.slice(0, 4));
@@ -762,14 +648,21 @@
 
             );
 
+            const grid = createElement(
+                "div",
+                "news-grid conference-grid"
+            );
+            
             for (const event of groups.get(year)) {
-
-                group.appendChild(
+            
+                grid.appendChild(
                     createEventCard(event, true)
                 );
-
+            
             }
-
+            
+            group.appendChild(grid);
+            
             container.appendChild(group);
 
         }
