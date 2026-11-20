@@ -530,157 +530,6 @@
 
 
 /* -----------------------------------------------------
-   INDIVIDUAL EVENT CARD
------------------------------------------------------ */
-
-.event-card {
-    display: grid;
-    grid-template-columns: 110px minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 30px;
-
-    padding: 28px;
-
-    background: #ffffff;
-    border: 1px solid #dce4e8;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.event-card:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 30px rgba(23, 42, 58, 0.07);
-}
-
-
-/* -----------------------------------------------------
-   EVENT DATE BOX
------------------------------------------------------ */
-
-.event-date-box {
-    min-height: 110px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-
-    padding: 15px 10px;
-
-    background: #e7f0f4;
-
-    text-align: center;
-}
-
-.event-month {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-
-    color: #1677a8;
-}
-
-.event-day {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.1;
-
-    color: #172a3a;
-}
-
-.event-year {
-    font-size: 13px;
-    font-weight: 500;
-
-    color: #60717d;
-}
-
-
-/* -----------------------------------------------------
-   EVENT CONTENT
------------------------------------------------------ */
-
-.event-content {
-    min-width: 0;
-}
-
-.event-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-
-    margin-bottom: 12px;
-}
-
-.event-organization {
-    display: inline-block;
-
-    padding: 6px 9px;
-
-    background: #eaf5f9;
-
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-
-    color: #1677a8;
-}
-
-.event-category {
-    font-size: 12px;
-    font-weight: 500;
-
-    color: #60717d;
-}
-
-.event-content h3 {
-    margin: 0 0 10px;
-
-    font-size: clamp(21px, 2vw, 26px);
-    line-height: 1.25;
-
-    color: #172a3a;
-}
-
-.event-location {
-    margin: 0 0 6px;
-
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.6;
-
-    color: #526570;
-}
-
-.event-full-date {
-    margin: 0 0 8px;
-
-    font-size: 13px;
-    line-height: 1.6;
-
-    color: #60717d;
-}
-
-.event-description {
-    max-width: 700px;
-    margin: 10px 0 0;
-
-    font-size: 14px;
-    line-height: 1.7;
-
-    color: #526570;
-}
-
-
-/* -----------------------------------------------------
    EVENT STATUS
 ----------------------------------------------------- */
 
@@ -698,19 +547,9 @@
     color: #526570;
 }
 
-.event-status.upcoming {
-    background: #eaf5f9;
-    color: #1677a8;
-}
-
 .event-status.ongoing {
     background: #e8f3eb;
     color: #327349;
-}
-
-.event-status.completed {
-    background: #eef1f3;
-    color: #60717d;
 }
 
 
@@ -737,53 +576,6 @@
     font-weight: 600;
     color: #435765;
 }
-
-
-/* -----------------------------------------------------
-   EVENT LINKS
------------------------------------------------------ */
-
-.event-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 12px;
-}
-
-.event-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    padding: 12px 18px;
-
-    border: 1px solid #1677a8;
-
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-
-    color: #1677a8;
-    background: transparent;
-
-    transition:
-        background 0.2s ease,
-        color 0.2s ease;
-}
-
-.event-link:hover {
-    background: #1677a8;
-    color: #ffffff;
-}
-
-.event-link:focus-visible {
-    outline: 2px solid #1677a8;
-    outline-offset: 3px;
-}
-
 
 /* =====================================================
    PAST EVENTS ARCHIVE
@@ -822,51 +614,6 @@
     height: 1px;
 
     background: #cbd7dd;
-}
-
-
-/* -----------------------------------------------------
-   PAST EVENT CARDS
------------------------------------------------------ */
-
-.event-card.past {
-    padding: 22px 28px;
-
-    grid-template-columns: 90px minmax(0, 1fr) auto;
-
-    gap: 25px;
-}
-
-.event-card.past .event-date-box {
-    min-height: 85px;
-
-    background: #f0f3f5;
-}
-
-.event-card.past .event-month,
-.event-card.past .event-year {
-    color: #60717d;
-}
-
-.event-card.past .event-day {
-    font-size: 24px;
-    color: #435765;
-}
-
-.event-card.past .event-content h3 {
-    font-size: 21px;
-}
-
-.event-card.past .event-link {
-    padding: 8px 0;
-
-    border: none;
-}
-
-.event-card.past .event-link:hover {
-    background: transparent;
-    color: #105d85;
-    text-decoration: underline;
 }
 
 
@@ -1069,32 +816,6 @@
 
 }
 
-/* =====================================================
-   RESPONSIVE: TABLET
-===================================================== */
-
-@media (max-width: 1100px) {
-
-    .event-card {
-        grid-template-columns: 95px minmax(0, 1fr);
-
-        gap: 22px;
-    }
-
-    .event-actions {
-        grid-column: 2;
-
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .event-card.past {
-        grid-template-columns: 80px minmax(0, 1fr);
-    }
-
-}
-
 
 /* =====================================================
    RESPONSIVE: MOBILE
@@ -1112,68 +833,10 @@
 
     .news-events-tab {
         flex: 1;
-
         padding: 20px 5px;
-
         font-size: 14px;
         line-height: 1.4;
         text-align: center;
-    }
-
-    .events-list {
-        gap: 16px;
-    }
-
-    .event-card {
-        grid-template-columns: 80px minmax(0, 1fr);
-
-        gap: 20px;
-        padding: 22px;
-    }
-
-    .event-date-box {
-        min-height: 95px;
-        padding: 12px 8px;
-    }
-
-    .event-month {
-        font-size: 11px;
-    }
-
-    .event-day {
-        font-size: 24px;
-    }
-
-    .event-year {
-        font-size: 12px;
-    }
-
-    .event-content h3 {
-        font-size: 21px;
-    }
-
-    .event-location,
-    .event-description {
-        font-size: 13px;
-    }
-
-    .event-actions {
-        grid-column: 2;
-
-        align-items: flex-start;
-    }
-
-    .event-link {
-        padding: 10px 14px;
-
-        font-size: 12px;
-    }
-
-    .event-card.past {
-        grid-template-columns: 75px minmax(0, 1fr);
-
-        gap: 18px;
-        padding: 20px;
     }
 
     .events-year-heading {
@@ -1201,54 +864,6 @@
         font-size: 13px;
     }
 
-    .event-card,
-    .event-card.past {
-        grid-template-columns: 65px minmax(0, 1fr);
-
-        gap: 15px;
-        padding: 18px;
-    }
-
-    .event-date-box {
-        min-height: 85px;
-    }
-
-    .event-day,
-    .event-card.past .event-day {
-        font-size: 21px;
-    }
-
-    .event-content h3,
-    .event-card.past .event-content h3 {
-        font-size: 19px;
-    }
-
-    .event-organization {
-        font-size: 10px;
-    }
-
-    .event-actions {
-        grid-column: 1 / -1;
-
-        padding-top: 12px;
-
-        border-top: 1px solid #e6ecef;
-    }
-
-    .event-link {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .event-card.past .event-link {
-        justify-content: flex-start;
-    }
-
-    .event-deadlines {
-        flex-direction: column;
-        gap: 5px;
-    }
-
     .events-archive {
         gap: 30px;
     }
@@ -1262,15 +877,9 @@
 
 @media (prefers-reduced-motion: reduce) {
 
-    .event-card,
-    .event-link,
     .news-events-tab,
     .news-events-tab::after {
         transition: none;
-    }
-
-    .event-card:hover {
-        transform: none;
     }
 
 }
